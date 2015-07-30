@@ -1,0 +1,222 @@
+1. Dados Pessoais
+perfil
+
+2. Privacidade
+imagem
+honra
+dignidade
+vida privada
+
+3. Liberdade
+personalidade
+direitos da personalidade
+autodeterminação informativa
+autodeterminação informacional
+
+4. Intimidade
+vida privada
+dignidade
+segredo
+vazamento
+
+5. Dignidade
+
+dignidade da pessoa humana
+
+6. Pessoa natural
+7. Pessoa jurídica
+
+
+8. tratamento
+de dados
+automatizado
+automatização
+coleta
+produção
+recepção
+classificação
+utilização 
+acesso 
+reprodução
+transmissão
+distribuição
+transporte
+processamento
+arquivamento
+armazenamento 
+eliminação
+avaliação ou controle da informação
+vedado
+modificação 
+bloqueio  
+fornecimento a terceiros de dados pessoais
+comunicação
+interconexão
+transferência 
+difusão 
+extração
+
+9. internet
+meio digital
+(oposto = meio físico)
+digital
+físico
+
+10. Compartilhamento
+de dados
+de perfis
+de fotos
+imagens
+informações
+banco de dados
+
+11. interconexão
+banco de dados
+de dados
+
+12. comunicação
+de dados
+terceiros
+
+13. difusão
+de dados
+banco de dados
+terceiros
+
+14. Transferência Internacional
+de dados
+adequação
+país
+
+15. Uso compartilhado
+poder público
+transparência
+terceiros
+bancos de dados públicos
+
+
+16. Banco de Dados
+público
+privado
+
+17. Titular
+de dados
+sujeito de direitos
+cidadão
+indivíduo
+proprietário
+
+18. Território Nacional
+país
+coleta
+escopo
+
+19. Consentimento
+do titular
+ausência de
+excessão
+autorização
+interesse legítimo
+dispensa de consentimento
+
+20. Atividade jornalística
+Liberdade de expressão
+censura
+
+21. Segurança pública
+Defesa
+segurança nacional
+Segurança do Estado
+Investigação
+Repressão
+Infração Penal
+Crime
+censura
+
+22. Dados anônimos
+anonimização
+sigilo
+
+23. Dados sensíveis
+discriminação
+origem racial ou étnica
+convicções religiosas, filosóficas ou morais
+opiniões políticas
+iliação a sindicatos 
+organizações de caráter religioso, filosófico ou político, 
+saúde 
+opção sexual
+gênero
+dados genéticos
+dados biométricos
+
+
+24. Comunicações
+dado comunicado
+dado armazenado
+interceptação
+sigilo
+segurança das comunicações
+soberania nacional
+censura
+
+25. Dissociação
+desidentificação
+anonimização
+não identificação
+anonimato
+pesquisa
+
+26. Bloqueio
+de tratamento
+autoridade
+órgão competente
+sanção
+
+27. Cancelamento
+exclusão
+titularidade
+bloqueio
+
+28. Acesso
+livre acesso
+
+29. Informação
+30. Transparência
+
+31. Finalidade
+princípios
+qualidade 
+segurança
+prevenção
+não-discriminação
+adequação
+finalidade da coleta
+necessidade
+
+32. Direitos
+acesso
+retificação
+cancelamento
+oposição
+titularidade
+
+33. órgão competente
+Órgão público
+autoridade
+autoridade de garantia
+Publicidade
+
+34. responsável legal
+Menor incapaz
+menor de idade
+tutela
+responsável
+responsabilidade
+tutela do Estado
+
+35. Término do tratamento
+Período
+cancelamento
+Responsabilidade
+finalidade
