@@ -1,0 +1,269 @@
+commentable_id,commentable_parent,commentable_article,commentable_chapter,commentable_axis,commentable_type,commentable_text
+1,0,0,0,0,geral,ANTEPROJETO DE LEI
+2,0,0,0,0,geral,Dispõe sobre o tratamento de dados pessoais para proteger a personalidade e a dignidade da pessoa natural
+3,0,0,0,0,geral,A PRESIDENTA DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
+301,0,0,301,0,capitulo,CAPÍTULO I – DISPOSIÇÕES PRELIMINARES
+4,301,4,301,1,artigo,"Art. 1º Esta Lei dispõe sobre o tratamento de dados pessoais, com o objetivo de proteger os direitos fundamentais de liberdade, intimidade e privacidade da pessoa natural."
+5,301,5,301,1,artigo,"Art. 2º Esta Lei aplica-se a qualquer operação de tratamento realizada por meio total ou parcialmente automatizado, por pessoa natural ou por pessoa jurídica de direito público ou privado, independentemente do país de sua sede e do país onde esteja localizado o banco de dados, desde que:"
+6,5,5,301,1,inciso,I – a operação de tratamento seja realizada no território nacional; ou
+7,5,5,301,1,inciso,II – os dados pessoais objeto do tratamento tenham sido coletados no território nacional.
+8,5,5,301,1,paragrafo,§ 1º Consideram-se coletados no território nacional os dados pessoais cujo titular nele se encontre  no momento da coleta.
+9,5,5,301,1,paragrafo,§ 2º Esta Lei não se aplica aos tratamentos de dados:
+10,9,5,301,1,inciso,I – realizados por pessoa natural para fins exclusivamente pessoais; ou
+11,9,5,301,1,inciso,II – realizados para fins exclusivamente jornalísticos.
+12,5,5,301,1,paragrafo,"§ 3º É vedado aos órgãos públicos e entidades públicas efetuar a transferência de dados pessoais constantes de bases de dados  que administram ou a que  tenham acesso no exercício de suas competências legais para entidades privadas, exceto em casos de execução terceirizada ou mediante concessão e permissão de atividade pública que o exija e exclusivamente para fim específico e determinado."
+13,301,13,301,1,artigo,"Art. 3º As empresas públicas e sociedades de economia mista que atuem em regime de concorrência, sujeitas ao disposto no art. 173 da Constituição, terão o mesmo tratamento dispensado às pessoas jurídicas de direito privado particulares, nos termos desta Lei."
+14,13,13,301,1,paragrafo,"§ 1º As empresas públicas e sociedades de economia mista, quando estiverem operacionalizando políticas públicas e não estiverem atuando em regime de concorrência, terão o mesmo tratamento dispensado aos órgãos e entidades públicas, nos termos dessa Lei."
+15,301,15,301,1,artigo,"Art. 4º Os tratamentos de dados pessoais para fins exclusivos de segurança pública, defesa, segurança do Estado, ou atividades de investigação e repressão de infrações penais, serão regidos por legislação específica, observados os princípios gerais de proteção e os direitos do titular previstos nesta Lei."
+16,15,15,301,1,paragrafo,"§ 1º É vedado o tratamento dos dados a que se refere o caput por pessoa de direito privado, salvo em procedimentos sob tutela de pessoa jurídica de direito público, que serão objeto de informe específico ao órgão competente."
+17,301,17,301,2,artigo,"Art. 5º Para os fins desta Lei, considera-se:"
+18,17,17,301,2,inciso,"I – dado pessoal: dado relacionado à pessoa natural identificada ou identificável, inclusive a partir de números identificativos, dados locacionais ou identificadores eletrônicos;"
+19,17,17,301,2,inciso,"II – tratamento: conjunto de ações referentes a coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, transporte, processamento, arquivamento, armazenamento, eliminação, avaliação ou controle da informação, modificação, bloqueio ou fornecimento a terceiros de dados pessoais, por comunicação, interconexão, transferência, difusão ou extração;"
+20,17,17,301,2,inciso,"III – dados sensíveis: dados pessoais que revelem a origem racial ou étnica, as convicções religiosas, filosóficas ou morais, as opiniões políticas, a filiação a sindicatos ou organizações de caráter religioso, filosófico ou político, dados referentes à saúde ou à vida sexual, bem como dados genéticos;"
+21,17,17,301,2,inciso,"IV – dados anônimos: dados relativos a um titular que não possa ser identificado, nem pelo responsável pelo tratamento nem por qualquer outra pessoa, tendo em conta o conjunto de meios suscetíveis de serem razoavelmente utilizados para identificar o referido titular;"
+22,17,17,301,2,inciso,"V – banco de dados: conjunto estruturado de dados pessoais, localizado em um ou em vários locais, em suporte eletrônico ou físico;"
+23,17,17,301,2,inciso,VI – titular: a pessoa natural a quem se referem os dados pessoais objeto de tratamento;
+24,17,17,301,2,inciso,"VII – consentimento: manifestação livre, expressa, específica e informada pela qual o titular concorda com o tratamento de seus dados pessoais para uma finalidade determinada;"
+25,17,17,301,2,inciso,"VIII – responsável: a pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões referentes ao tratamento de dados pessoais;"
+26,17,17,301,2,inciso,"IX – operador: a pessoa natural ou jurídica, de direito público ou privado, que realiza o tratamento de dados pessoais em nome do responsável;"
+27,17,17,301,2,inciso,"X – comunicação de dados: transferência de dados pessoais a um ou mais sujeitos determinados diversos do seu titular, sob qualquer forma;"
+28,17,17,301,2,inciso,"XI – interconexão: transferência de dados pessoais de um banco a outro, mantido ou não pelo mesmo proprietário, com finalidade semelhante ou distinta;"
+29,17,17,301,2,inciso,"XII – difusão: transferência de dados pessoais a um ou mais sujeitos indeterminados, diversos do seu titular, sob qualquer forma;"
+30,17,17,301,2,inciso,XIII – transferência internacional de dados: transferência de dados pessoais para um país estrangeiro;
+31,17,17,301,2,inciso,"XIV – dissociação: ato de modificar o dado pessoal de modo a que ele não possa ser associado, direta ou indiretamente, com um indivíduo identificado ou identificável;"
+32,17,17,301,2,inciso,XV – bloqueio: guarda do dado pessoal ou do banco de dados com a suspensão temporária de qualquer operação de tratamento;
+33,17,17,301,2,inciso,"XVI – cancelamento: eliminação de dados ou conjunto de dados armazenados em banco de dados, seja qual for o procedimento empregado;"
+34,17,17,301,2,inciso,"XVII – uso compartilhado de dados: a comunicação, a difusão, a transferência internacional, a interconexão de dados pessoais ou tratamento compartilhado de bancos de dados pessoais por órgãos e entidades públicos, no cumprimento de suas competências legais, ou entre órgãos e entidades públicos e entes privados, com autorização específica, para uma ou mais modalidades de tratamento delegados por esses entes públicos; e"
+35,17,17,301,2,inciso,"XVIII – encarregado: pessoa natural, indicada pelo responsável, que atua como canal de comunicação perante os titulares e o órgão competente."
+36,301,36,301,3,artigo,Art. 6º As atividades de tratamento de dados pessoais deverão atender aos seguintes princípios gerais:
+37,36,36,301,3,inciso,"I – princípio da finalidade, pelo qual o tratamento deve ser realizado com finalidades legítimas, específicas, explícitas e conhecidas pelo titular;"
+38,36,36,301,3,inciso,"II – princípio da adequação, pelo qual o tratamento deve ser compatível com as finalidades almejadas e com as legítimas expectativas do titular, de acordo com o contexto do tratamento;"
+39,36,36,301,3,inciso,"III – princípio da necessidade, pelo qual o tratamento deve se limitar ao mínimo necessário para a realização das finalidades almejadas, abrangendo dados pertinentes, proporcionais e não excessivos;"
+40,36,36,301,3,inciso,"IV – princípio do livre acesso, pelo qual deve ser garantida consulta facilitada e gratuita pelos titulares sobre as modalidades de tratamento e sobre a integralidade dos seus dados pessoais;"
+41,36,36,301,3,inciso,"V – princípio da qualidade dos dados, pelo qual devem ser garantidas a exatidão, a clareza e a atualização dos dados, de acordo com a periodicidade necessária para o cumprimento da finalidade de seu tratamento;"
+42,36,36,301,3,inciso,"VI – princípio da transparência, pelo qual devem ser garantidas aos titulares informações claras e adequadas sobre a realização do tratamento;"
+43,36,36,301,3,inciso,"VII – princípio da segurança, pelo qual devem ser utilizadas medidas técnicas e administrativas constantemente atualizadas, proporcionais à natureza das informações tratadas e aptas a proteger os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou difusão;"
+44,36,36,301,3,inciso,"VIII – princípio da prevenção, pelo qual devem ser adotadas medidas capazes de prevenir a ocorrência de danos em virtude do tratamento de dados pessoais; e"
+45,36,36,301,3,inciso,"IX – princípio da não discriminação, pelo qual o tratamento não pode ser realizado para fins discriminatórios."
+46,36,36,301,3,paragrafo,"§ 1º Os órgãos públicos darão publicidade às suas atividades de tratamento de dados por meio de informações claras, precisas e atualizadas em veículos de fácil acesso, preferencialmente em seus sítios eletrônicos, respeitando o princípio da transparência disposto no inciso VI."
+47,36,36,301,3,paragrafo,"§ 2º  O uso compartilhado de dados pessoais deve atender a finalidade específica de execução de políticas públicas e atribuição legal pelos órgãos e entidades públicas, respeitando o princípio da finalidade, adequação e necessidade dispostos nos incisos I, II e III."
+302,0,0,302,0,capitulo,CAPÍTULO II – REQUISITOS PARA O TRATAMENTO DE DADOS PESSOAIS
+303,302,0,302,0,secao,Seção I – Consentimento
+48,303,48,302,4,artigo,"Art. 7º O tratamento de dados pessoais somente é permitido após o consentimento livre, expresso, específico e informado do titular, salvo o disposto no art. 11."
+49,48,48,302,4,paragrafo,"§1º O consentimento para o tratamento de dados pessoais não pode ser condição para o fornecimento de produto ou serviço ou para o exercício de direito, salvo em hipóteses em que os dados forem indispensáveis para a sua realização."
+50,48,48,302,4,paragrafo,"§2º É vedado o tratamento de dados pessoais cujo consentimento tenha sido obtido mediante erro, dolo, estado de necessidade ou coação."
+51,48,48,302,4,paragrafo,§3º O consentimento deverá ser fornecido por escrito ou por outro meio que o certifique.
+52,48,48,302,4,paragrafo,§4º O consentimento deverá ser fornecido de forma destacada das demais cláusulas contratuais.
+53,48,48,302,4,paragrafo,"§5º O consentimento deverá se referir a finalidades determinadas, sendo nulas as autorizações genéricas para o tratamento de dados pessoais."
+54,48,48,302,4,paragrafo,"§6º O consentimento pode ser revogado a qualquer momento, sem ônus para o titular."
+55,48,48,302,4,paragrafo,"§7º São nulas as disposições que estabeleçam ao titular obrigações iníquas, abusivas, que o coloquem em desvantagem exagerada, ou que sejam incompatíveis com a boa-fé ou a equidade."
+56,48,48,302,4,paragrafo,§8º Cabe ao responsável o ônus da prova de que o consentimento do titular foi obtido em conformidade com o disposto nesta Lei.
+57,303,57,302,4,artigo,"Art. 8º O titular de dados pessoais com idade entre doze e dezoito anos idade poderá fornecer consentimento para tratamento que respeite sua condição peculiar de pessoa em desenvolvimento, ressalvada a possibilidade de revogação do consentimento pelos pais ou responsáveis legais, no seu melhor interesse."
+58,303,58,302,4,artigo,"Art. 9º No caso do titular de dados pessoais com idade até doze anos incompletos, o consentimento será fornecido pelos pais ou responsáveis legais, devendo o tratamento respeitar sua condição peculiar de pessoa em desenvolvimento."
+59,303,59,302,4,artigo,"Art. 10º No momento do fornecimento do consentimento, o titular será informado de forma clara, adequada e ostensiva sobre os seguintes elementos:"
+60,59,59,302,4,inciso,I – finalidade específica do tratamento;
+61,59,59,302,4,inciso,II – forma e duração do tratamento;
+62,59,59,302,4,inciso,III – identificação do responsável;
+63,59,59,302,4,inciso,IV – informações de contato do responsável;
+64,59,59,302,4,inciso,"V – sujeitos ou categorias de sujeitos para os quais os dados podem ser comunicados, bem como âmbito de difusão;"
+65,59,59,302,4,inciso,VI – responsabilidades dos agentes que realizarão o tratamento; e
+66,59,59,302,4,inciso,"VII – direitos do titular, com menção explícita a:"
+67,66,59,302,4,alinea,"a) possibilidade de não fornecer o consentimento, com explicação sobre as consequências da negativa, observado o disposto no § 1º do art. 6º;"
+68,66,59,302,4,alinea,"b) possibilidade de acessar os dados, retificá-los ou revogar o consentimento, por procedimento gratuito e facilitado; e"
+69,66,59,302,4,alinea,c) possibilidade de denunciar ao órgão competente o descumprimento de disposições desta Lei.
+70,59,59,302,4,paragrafo,"§ 1º Considera-se nulo o consentimento caso as informações tenham conteúdo enganoso ou não tenham sido apresentadas de forma clara, adequada e ostensiva."
+71,59,59,302,4,paragrafo,"§ 2º Em caso de alteração de informação referida nos incisos I, II, III ou V do caput, o responsável deverá obter novo consentimento do titular, após destacar de forma específica o teor das alterações."
+72,59,59,302,4,paragrafo,"§ 3º Em caso de alteração de informação referida no inciso IV do caput, o responsável deverá comunicar ao titular as informações de contato atualizadas."
+73,59,59,302,4,paragrafo,"§ 4º Nas atividades que importem em coleta continuada de dados pessoais, o titular deverá ser informado regularmente sobre a continuidade, nos termos definidos pelo órgão competente."
+74,303,74,302,4,artigo,Art. 11. O consentimento será dispensado quando os dados forem de acesso público irrestrito ou quando o tratamento for indispensável para:
+75,74,74,302,4,inciso,I – cumprimento de uma obrigação legal pelo responsável;
+76,74,74,302,4,inciso,II – tratamento e uso compartilhado de dados relativos ao exercício de direitos ou deveres previstos em leis ou regulamentos pela administração pública;
+77,74,74,302,4,inciso,"III – execução de procedimentos pré-contratuais ou obrigações relacionados a um contrato do qual é parte o titular, observado o disposto no § 1º do art. 6º;"
+78,74,74,302,4,inciso,"IV – realização de pesquisa histórica, científica ou estatística, garantida, sempre que possível, a dissociação dos dados pessoais;"
+79,74,74,302,4,inciso,V – exercício regular de direitos em processo judicial ou administrativo;
+80,74,74,302,4,inciso,VI – proteção da vida ou da incolumidade física do titular ou de terceiro;
+81,74,74,302,4,inciso,"VII – tutela da saúde, com procedimento realizado por profissionais da área da saúde ou por entidades sanitárias."
+82,74,74,302,4,paragrafo,"§ 1º Nas hipóteses de dispensa de consentimento, os dados devem ser tratados exclusivamente para as finalidades previstas e pelo menor período de tempo possível, conforme os princípios gerais dispostos nesta Lei, garantidos os direitos do titular."
+83,74,74,302,4,paragrafo,"§ 2º Nos casos de aplicação do disposto nos incisos I e II, será dada publicidade a esses casos, nos termos do parágrafo 1º do art. 6º."
+84,74,74,302,4,paragrafo,"§ 3º  No caso de descumprimento do disposto no §2o, o operador ou o responsável pelo tratamento de dados poderá ser responsabilizado."
+304,302,0,302,0,secao,Seção II – Dados Pessoais Sensíveis
+85,304,85,302,2,artigo,"Art. 12.  É vedado o tratamento de dados pessoais sensíveis, salvo:"
+86,85,85,302,2,inciso,I – com fornecimento de consentimento especial pelo titular:
+87,86,85,302,2,alinea,"a) mediante manifestação própria, distinta da manifestação de consentimento relativa a outros dados pessoais; e"
+88,86,85,302,2,alinea,"b) com informação prévia e específica sobre a natureza sensível dos dados a serem tratados, com alerta quanto aos riscos envolvidos no tratamento desta espécie de dados; ou"
+89,85,85,302,2,inciso,"II – sem fornecimento de consentimento do titular, quando os dados forem de acesso público irrestrito, ou nas hipóteses em que for indispensável para:"
+90,89,85,302,2,alinea,a) cumprimento de uma obrigação legal pelo responsável;
+91,89,85,302,2,alinea,b) tratamento e uso compartilhado de dados relativos ao exercício regular de direitos ou deveres previstos em leis ou regulamentos pela administração pública;
+92,89,85,302,2,alinea,"c) realização de pesquisa histórica, científica ou estatística, garantida, sempre que possível, a dissociação dos dados pessoais;"
+93,89,85,302,2,alinea,d) exercício regular de direitos em processo judicial ou administrativo;
+94,89,85,302,2,alinea,e) proteção da vida ou da incolumidade física do titular ou de terceiro;
+95,89,85,302,2,alinea,"f) tutela da saúde, com procedimento realizado por profissionais da área da saúde ou por entidades sanitárias."
+96,85,85,302,2,paragrafo,§ 1º O disposto neste artigo aplica-se a qualquer tratamento capaz de revelar dados pessoais sensíveis.
+97,85,85,302,2,paragrafo,"§ 2º O tratamento de dados pessoais sensíveis não poderá ser realizado em detrimento do titular, ressalvado o disposto em legislação específica."
+98,85,85,302,2,paragrafo,"§ 3º Nos casos de aplicação do disposto nos itens ‘a’ e ‘b’ pelos órgãos e entidades públicas,  será dada publicidade à referida dispensa de consentimento, nos termos do §1o do art. 6o."
+99,304,99,302,2,artigo,"Art. 13.  Órgão competente poderá estabelecer medidas adicionais de segurança e de proteção aos dados pessoais sensíveis, que deverão ser adotadas pelo responsável ou por outros agentes do tratamento."
+100,99,99,302,2,paragrafo,"§ 1º A realização de determinadas modalidades de tratamento de dados pessoais sensíveis poderá ser condicionada à autorização prévia de órgão competente, nos termos do regulamento."
+101,99,99,302,2,paragrafo,"§ 2º O tratamento de dados pessoais biométricos será disciplinado por órgão competente, que disporá sobre hipóteses em que dados biométricos serão considerados dados pessoais sensíveis."
+305,302,0,302,0,secao,Seção III – Término do Tratamento
+102,305,102,302,5,artigo,Art. 14. O término do tratamento de dados pessoais ocorrerá nas seguintes hipóteses:
+103,102,102,302,5,inciso,I – verificação de que a finalidade foi alcançada ou de que os dados deixaram de ser necessários ou pertinentes para o alcance da finalidade específica almejada;
+104,102,102,302,5,inciso,II – fim do período de tratamento;
+105,102,102,302,5,inciso,III – comunicação do titular; ou
+106,102,102,302,5,inciso,IV – determinação de órgão competente quando houver violação de dispositivo legal ou regulamentar.
+107,102,102,302,5,paragrafo,"§ 1º Órgão competente estabelecerá períodos máximos para o tratamento de dados pessoais, ressalvado o disposto em legislação específica."
+108,305,108,302,5,artigo,"Art. 15. Os dados pessoais serão cancelados após o término de seu tratamento, autorizada a conservação para as seguintes finalidades:"
+109,108,108,302,5,inciso,I – cumprimento de obrigação legal pelo responsável;
+110,108,108,302,5,inciso,"II – pesquisa histórica, científica ou estatística, garantida, sempre que possível, a dissociação dos dados pessoais; ou"
+111,108,108,302,5,inciso,"III – cessão a terceiros, nos termos desta Lei."
+112,108,108,302,5,paragrafo,"§ 1º Órgão competente poderá estabelecer hipóteses específicas de conservação de dados pessoais, garantidos os direitos do titular, ressalvado o disposto em legislação específica."
+306,0,0,306,0,capitulo,CAPÍTULO III – DIREITOS DO TITULAR
+113,306,113,306,6,artigo,"Art. 16. Toda pessoa natural tem assegurada a titularidade de seus dados pessoais, garantidos os direitos fundamentais de liberdade, intimidade e privacidade, nos termos desta Lei."
+114,306,114,306,6,artigo,Art. 17. O titular dos dados pessoais tem direito a obter:
+115,114,114,306,6,inciso,I – confirmação da existência de tratamento de seus dados;
+116,114,114,306,6,inciso,II – acesso aos dados;
+117,114,114,306,6,inciso,"III – correção de dados incompletos, inexatos ou desatualizados; e"
+118,114,114,306,6,inciso,"IV – dissociação, bloqueio ou cancelamento de dados desnecessários, excessivos ou tratados em desconformidade com o disposto nesta Lei."
+119,114,114,306,6,paragrafo,"§1º O titular pode opor-se a tratamento realizado com fundamento em uma das hipóteses de dispensa de consentimento, alegando descumprimento ao disposto nesta Lei."
+120,114,114,306,6,paragrafo,"§ 2º Os direitos previstos neste artigo serão exercidos mediante requerimento do titular a um dos agentes de tratamento, que adotará imediata providência para seu atendimento."
+121,114,114,306,6,paragrafo,"§ 3º Em caso de impossibilidade de adoção imediata da providência de que trata o §2o, o responsável enviará ao titular, em até sete dias a partir da data do recebimento da comunicação, resposta em que poderá:"
+122,121,114,306,6,inciso,I – comunicar que não é agente de tratamento dos dados; ou
+123,121,114,306,6,inciso,II – indicar as razões de fato ou de direito que impedem a adoção imediata da providência.
+124,114,114,306,6,paragrafo,§ 4º A providência de que trata o § 2o será realizada sem ônus para o titular.
+125,114,114,306,6,paragrafo,"§ 5º O responsável deverá informar aos terceiros a quem os dados tenham sido comunicados sobre a realização de correção, cancelamento, dissociação ou bloqueio dos dados, para que repitam idêntico procedimento."
+126,306,126,306,6,artigo,"Art. 18. A confirmação de existência ou o acesso a dados pessoais serão providenciados, a critério do titular:"
+127,126,126,306,6,inciso,"I – em formato simplificado, imediatamente; ou"
+128,126,126,306,6,inciso,"II – por meio de declaração clara e completa, que indique a origem dos dados, data de registro, critérios utilizados e finalidade do tratamento, fornecida no prazo de até sete dias, a contarem do momento do requerimento do titular."
+129,126,126,306,6,paragrafo,§ 1º Os dados pessoais serão armazenados em formato que permita o exercício do direito de acesso.
+130,126,126,306,6,paragrafo,"§ 2º As informações e dados poderão ser fornecidos, a critério do titular:"
+131,130,126,306,6,inciso,"I – por meio eletrônico, seguro e idôneo para tal fim; ou"
+132,130,126,306,6,inciso,"II – sob a forma impressa, situação em que poderá ser cobrado exclusivamente o valor necessário ao ressarcimento do custo dos serviços e dos materiais utilizados."
+133,126,126,306,6,paragrafo,"§ 3º O titular poderá solicitar cópia eletrônica integral dos seus dados pessoais em formato que permita a sua utilização subsequente, inclusive em outras operações de tratamento, sempre que o banco de dados estiver em suporte eletrônico."
+134,126,126,306,6,paragrafo,§ 4º Órgão competente poderá dispor sobre os formatos em que serão fornecidas as informações e os dados ao titular.
+135,306,135,306,6,artigo,"Art. 19. O titular dos dados tem direito a solicitar revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais que afetem seus interesses, inclusive as decisões destinadas a definir o seu perfil ou avaliar aspectos de sua personalidade."
+136,135,135,306,6,paragrafo,"§ 1º O responsável deverá fornecer, sempre que solicitadas, informações adequadas a respeito dos critérios e procedimentos utilizados para a decisão automatizada."
+137,135,135,306,6,paragrafo,§ 2º Ficam ressalvados os tratamentos de dados pessoais necessários ao cumprimento de obrigação legal.
+138,306,138,306,6,artigo,Art. 20. Os dados pessoais referentes a exercício regular de direitos pelo titular não podem ser utilizados em seu prejuízo.
+139,306,139,306,6,artigo,"Art. 21. A defesa dos interesses e direitos dos titulares de dados poderá ser exercida em juízo individual ou coletivamente, na forma do disposto na Lei no 9.507, de 12 de novembro de 1997, nos arts. 81 e 82 da Lei no 8.078, de 11 de setembro de 1990, na Lei no 7.347, de 24 de julho de 1985, e nos demais instrumentos de tutela individual e coletiva."
+307,0,0,307,0,capitulo,CAPÍTULO IV – COMUNICAÇÃO E INTERCONEXÃO
+140,307,140,307,7,artigo,"Art. 22.  Nos casos de comunicação ou interconexão de dados pessoais, o cessionário ficará sujeito às mesmas obrigações legais e regulamentares do cedente, com quem terá responsabilidade solidária pelos danos eventualmente causados."
+141,140,140,307,7,paragrafo,"§ 1º A responsabilidade solidária não se aplica aos casos de comunicação ou interconexão realizadas no exercício dos deveres de que trata a Lei no 12.527, de 18 de novembro de 2011, relativos à garantia do acesso a informações públicas."
+142,307,142,307,7,artigo,"Art. 23. A comunicação ou interconexão de dados pessoais entre pessoas de direito privado dependerá de consentimento livre, expresso, específico e informado, ressalvadas as hipóteses de dispensa do consentimento previstas nesta Lei."
+143,307,143,307,7,artigo,"Art. 24. A comunicação ou interconexão de dados pessoais entre pessoa jurídica de direito público e pessoa de direito privado dependerá de consentimento livre, expresso, específico e informado do titular, salvo:"
+144,143,143,307,7,inciso,I – nas hipóteses de dispensa do consentimento previstas nesta Lei;
+145,143,143,307,7,inciso,"II – nos casos de uso compartilhado de dados previsto no inciso XVII do art. 5º, em que será dada publicidade nos termos do §1º do art. 6º; ou"
+146,143,143,307,7,inciso,"III – quando houver prévia autorização de órgão competente, que avaliará o atendimento ao interesse público, a adequação e a necessidade da dispensa do consentimento."
+147,143,143,307,7,paragrafo,§ 1º A autorização prevista no inciso III do caput poderá ser condicionada:
+148,147,143,307,7,inciso,"I – à comunicação da interconexão aos titulares, nos termos do §1º do art. 6º;"
+149,147,143,307,7,inciso,II – ao oferecimento aos titulares de opção de cancelamento de seus dados; ou
+150,147,143,307,7,inciso,III – ao cumprimento de obrigações complementares determinadas por órgão competente.
+151,307,151,307,7,artigo,"Art. 25. A comunicação ou interconexão entre órgãos e entidades de direito público será objeto de publicidade, nos termos do §1º do art. 6º, e obedecerá às regras gerais deste Capítulo."
+152,307,152,307,7,artigo,"Art. 26. O órgão competente poderá solicitar, a qualquer momento, aos órgãos e entidades públicos que realizem interconexão de dados e o uso compartilhado de dados pessoais, informe específico sobre o âmbito, natureza dos dados e demais detalhes do tratamento realizado, podendo emitir recomendações complementares para garantir o cumprimento desta Lei."
+153,307,153,307,7,artigo,Art. 27. Órgão competente poderá estabelecer normas complementares para as atividades de comunicação e interconexão de dados pessoais.
+308,0,0,308,0,capitulo,CAPÍTULO V – TRANSFERÊNCIA INTERNACIONAL DE DADOS
+154,308,154,308,8,artigo,"Art. 28. A transferência internacional de dados pessoais somente é permitida para países que proporcionem nível de proteção de dados pessoais equiparável ao desta Lei, ressalvadas as seguintes exceções:"
+155,154,154,308,8,inciso,"I – quando a transferência for necessária para a cooperação judicial internacional entre órgãos públicos de inteligência e de investigação, de acordo com os instrumentos de direito internacional;"
+156,154,154,308,8,inciso,II – quando a transferência for necessária para a proteção da vida ou da incolumidade física do titular ou de terceiro;
+157,154,154,308,8,inciso,"III – quando órgão competente autorizar a transferência, nos termos de regulamento;"
+158,154,154,308,8,inciso,IV – quando a transferência resultar em compromisso assumido em acordo de cooperação internacional;
+159,154,154,308,8,inciso,"V – quando a transferência for necessária para execução de política pública ou atribuição legal do serviço público, sendo dada publicidade nos termos do §1º do art. 6º."
+160,154,154,308,8,paragrafo,"§ 1º O nível de proteção de dados do país será avaliado por órgão competente, que levará em conta:"
+161,160,154,308,8,inciso,I – normas gerais e setoriais da legislação em vigor no país de destino;
+162,160,154,308,8,inciso,II – natureza dos dados;
+163,160,154,308,8,inciso,III – observância dos princípios gerais de proteção de dados pessoais previstos nesta Lei;
+164,160,154,308,8,inciso,IV – adoção de medidas de segurança previstas em regulamento; e
+165,160,154,308,8,inciso,V – outras circunstâncias específicas relativas à transferência.
+166,308,166,308,8,artigo,"Art. 29. Nos casos de países que não proporcionem nível de proteção equiparável ao desta Lei, o consentimento de que trata o art. 7º será especial, fornecido:"
+167,166,166,308,8,inciso,"I – mediante manifestação própria, distinta da manifestação de consentimento relativa a outras operações de tratamento; e"
+168,166,166,308,8,inciso,"II – com informação prévia e específica sobre o caráter internacional da operação, com alerta quanto aos riscos envolvidos, de acordo com as circunstâncias de vulnerabilidade do país de destino."
+169,308,169,308,8,artigo,"Art. 30. A autorização referida no inciso III do caput do art. 28 será concedida quando o responsável pelo tratamento apresentar garantias suficientes de observância dos princípios gerais de proteção e dos direitos do titular, apresentadas em cláusulas contratuais aprovadas para uma transferência específica, em cláusulas contratuais-padrão ou em normas corporativas globais, nos termos do regulamento."
+170,169,169,308,8,paragrafo,"§ 1º Órgão competente poderá elaborar cláusulas contratuais-padrão, que deverão observar os princípios gerais de proteção de dados e os direitos do titular, garantida a responsabilidade solidária, independente de culpa, de cedente e cessionário."
+171,169,169,308,8,paragrafo,"§ 2º Os responsáveis pelo tratamento que fizerem parte de um mesmo grupo econômico ou conglomerado multinacional poderão submeter normas corporativas globais à aprovação de órgão competente, obrigatórias para todas as empresas integrantes do grupo ou conglomerado, a fim de obter permissão para transferências internacionais de dados dentro do grupo ou conglomerado sem necessidade de autorizações específicas, observados os princípios gerais de proteção e os direitos do titular."
+172,169,169,308,8,paragrafo,"§ 3º Na análise de cláusulas contratuais ou de normas corporativas globais submetidas à aprovação de órgão competente, poderão ser requeridas informações suplementares ou realizadas diligências de verificação quanto às operações de tratamento."
+173,308,173,308,8,artigo,"Art. 31. O cedente e o cessionário têm responsabilidade solidária pelo tratamento de dados realizado no exterior ou no território nacional, em qualquer hipótese, independente de culpa."
+174,308,174,308,8,artigo,"Art. 32. No caso de transferência internacional de dados de país estrangeiro para o Brasil, somente é permitido o seu tratamento no território nacional quando nas operações realizadas naquele país tiverem sido observadas suas normas relativas à obtenção de consentimento."
+175,308,175,308,8,artigo,Art. 33. Órgão competente poderá estabelecer normas complementares que permitam identificar uma operação de tratamento como transferência internacional de dados pessoais.
+309,0,0,309,0,capitulo,CAPÍTULO VII – RESPONSABILIDADE DOS AGENTES
+310,309,0,309,0,secao,Seção I – Agentes do Tratamento e Ressarcimento de Danos
+176,310,176,309,9,artigo,Art. 34. São agentes do tratamento de dados pessoais o responsável e o operador.
+177,310,177,309,9,artigo,"Art. 35. Todo aquele que, por meio do tratamento de dados pessoais, causar a outrem dano material ou moral, individual ou coletivo, é obrigado a ressarci-lo."
+178,177,177,309,9,paragrafo,"§ 1º O juiz, no processo civil, poderá inverter o ônus da prova a favor do titular dos dados quando, a seu juízo, for verossímil a alegação ou quando a produção de prova pelo titular resultar excessivamente onerosa;"
+179,177,177,309,9,paragrafo,§ 2º O responsável ou o operador podem deixar de ser responsabilizados se provarem que o fato que causou o dano não lhes é imputável.
+180,310,180,309,9,artigo,"Art. 36. A eventual dispensa da exigência do consentimento não desobriga os agentes do tratamento das demais obrigações previstas nesta Lei, especialmente da observância dos princípios gerais e da garantia dos direitos do titular."
+181,310,181,309,9,artigo,"Art. 37. As punições cabíveis no âmbito desta Lei serão aplicadas pessoalmente aos operadores e responsáveis de órgãos públicos que agirem de forma contrária a esta Lei, conforme disposto na Lei no 8.112, de 11 de dezembro de 1990 e na Lei no 8.429, de 2 de junho de 1992."
+182,310,182,309,9,artigo,"Art. 38. As competências e responsabilidades relativas à gestão de bases de dados nos órgãos e entidades públicos, bem como a responsabilidade pela prática de atos administrativos referentes a dados pessoais, serão definidas nos atos normativos que tratam da definição de suas competências."
+311,309,0,309,0,secao,Seção II – Responsável e Operador
+183,311,183,309,9,artigo,"Art. 39. O operador deverá realizar o tratamento segundo as instruções fornecidas pelo responsável, que verificará a observância das próprias instruções e das normas sobre a matéria."
+184,183,183,309,9,paragrafo,§ 1º O responsável tem responsabilidade solidária quanto a todas as operações de tratamento realizadas pelo operador.
+185,183,183,309,9,paragrafo,"§ 2º Órgão competente poderá determinar ao responsável que elabore relatório de impacto à privacidade referente às suas operações de tratamento de dados, nos termos do regulamento."
+186,311,186,309,9,artigo,"Art. 40. O responsável ou o operador devem manter registro das operações de tratamento de dados pessoais que realizarem, observado o disposto no art. 15."
+187,186,186,309,9,paragrafo,"§ 1º Órgão competente poderá dispor sobre formato, estrutura e tempo de guarda do registro."
+312,309,0,309,0,secao,Seção III – Encarregado pelo Tratamento de Dados Pessoais
+188,312,188,309,9,artigo,Art. 41. O responsável deverá indicar um encarregado pelo tratamento de dados pessoais.
+189,188,188,309,9,paragrafo,"§ 1º A identidade e as informações de contato do encarregado deverão ser divulgadas publicamente de forma clara e objetiva, preferencialmente na página eletrônica do responsável na Internet."
+190,188,188,309,9,paragrafo,§ 2º As atividades do encarregado consistem em:
+191,190,188,309,9,inciso,"I – receber reclamações e comunicações dos titulares, prestar esclarecimentos e adotar providências;"
+192,190,188,309,9,inciso,II – receber comunicações do órgão competente e adotar providências;
+193,190,188,309,9,inciso,III – orientar os funcionários da entidade a respeito das práticas a serem tomadas em relação à proteção de dados pessoais; e
+194,190,188,309,9,inciso,IV – demais atribuições estabelecidas em normas complementares ou determinadas pelo responsável.
+195,188,188,309,9,paragrafo,"§ 3º Órgão competente estabelecerá normas complementares sobre a definição e as atribuições do encarregado, inclusive hipóteses de dispensa da necessidade de definição, conforme critérios de natureza ou porte da entidade, e volume de operações de tratamento de dados."
+313,309,0,309,0,secao,Seção IV – Segurança e Sigilo dos Dados
+196,313,196,309,10,artigo,"Art. 42. O operador deve adotar medidas de segurança técnicas e administrativas constantemente atualizadas, proporcionais à natureza das informações tratadas e aptas a proteger os dados pessoais de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação, difusão, ou qualquer forma de tratamento inadequado ou ilícito."
+197,196,196,309,10,paragrafo,"§ 1º  As medidas de segurança devem ser compatíveis com o atual estado da tecnologia, com a natureza dos dados e com as características específicas do tratamento, em particular no caso de dados sensíveis."
+198,313,198,309,10,artigo,"Art. 43. Os agentes de tratamento ou qualquer outra pessoa que intervenha em uma das fases do tratamento obriga-se ao dever de sigilo em relação aos dados pessoais, mesmo após o seu término."
+199,313,199,309,10,artigo,Art. 44. O responsável deverá comunicar imediatamente ao órgão competente a ocorrência de qualquer incidente de segurança que possa acarretar prejuízo aos titulares.
+200,199,199,309,10,paragrafo,"§ 1º A comunicação deverá mencionar, no mínimo:"
+201,200,199,309,10,inciso,I – descrição da natureza dos dados pessoais afetados;
+202,200,199,309,10,inciso,II – informações sobre os titulares envolvidos;
+203,200,199,309,10,inciso,"III – indicação das medidas de segurança utilizadas para a proteção dos dados, inclusive procedimentos de encriptação;"
+204,200,199,309,10,inciso,IV – riscos relacionados ao incidente; e
+205,200,199,309,10,inciso,V – medidas que foram ou que serão adotadas para reverter ou mitigar os efeitos de prejuízo.
+206,313,206,309,10,artigo,"Art. 45. Órgão competente poderá determinar a adoção de providências quanto a incidentes de segurança relacionados a dados pessoais, conforme sua gravidade, tais como:"
+207,206,206,309,10,inciso,I – pronta comunicação aos titulares;
+208,206,206,309,10,inciso,II – ampla divulgação do fato em meios de comunicação; ou
+209,206,206,309,10,inciso,III – medidas para reverter ou mitigar os efeitos de prejuízo.
+210,206,206,309,10,paragrafo,"§ 1º No juízo de gravidade do incidente, será avaliada eventual comprovação de que foram adotadas medidas técnicas adequadas que tornem os dados pessoais afetados ininteligíveis para terceiros não autorizados a acessá-los."
+211,206,206,309,10,paragrafo,"§ 2º A pronta comunicação aos titulares afetados pelo incidente de segurança será obrigatória, independente de determinação do órgão competente, nos casos em que for possível identificar que o incidente coloque em risco a segurança pessoal dos titulares ou lhes possa causar danos."
+212,313,212,309,10,artigo,"Art. 46. Os sistemas utilizados para o tratamento de dados pessoais devem ser estruturados de forma a atender aos requisitos de segurança, aos princípios gerais previstos nesta Lei e às demais normas regulamentares."
+213,313,213,309,10,artigo,"Art. 47. Órgão competente poderá estabelecer normas complementares acerca de critérios e padrões mínimos de segurança, inclusive com base na evolução da tecnologia."
+314,309,0,309,0,secao,Seção V – Boas Práticas
+214,314,214,309,11,artigo,"Art. 48.  Os responsáveis pelo tratamento de dados pessoais, individualmente ou por meio de associações, poderão formular regras de boas práticas que estabeleçam condições de organização, regime de funcionamento, procedimentos, normas de segurança, padrões técnicos, obrigações específicas para os diversos envolvidos no tratamento, ações formativas ou mecanismos internos de supervisão, observado o disposto nesta Lei e em normas complementares sobre proteção de dados."
+215,214,214,309,11,paragrafo,§ 1º As regras de boas práticas disponibilizadas publicamente e atualizadas poderão ser reconhecidas e divulgadas pelo órgão competente.
+216,314,216,309,11,artigo,"Art. 49. O órgão competente estimulará a adoção de padrões técnicos para softwares e aplicações de Internet que facilitem a disposição dos titulares sobre seus dados pessoais, incluindo o direito ao não rastreamento."
+315,0,0,315,0,capitulo,CAPÍTULO VIII – SANÇÕES ADMINISTRATIVAS
+217,315,217,315,12,artigo,Art. 50.  As infrações realizadas por pessoas jurídicas de direito privado às normas previstas nesta Lei ficam sujeitas às seguintes sanções administrativas aplicáveis por órgão competente:
+218,217,217,315,12,inciso,I – multa simples ou diária;
+219,217,217,315,12,inciso,II – publicização da infração;
+220,217,217,315,12,inciso,III – dissociação dos dados pessoais;
+221,217,217,315,12,inciso,IV – bloqueio dos dados pessoais;
+222,217,217,315,12,inciso,"V – suspensão de operação de tratamento de dados pessoais, por prazo não superior a dois anos;"
+223,217,217,315,12,inciso,VI – cancelamento dos dados pessoais;
+224,217,217,315,12,inciso,"VII – proibição do tratamento de dados sensíveis, por prazo não superior a dez anos; e"
+225,217,217,315,12,inciso,"VIII – proibição de funcionamento de banco de dados, por prazo não superior a dez anos."
+226,217,217,315,12,paragrafo,§ 1º As sanções poderão ser aplicadas cumulativamente.
+227,217,217,315,12,paragrafo,"§ 2º Os procedimentos e critérios para a aplicação das sanções serão adequados em relação à gravidade e à extensão da infração, à natureza dos direitos pessoais afetados, à existência de reincidência, à situação econômica do infrator e aos prejuízos causados, nos termos do regulamento."
+228,217,217,315,12,paragrafo,"§ 3º Os prazos de proibição previstos nos incisos VII e VIII do caput poderão ser prorrogados pelo órgão competente, desde que verificada a omissão no cumprimento de suas determinações, a reincidência no cometimento de infrações ou a ausência de reparação integral de danos causados pela infração."
+229,217,217,315,12,paragrafo,"§ 4º O disposto neste artigo não prejudica a aplicação de sanções administrativas, civis ou penais definidas em legislação específica."
+230,217,217,315,12,paragrafo,"§ 5º O disposto nos incisos III a VII poderá ser aplicado às entidades e aos órgãos públicos, sem prejuízo do disposto na Lei no 8.112, de 11 de dezembro de 1990 e na Lei no 8.429, de 2 de junho de 1992."
+316,0,0,316,0,capitulo,CAPÍTULO IX – DISPOSIÇÕES TRANSITÓRIAS E FINAIS
+231,316,231,316,13,artigo,"Art. 51. Órgão competente estabelecerá normas sobre adequação progressiva de bancos de dados constituídos até a data de entrada em vigor desta Lei, considerada a complexidade das operações de tratamento, a natureza dos dados e o porte do responsável."
+232,316,232,316,13,artigo,Art. 52. Esta Lei entrará em vigor no prazo de 120 (cento e vinte) dias contados da data da sua publicação.
+233,0,0,0,0,geral,"Brasília,            de                    de 2015; 194o da Independência e 127o da República."
+234,0,0,0,0,geral,Nestes artigos pretendemos discutir o início da entrada em vigor da Lei.
+235,0,0,0,0,geral,Sanções administrativas
+237,0,0,0,0,geral,Órgão Administrativo
+239,0,0,0,0,geral,"A norma proposta pretende incentivar que responsáveis pelo tratamento de dados, individualmente ou em grupos, formulem regras de boas práticas. Esta medida procura estimular os responsáveis a tornarem públicas e adequarem as suas práticas e compromissos, referentes ao tratamento de dados que realizem, às necessidades específicas do seu tratamento, sempre fortalecendo o nível esperado de proteção de dados em relação ao que é determinado pela lei."
+242,0,0,0,0,geral,"Favorecer a utilização lícita de dados pessoais, observadas as garantias de seus titulares, é um dos incentivos que se pretende criar com esta proposta, fazendo com que a utilização de dados pessoais seja realizada por agentes responsáveis e fomentando o desenvolvimento de setores econômicos ligados, por exemplo, às tecnologias de informação. A transferência internacional de dados é hoje um tema crucial, visto que diversos tratamentos de dados pessoais supõem que estes atravessem fronteiras, fazendo com que se submetam a diferentes legislações. A presente proposta busca condicionar o fluxo internacional de dados pessoais dos cidadãos brasileiros a países que possuam níveis de proteção da privacidade e de dados pessoais equiparáveis, dando ênfase à transparência sobre acordos internacionais, bilaterais ou regionais que versem sobre o tema e ao incentivo à adoção de padrões contratuais internacionalmente conhecidos. Quais deveriam ser as condições para que os dados de cidadãos brasileiros sejam transferidos para outras jurisdições?"
+243,0,0,0,0,geral,"Nesta parte, pretendemos discutir como os dados pessoais podem ser utilizados e transmitidos entre diversos responsáveis. A comunicação de dados é a apresentação ou revelação dos dados pessoais a pessoas determinadas, ao passo que a interconexão é transferência de dados pessoais de um banco de dados a outro. O uso compartilhado, por sua vez, compreende situações em que os mesmos dados são tratados e transferidos entre órgãos e entidades públicas. Aqui, pretendemos definir as limitações e obrigações dos agentes que realizem a comunicação, interconexão de dados ou uso compartilhado de dados pessoais, dadas suas características específicas. A definição desses conceitos pode também ser discutida nos itens anteriores! Volte ao artigo 5º, entenda um pouco mais sobre eles e contribua para sua melhor definição!"
+244,0,0,0,0,geral,"A proposta define direitos básicos que garantem ao cidadão a titularidade sobre os seus próprios dados pessoais, que podem ser sintetizados nos chamados direitos ARCO: Acesso, Retificação, Cancelamento e Oposição. O cidadão deve ter acesso livre aos seus dados pessoais e deve poder obter a confirmação de que há alguma operação de tratamento de seus dados pessoais em curso; deve ter o direito de corrigir e de retificar seus dados pessoais que estejam incorretos ou imprecisos; tem o direito de solicitar o cancelamento de operações de tratamento que não sigam os parâmetros estabelecidos pela lei; e tem o direito de se opor a um tratamento de dados pessoais que não autorizou previamente. Além destes direitos, o cidadão pode também solicitar o bloqueio do tratamento, até que seja averiguada a sua legitimidade, ou mesmo a dissociação dos seus dados pessoais, que passariam a ser dados anônimos. Quais outros direitos o cidadão deve ter par garantir a titularidade de seus próprios dados?"
+245,0,0,0,0,geral,"Estes artigos pretendem discutir até que momento os dados pessoais de um indivíduo podem ser utilizados e quais os casos em que esses dados devem ou podem ser conservados, como, por exemplo, para fins de pesquisa histórica. Assim, buscamos colaborações para definição do momento de tratamento e dos meios para este fim. Aqui, debateremos também em quais situações o tratamento deve ser continuado. O término do tratamento dialoga com o princípio da finalidade, por exemplo, e alguns direitos do titular de dados pessoais, como o acesso. Reveja tais conceitos nos itens anteriores!"
+246,0,0,0,0,geral,"A proposta traz a necessidade de consentimento do titular para o tratamento de seus dados pessoais como a regra geral a legitimar o tratamento de dados pessoais. Aqui, debateremos o papel do consentimento na proteção dos dados pessoais enquanto ferramenta de efetivo controle do cidadão sobre suas próprias informações. Assim, o tratamento dependeria do consentimento do titular, salvo em alguns casos excepcionados. Algumas exceções conhecidas são: dados que já são de acesso público ou casos em que alguma lei específica dispense o consentimento. Por outro lado, há, ainda, casos específicos em que o consentimento poderia ser ainda mais relevante, como no caso dos dados sensíveis – veja os artigos específicos sobre isso e entenda a importância da sua proteção!"
+248,0,0,0,0,geral,Nestes artigos pretendemos conceituar os dados pessoais e algumas de suas categorias específicas.
+249,0,0,0,0,geral,O que se entende por dado pessoal?
+250,0,0,0,0,geral,"O texto proposto adota a ideia de que dado pessoal é uma informação que pode ser ligada a uma pessoa. Representa qualquer dado que possa ser associado a um indivíduo, fazendo com que a aplicação da norma se concentre sobre o poder que o indivíduo tenha sobre o seu próprio dado. A definição de dado pessoal pode influenciar o equilíbrio de poder entre o cidadão e aquele que coleta e utiliza seus dados. Colabore nesta definição!"
+251,0,0,0,0,geral,"De forma quase oposta à ideia de identificação, os dados anônimos, por sua vez, são dados que se referem a pessoas que não podem ser identificadas – como dados estatísticos, por exemplo. Um dado anônimo, ainda que seja referente a uma pessoa (ou grupos de pessoas), não permite a identificação de seu titular. Qual a importância da não-identificação? Quais seus limites? Participe!"
+252,0,0,0,0,geral,"Há ainda na proposta a necessidade de definição dos “dados sensíveis”, que são dados cujo tratamento pode ensejar a discriminação do seu titular – por se referirem, por exemplo, à opção sexual, convicções religiosas, filosóficas ou morais, ou opiniões políticas. Os dados sensíveis, pelo potencial discriminatório que apresentam, de acordo com a proposta em questão, deveriam ser protegidos de forma mais rígida. Aqui, devemos debater qual o grau de proteção desses dados e os limites para seu tratamento."
+253,0,0,0,0,geral,"O projeto ainda abre a possibilidade de dados biométricos receberem a mesma proteção relegada aos dados sensíveis, dadas as suas características – não poderem ser desvinculados do seu titular."
+254,0,0,0,0,geral,Dê sua opinião!
+256,0,0,0,0,geral,"Nestes artigos queremos discutir a quem esta lei se aplica e em quais ocasiões, ou seja, sua abrangência. Aplica-se a dados de cidadãos brasileiros? A tratamento e coletas de dados realizados em território nacional?"
+257,0,0,0,0,geral,"Debateremos, também, se essa lei se aplicará a pessoa física, a pessoa jurídica e ao poder público, bem como as exceções necessárias. Deve, por exemplo, ser aplicada no caso de uma agenda telefônica, quando os fins de tratamento dos dados sejam exclusivamente pessoais e não passem disto? Dê sua opinião sobre o texto proposto."
+258,0,0,0,0,geral,Arts. 1º a 4.
