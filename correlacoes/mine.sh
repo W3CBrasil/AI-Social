@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Called with dadospessoais-anteprojeto.csv dadospessoais-comentarios-pdfs-filtrado.csv
+
 # awk -F , '$3 == "geral" || $3 == "capitulo" || $3 == "artigo" { print $1 "," $4 }' "$1" > articles
 # articles edited by hand
 
@@ -21,7 +23,7 @@ do
 	echo $id >> uncategorized
     fi
 done < "$1" | awk -F , 'ARGIND == 1 && NR > 1 { article[$1] = $2 }
-ARGIND == 2 && $5 in article { print $3 "," article[$5] "," 1 }' - "$2" | multidupehack --ids , --ods \; --ha 1 /dev/stdin -o /dev/stdout | d-peeler -m --ids \; --ods " & " --ois ", " --all "Todas as seções" /dev/stdin -o /dev/stdout | ./sort-n-sets | sed 's/$/\\\\\n\\hline/'
+ARGIND == 2 && $6 in article { print $3 "," article[$6] "," 1 }' - "$2" | multidupehack --ids , --ods \; --ha 1 /dev/stdin -o /dev/stdout | d-peeler -m --ids \; --ods " & " --ois ", " --all "Todas as seções" /dev/stdin -o /dev/stdout | ./sort-n-sets | sed 's/$/\\\\\n\\hline/'
 
 # Computer-readable output
 
@@ -41,4 +43,4 @@ ARGIND == 2 && $5 in article { print $3 "," article[$5] "," 1 }' - "$2" | multid
 # 	echo $id >> uncategorized
 #     fi
 # done < "$1" | awk -F , 'ARGIND == 1 && NR > 1 { article[$1] = $2 }
-# ARGIND == 2 && $5 in article { print $2, article[$5], 1 }' - "$2" | multidupehack --ha 1 /dev/stdin -o /dev/stdout | d-peeler -m --all "`cut -d , -f 1 articles | tr '\n' ','`" /dev/stdin -o /dev/stdout | ./sort-n-sets
+# ARGIND == 2 && $6 in article { print $3, article[$6], 1 }' - "$2" | multidupehack --ha 1 /dev/stdin -o /dev/stdout | d-peeler -m --all "`cut -d , -f 1 articles | tr '\n' ','`" /dev/stdin -o /dev/stdout | ./sort-n-sets
