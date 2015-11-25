@@ -5,8 +5,8 @@ Este diretório contém os scripts de processamento para gerar os arquivos de da
 utilizados pelo dashboard, além dos arquivos do site propriamente dito (html, css).
 
 - `lac`: código fonte do LAC 
-- `dados/entrada`: arquivos den entrada utilizados pelo LAC
-- `dados/saida`  
+- `dados/entrada`: arquivos de entrada utilizados pelo LAC
+- `dados/saida`: arquivos de saída com os resultados 
 
 Execução
 --------
