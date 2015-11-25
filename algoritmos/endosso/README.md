@@ -1,19 +1,24 @@
 Identificação de conteúdo relevante e de usuários influentes
+============================================================
 
 A tarefa de identificação de conteúdo relevante busca estabelecer quais itens do anteprojeto e quais comentários geraram maior reação de endosso/concordância e de reprovação/discordância entre os usuários. Complementarmente, a tarefa de identificação de usuários influentes pretende encontrar os usuários cujos comentários causaram tais reações.
 
-- Softwares necessários:
+Softwares necessários
+---------------------
 
 a) Python 2
 b) Biblioteca SciPy para Python
 
-- Dados de entrada:
+
+Dados de entrada
+----------------
 
 Cada uma das tarefas é dividida em duas etapas: (i) preparação e (ii) execução do algoritmo ProfileRank.
 A etapa (i) requer como entrada apenas a base de dados "dadospessoais-comentarios-pdfs-filtrado.jsonl".
 A etapa (ii) requer como entrada as saídas da etapa (i), que serão apresentadas mais abaixo.
 
-- Execução:
+Execução
+--------
 
 A etapa (i) é a execução do script "conteudo-relevante_usuarios-influentes.py", que lê a base de dados completa e a prepara como entrada para o algoritmo ProfileRank. 
 Para executar a etapa (i), a base completa em formato .jsonl ("dadospessoais-comentarios-pdfs-filtrado.jsonl") deve estar no mesmo diretório que o script "conteudo-relevante_usuarios-influentes.py". Satisfeita essa condição, basta executar o seguinte comando:
@@ -37,7 +42,8 @@ python ranking/pr.py  -i dados/ -o dados/ -t CONTENT --date 20000101 -r 0
 python ranking/pr.py  -i dados/ -o dados/ -t CONTENT --date 20000202 -r 0
 python ranking/pr.py  -i dados/ -o dados/ -t USER --date 20000303 -r 0
 
-- Saída:
+Saída
+-----
 
 A etapa (i) gera como saída três arquivos:
 a. 20000101, contendo os nomes dos usuários que endossaram conteúdo, os números de identificação dos comentários onde ocorreram os endossos e os números de identificação dos itens do anteprojeto ou dos comentários endossados;
