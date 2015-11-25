@@ -1,0 +1,220 @@
+id,name,group,value
+TCI1,ANTEPROJETO DE LEI,0,14
+TCI2,Dispõe sobre o trata,0,8
+TCI3,A PRESIDENTA DA REPÚ,0,6
+TCI4,Art. 1,1,35
+TCI5,Art. 2,1,41
+TCI6,"Art. 2, I",1,11
+TCI7,"Art. 2, II",1,12
+TCI8,"Art. 2, § 1º",1,7
+TCI9,"Art. 2, § 2º",1,14
+TCI10,"Art. 2, § 2º, I",1,13
+TCI11,"Art. 2, § 2º, II",1,52
+TCI12,"Art. 2, § 3º",1,18
+TCI13,Art. 3,1,4
+TCI14,"Art. 3, § 1º",1,4
+TCI15,Art. 4,1,24
+TCI16,"Art. 4, § 1º",1,11
+TCI17,Art. 5,2,18
+TCI18,"Art. 5, I",2,31
+TCI19,"Art. 5, II",2,13
+TCI20,"Art. 5, III",2,24
+TCI21,"Art. 5, IV",2,23
+TCI22,"Art. 5, V",2,7
+TCI23,"Art. 5, VI",2,6
+TCI24,"Art. 5, VII",2,18
+TCI25,"Art. 5, VIII",2,3
+TCI26,"Art. 5, IX",2,2
+TCI27,"Art. 5, X",2,3
+TCI28,"Art. 5, XI",2,8
+TCI29,"Art. 5, XII",2,5
+TCI30,"Art. 5, XIII",2,7
+TCI31,"Art. 5, XIV",2,10
+TCI32,"Art. 5, XV",2,4
+TCI33,"Art. 5, XVI",2,8
+TCI34,"Art. 5, XVII",2,8
+TCI35,"Art. 5, XVIII",2,4
+TCI36,Art. 6,3,14
+TCI37,"Art. 6, I",3,11
+TCI38,"Art. 6, II",3,6
+TCI39,"Art. 6, III",3,8
+TCI40,"Art. 6, IV",3,11
+TCI41,"Art. 6, V",3,11
+TCI42,"Art. 6, VI",3,5
+TCI43,"Art. 6, VII",3,4
+TCI44,"Art. 6, VIII",3,3
+TCI45,"Art. 6, IX",3,8
+TCI46,"Art. 6, § 1º",3,5
+TCI47,"Art. 6, § 2º",3,5
+TCI48,Art. 7,4,59
+TCI49,"Art. 7, § 1º",4,13
+TCI50,"Art. 7, § 2º",4,7
+TCI51,"Art. 7, § 3º",4,14
+TCI52,"Art. 7, § 4º",4,10
+TCI53,"Art. 7, § 5º",4,8
+TCI54,"Art. 7, § 6º",4,16
+TCI55,"Art. 7, § 7º",4,4
+TCI56,"Art. 7, § 8º",4,7
+TCI57,Art. 8,4,24
+TCI58,Art. 9,4,10
+TCI59,Art. 10,4,11
+TCI60,"Art. 10, I",4,7
+TCI61,"Art. 10, II",4,5
+TCI63,"Art. 10, IV",4,1
+TCI64,"Art. 10, V",4,3
+TCI65,"Art. 10, VI",4,1
+TCI66,"Art. 10, VII",4,4
+TCI67,"Art. 10, VII, a)",4,2
+TCI68,"Art. 10, VII, b)",4,4
+TCI69,"Art. 10, VII, c)",4,2
+TCI70,"Art. 10, § 1º",4,8
+TCI71,"Art. 10, § 2º",4,5
+TCI72,"Art. 10, § 3º",4,3
+TCI73,"Art. 10, § 4º",4,10
+TCI74,Art. 11,4,38
+TCI75,"Art. 11, I",4,7
+TCI76,"Art. 11, II",4,13
+TCI77,"Art. 11, III",4,4
+TCI78,"Art. 11, IV",4,11
+TCI79,"Art. 11, V",4,4
+TCI80,"Art. 11, VI",4,1
+TCI81,"Art. 11, VII",4,4
+TCI82,"Art. 11, § 1º",4,9
+TCI83,"Art. 11, § 2º",4,1
+TCI84,"Art. 11, § 3º",4,6
+TCI85,Art. 12,2,14
+TCI86,"Art. 12, I",2,6
+TCI87,"Art. 12, I, a)",2,1
+TCI89,"Art. 12, II",2,6
+TCI90,"Art. 12, II, a)",2,1
+TCI91,"Art. 12, II, b)",2,3
+TCI92,"Art. 12, II, c)",2,9
+TCI93,"Art. 12, II, d)",2,2
+TCI94,"Art. 12, II, e)",2,1
+TCI95,"Art. 12, II, f)",2,4
+TCI96,"Art. 12, § 1º",2,3
+TCI97,"Art. 12, § 2º",2,9
+TCI98,"Art. 12, § 3º",2,2
+TCI99,Art. 13,2,15
+TCI100,"Art. 13, § 1º",2,8
+TCI101,"Art. 13, § 2º",2,9
+TCI102,Art. 14,5,5
+TCI103,"Art. 14, I",5,2
+TCI104,"Art. 14, II",5,3
+TCI105,"Art. 14, III",5,7
+TCI106,"Art. 14, IV",5,4
+TCI107,"Art. 14, § 1º",5,12
+TCI108,Art. 15,5,11
+TCI109,"Art. 15, I",5,1
+TCI110,"Art. 15, II",5,7
+TCI111,"Art. 15, III",5,10
+TCI112,"Art. 15, § 1º",5,6
+TCI113,Art. 16,6,6
+TCI114,Art. 17,6,12
+TCI115,"Art. 17, I",6,2
+TCI116,"Art. 17, II",6,5
+TCI117,"Art. 17, III",6,4
+TCI118,"Art. 17, IV",6,16
+TCI119,"Art. 17, § 1º",6,7
+TCI120,"Art. 17, § 2º",6,9
+TCI121,"Art. 17, § 3º",6,7
+TCI122,"Art. 17, § 3º, I",6,4
+TCI123,"Art. 17, § 3º, II",6,3
+TCI124,"Art. 17, § 4º",6,2
+TCI125,"Art. 17, § 5º",6,7
+TCI126,Art. 18,6,13
+TCI127,"Art. 18, I",6,5
+TCI128,"Art. 18, II",6,5
+TCI129,"Art. 18, § 1º",6,3
+TCI130,"Art. 18, § 2º",6,4
+TCI132,"Art. 18, § 2º, II",6,2
+TCI133,"Art. 18, § 3º",6,4
+TCI134,"Art. 18, § 4º",6,9
+TCI135,Art. 19,6,12
+TCI136,"Art. 19, § 1º",6,7
+TCI137,"Art. 19, § 2º",6,2
+TCI138,Art. 20,6,7
+TCI139,Art. 21,6,1
+TCI140,Art. 22,7,19
+TCI141,"Art. 22, § 1º",7,3
+TCI142,Art. 23,7,17
+TCI143,Art. 24,7,15
+TCI144,"Art. 24, I",7,1
+TCI145,"Art. 24, II",7,3
+TCI146,"Art. 24, III",7,6
+TCI147,"Art. 24, § 1º",7,1
+TCI150,"Art. 24, § 1º, III",7,1
+TCI151,Art. 25,7,3
+TCI152,Art. 26,7,8
+TCI153,Art. 27,7,11
+TCI154,Art. 28,8,41
+TCI155,"Art. 28, I",8,3
+TCI156,"Art. 28, II",8,2
+TCI157,"Art. 28, III",8,9
+TCI158,"Art. 28, IV",8,3
+TCI159,"Art. 28, V",8,2
+TCI160,"Art. 28, § 1º",8,9
+TCI162,"Art. 28, § 1º, II",8,1
+TCI164,"Art. 28, § 1º, IV",8,2
+TCI166,Art. 29,8,12
+TCI167,"Art. 29, I",8,2
+TCI168,"Art. 29, II",8,2
+TCI169,Art. 30,8,14
+TCI170,"Art. 30, § 1º",8,7
+TCI171,"Art. 30, § 2º",8,7
+TCI172,"Art. 30, § 3º",8,5
+TCI173,Art. 31,8,12
+TCI174,Art. 32,8,11
+TCI175,Art. 33,8,11
+TCI176,Art. 34,9,10
+TCI177,Art. 35,9,14
+TCI178,"Art. 35, § 1º",9,2
+TCI179,"Art. 35, § 2º",9,8
+TCI181,Art. 37,9,3
+TCI182,Art. 38,9,7
+TCI183,Art. 39,9,5
+TCI184,"Art. 39, § 1º",9,11
+TCI185,"Art. 39, § 2º",9,8
+TCI186,Art. 40,9,14
+TCI187,"Art. 40, § 1º",9,9
+TCI188,Art. 41,9,8
+TCI189,"Art. 41, § 1º",9,6
+TCI190,"Art. 41, § 2º",9,1
+TCI192,"Art. 41, § 2º, II",9,2
+TCI194,"Art. 41, § 2º, IV",9,2
+TCI195,"Art. 41, § 3º",9,5
+TCI196,Art. 42,10,18
+TCI197,"Art. 42, § 1º",10,5
+TCI198,Art. 43,10,4
+TCI199,Art. 44,10,21
+TCI202,"Art. 44, § 1º, II",10,1
+TCI203,"Art. 44, § 1º, III",10,5
+TCI204,"Art. 44, § 1º, IV",10,2
+TCI205,"Art. 44, § 1º, V",10,2
+TCI206,Art. 45,10,15
+TCI207,"Art. 45, I",10,5
+TCI208,"Art. 45, II",10,3
+TCI209,"Art. 45, III",10,1
+TCI210,"Art. 45, § 1º",10,3
+TCI211,"Art. 45, § 2º",10,7
+TCI212,Art. 46,10,4
+TCI213,Art. 47,10,9
+TCI214,Art. 48,11,20
+TCI215,"Art. 48, § 1º",11,5
+TCI216,Art. 49,11,10
+TCI217,Art. 50,12,32
+TCI218,"Art. 50, I",12,8
+TCI219,"Art. 50, II",12,3
+TCI220,"Art. 50, III",12,5
+TCI221,"Art. 50, IV",12,3
+TCI222,"Art. 50, V",12,5
+TCI223,"Art. 50, VI",12,3
+TCI224,"Art. 50, VII",12,8
+TCI225,"Art. 50, VIII",12,6
+TCI226,"Art. 50, § 1º",12,5
+TCI227,"Art. 50, § 2º",12,7
+TCI228,"Art. 50, § 3º",12,3
+TCI229,"Art. 50, § 4º",12,6
+TCI230,"Art. 50, § 5º",12,2
+TCI231,Art. 51,13,22
+TCI232,Art. 52,13,18
