@@ -1,0 +1,56 @@
+
+
+text {
+  font: 12px sans-serif;
+  text-rendering: optimizelegibility;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #D3D3D3;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: #383838;
+  fill-opacity: .8;
+}
+
+.x.axis path {
+  display: none;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+
+.bar rect {
+  fill: #383838;
+  fill-opacity: .8;
+}
+
+.bar text.value {
+  fill: white;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.axis path {
+  fill: none;
+}
+
+.x.axis line {
+  stroke: #fff;
+  stroke-opacity: .8;
+}
+
+.y.axis path {
+  stroke: black;
+}

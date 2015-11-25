@@ -1,0 +1,37 @@
+.container-celula{
+	width: 100%;
+	height: 34px;
+	padding: 0px;
+	display: block;
+	
+}
+
+
+.container-grafico {
+	width: 100%;
+	height: 34px;
+	padding: 0px 0px;
+	display: block;
+}
+
+
+.frequencia {
+	padding: 6px 0;
+	font-family:Georgia, sans-serif;
+	font-size: 18px;
+}
+
+.termo {
+	margin-top: 6px;
+	padding-right: 10px;
+	color:#337ab7;
+}
+
+.termo span {
+	padding:0;
+}
+
+.termo:hover {
+	text-decoration: underline;
+	cursor:pointer;
+}

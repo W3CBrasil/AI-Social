@@ -7,7 +7,7 @@ import pandas as pd
 # Configura contextos
 contextos = [
     {"arquivo_comentarios":"../../dados/dadospessoais-comentarios-pdfs-filtrado.csv",
-     "prefixo_saida":"../data/"}
+     "prefixo_saida":"../site/data/"}
 ]
 #for i in range(1, 7):
 #    obj = {"arquivo_comentarios" : "../../data/contextos/dadospessoais-comentarios-pdfs-filtrado-contexto{}.csv".format(i),

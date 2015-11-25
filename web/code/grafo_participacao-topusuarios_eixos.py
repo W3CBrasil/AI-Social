@@ -13,7 +13,7 @@ contextos = [
 #    contextos.append(obj)
 
 
-anteprojeto = pd.read_csv("../../dados/dadospessoais-anteprojeto.csv", 
+anteprojeto = pd.read_csv("../../data/dadospessoais-anteprojeto.csv", 
                           dtype={"commentable_id"      : pd.core.common.CategoricalDtype,
                                  "commentable_parent"  : pd.core.common.CategoricalDtype,
                                  "commentable_article" : pd.core.common.CategoricalDtype,
@@ -34,7 +34,6 @@ for contexto in contextos:
                                      "comment_parent" : pd.core.common.CategoricalDtype, 
                                      "commentable_id" : pd.core.common.CategoricalDtype, 
                                      "comment_text"   : np.character })
-    comentarios.drop(["commentable_name"], axis=1, inplace=True)
     
     df = pd.merge(comentarios, anteprojeto, on="commentable_id")
     
@@ -47,58 +46,47 @@ for contexto in contextos:
     # Usuarios
     
     top_usuarios = df.groupby(["author_id", "author_name"]).size()
-    top_usuarios.sort_values(ascending=False)
-    
+    top_usuarios.sort(ascending=False)
+    usuarios_selecionados = set([a[0][0] for a in top_usuarios[:10].iteritems()])
     usuarios = [{"group":0, "type":
                  "user", "id":"TCP{}".format(author_id), 
                  "name":author_name, 
                  "value":int(count)} 
-                     for (author_id, author_name), count in top_usuarios.iteritems()]
+                     for (author_id, author_name), count in top_usuarios[:10].iteritems()]
     
     grafo["nodes"].extend(usuarios)
     
-    
-    # Itens
-    
-    top_itens = df.groupby(["commentable_id", "commentable_name", "commentable_axis"]).size()
-    itens = [{"id":"TCI{}".format(commentable_id), 
-              "name":commentable_name,
-              "type":"item",
-              "group":int(commentable_axis), 
+
+    # Eixos
+
+    top_eixos = df.groupby("commentable_axis").size()
+    eixos = [{"group": i, 
+              "type": "axis", 
+              "id": "TCE{}".format(i), 
+              "name": "Eixo {}".format(i), 
               "value":int(count)} 
-                  for (commentable_id, commentable_name, commentable_axis), count in top_itens.iteritems()]
+                  for (i), count in top_eixos.iteritems()]
     
+    grafo["nodes"].extend(eixos)
     
-    # Contagem de comentarios em itens
-    
-    frequencia = df.groupby(["author_id", "commentable_id"]).size()
-    
-    
-    # Filtra itens que não foram comentados
-    
-    itens_selecionados = set()
-    for (usuario, item), count in frequencia.iteritems():
-        itens_selecionados.add(item)
-    
-    itens = [item for item in itens if item["id"][3:] in itens_selecionados]
-    
-    grafo["nodes"].extend(itens)
-    
-    
+     
     # Nodos do grafo
     
     nodos_ids = {nodo["id"]:i for i, nodo in enumerate(grafo["nodes"])}
     
     
-    # Criação dos eixos do grafo
+    # Contagem de comentarios em eixos
     
-    for (usuario, item), count in frequencia.iteritems():
+    frequencia = df[df["author_id"].isin(usuarios_selecionados)].groupby(["author_id", "commentable_axis"]).size()
+    
+    for (usuario, eixo), count in frequencia.iteritems():
         grafo["links"].append({"source":nodos_ids["TCP{}".format(usuario)], 
-                               "target":nodos_ids["TCI{}".format(item)], 
+                               "target":nodos_ids["TCE{}".format(eixo)], 
                                "value":int(count)})
+    
     
     # Saida
     
-    with open("{}participantes_itens_comentaveis_graph.json".format(contexto["prefixo_saida"]), "w") as outfile:
+    with open("{}participantes_eixos_graph.json".format(contexto["prefixo_saida"]), "w") as outfile:
         json.dump(grafo, outfile, indent=4)
     

@@ -1,0 +1,764 @@
+{
+    "links": [
+        {
+            "value": 1,
+            "source": 3,
+            "target": 10
+        },
+        {
+            "value": 6,
+            "source": 3,
+            "target": 11
+        },
+        {
+            "value": 2,
+            "source": 3,
+            "target": 12
+        },
+        {
+            "value": 1,
+            "source": 3,
+            "target": 13
+        },
+        {
+            "value": 2,
+            "source": 3,
+            "target": 14
+        },
+        {
+            "value": 1,
+            "source": 3,
+            "target": 15
+        },
+        {
+            "value": 16,
+            "source": 3,
+            "target": 16
+        },
+        {
+            "value": 8,
+            "source": 3,
+            "target": 17
+        },
+        {
+            "value": 16,
+            "source": 3,
+            "target": 18
+        },
+        {
+            "value": 5,
+            "source": 3,
+            "target": 19
+        },
+        {
+            "value": 9,
+            "source": 3,
+            "target": 20
+        },
+        {
+            "value": 6,
+            "source": 3,
+            "target": 21
+        },
+        {
+            "value": 8,
+            "source": 3,
+            "target": 22
+        },
+        {
+            "value": 5,
+            "source": 3,
+            "target": 23
+        },
+        {
+            "value": 7,
+            "source": 8,
+            "target": 11
+        },
+        {
+            "value": 12,
+            "source": 8,
+            "target": 13
+        },
+        {
+            "value": 3,
+            "source": 8,
+            "target": 15
+        },
+        {
+            "value": 1,
+            "source": 8,
+            "target": 16
+        },
+        {
+            "value": 6,
+            "source": 8,
+            "target": 17
+        },
+        {
+            "value": 9,
+            "source": 8,
+            "target": 18
+        },
+        {
+            "value": 11,
+            "source": 8,
+            "target": 22
+        },
+        {
+            "value": 4,
+            "source": 4,
+            "target": 11
+        },
+        {
+            "value": 6,
+            "source": 4,
+            "target": 12
+        },
+        {
+            "value": 2,
+            "source": 4,
+            "target": 13
+        },
+        {
+            "value": 10,
+            "source": 4,
+            "target": 14
+        },
+        {
+            "value": 11,
+            "source": 4,
+            "target": 16
+        },
+        {
+            "value": 2,
+            "source": 4,
+            "target": 17
+        },
+        {
+            "value": 10,
+            "source": 4,
+            "target": 18
+        },
+        {
+            "value": 4,
+            "source": 4,
+            "target": 19
+        },
+        {
+            "value": 12,
+            "source": 4,
+            "target": 20
+        },
+        {
+            "value": 4,
+            "source": 4,
+            "target": 21
+        },
+        {
+            "value": 9,
+            "source": 4,
+            "target": 22
+        },
+        {
+            "value": 5,
+            "source": 4,
+            "target": 23
+        },
+        {
+            "value": 4,
+            "source": 5,
+            "target": 11
+        },
+        {
+            "value": 7,
+            "source": 5,
+            "target": 12
+        },
+        {
+            "value": 1,
+            "source": 5,
+            "target": 13
+        },
+        {
+            "value": 6,
+            "source": 5,
+            "target": 14
+        },
+        {
+            "value": 2,
+            "source": 5,
+            "target": 15
+        },
+        {
+            "value": 15,
+            "source": 5,
+            "target": 16
+        },
+        {
+            "value": 4,
+            "source": 5,
+            "target": 17
+        },
+        {
+            "value": 4,
+            "source": 5,
+            "target": 18
+        },
+        {
+            "value": 4,
+            "source": 5,
+            "target": 19
+        },
+        {
+            "value": 11,
+            "source": 5,
+            "target": 20
+        },
+        {
+            "value": 7,
+            "source": 5,
+            "target": 21
+        },
+        {
+            "value": 7,
+            "source": 5,
+            "target": 22
+        },
+        {
+            "value": 4,
+            "source": 5,
+            "target": 23
+        },
+        {
+            "value": 13,
+            "source": 1,
+            "target": 11
+        },
+        {
+            "value": 8,
+            "source": 1,
+            "target": 12
+        },
+        {
+            "value": 1,
+            "source": 1,
+            "target": 13
+        },
+        {
+            "value": 7,
+            "source": 1,
+            "target": 14
+        },
+        {
+            "value": 1,
+            "source": 1,
+            "target": 15
+        },
+        {
+            "value": 14,
+            "source": 1,
+            "target": 16
+        },
+        {
+            "value": 4,
+            "source": 1,
+            "target": 17
+        },
+        {
+            "value": 20,
+            "source": 1,
+            "target": 18
+        },
+        {
+            "value": 3,
+            "source": 1,
+            "target": 19
+        },
+        {
+            "value": 9,
+            "source": 1,
+            "target": 20
+        },
+        {
+            "value": 5,
+            "source": 1,
+            "target": 21
+        },
+        {
+            "value": 6,
+            "source": 1,
+            "target": 22
+        },
+        {
+            "value": 5,
+            "source": 1,
+            "target": 23
+        },
+        {
+            "value": 2,
+            "source": 7,
+            "target": 11
+        },
+        {
+            "value": 3,
+            "source": 7,
+            "target": 12
+        },
+        {
+            "value": 1,
+            "source": 7,
+            "target": 14
+        },
+        {
+            "value": 2,
+            "source": 7,
+            "target": 15
+        },
+        {
+            "value": 9,
+            "source": 7,
+            "target": 16
+        },
+        {
+            "value": 3,
+            "source": 7,
+            "target": 17
+        },
+        {
+            "value": 8,
+            "source": 7,
+            "target": 18
+        },
+        {
+            "value": 2,
+            "source": 7,
+            "target": 19
+        },
+        {
+            "value": 8,
+            "source": 7,
+            "target": 20
+        },
+        {
+            "value": 2,
+            "source": 7,
+            "target": 21
+        },
+        {
+            "value": 8,
+            "source": 7,
+            "target": 22
+        },
+        {
+            "value": 6,
+            "source": 7,
+            "target": 23
+        },
+        {
+            "value": 1,
+            "source": 6,
+            "target": 11
+        },
+        {
+            "value": 5,
+            "source": 6,
+            "target": 12
+        },
+        {
+            "value": 9,
+            "source": 6,
+            "target": 14
+        },
+        {
+            "value": 3,
+            "source": 6,
+            "target": 15
+        },
+        {
+            "value": 7,
+            "source": 6,
+            "target": 16
+        },
+        {
+            "value": 2,
+            "source": 6,
+            "target": 17
+        },
+        {
+            "value": 13,
+            "source": 6,
+            "target": 18
+        },
+        {
+            "value": 6,
+            "source": 6,
+            "target": 20
+        },
+        {
+            "value": 5,
+            "source": 6,
+            "target": 21
+        },
+        {
+            "value": 6,
+            "source": 6,
+            "target": 22
+        },
+        {
+            "value": 4,
+            "source": 6,
+            "target": 23
+        },
+        {
+            "value": 3,
+            "source": 9,
+            "target": 11
+        },
+        {
+            "value": 5,
+            "source": 9,
+            "target": 12
+        },
+        {
+            "value": 2,
+            "source": 9,
+            "target": 14
+        },
+        {
+            "value": 1,
+            "source": 9,
+            "target": 15
+        },
+        {
+            "value": 3,
+            "source": 9,
+            "target": 16
+        },
+        {
+            "value": 5,
+            "source": 9,
+            "target": 18
+        },
+        {
+            "value": 2,
+            "source": 9,
+            "target": 19
+        },
+        {
+            "value": 12,
+            "source": 9,
+            "target": 20
+        },
+        {
+            "value": 5,
+            "source": 9,
+            "target": 21
+        },
+        {
+            "value": 8,
+            "source": 9,
+            "target": 22
+        },
+        {
+            "value": 1,
+            "source": 9,
+            "target": 23
+        },
+        {
+            "value": 5,
+            "source": 0,
+            "target": 11
+        },
+        {
+            "value": 13,
+            "source": 0,
+            "target": 12
+        },
+        {
+            "value": 3,
+            "source": 0,
+            "target": 13
+        },
+        {
+            "value": 12,
+            "source": 0,
+            "target": 14
+        },
+        {
+            "value": 2,
+            "source": 0,
+            "target": 15
+        },
+        {
+            "value": 16,
+            "source": 0,
+            "target": 16
+        },
+        {
+            "value": 6,
+            "source": 0,
+            "target": 17
+        },
+        {
+            "value": 17,
+            "source": 0,
+            "target": 18
+        },
+        {
+            "value": 4,
+            "source": 0,
+            "target": 19
+        },
+        {
+            "value": 15,
+            "source": 0,
+            "target": 20
+        },
+        {
+            "value": 4,
+            "source": 0,
+            "target": 21
+        },
+        {
+            "value": 14,
+            "source": 0,
+            "target": 22
+        },
+        {
+            "value": 11,
+            "source": 0,
+            "target": 23
+        },
+        {
+            "value": 5,
+            "source": 2,
+            "target": 11
+        },
+        {
+            "value": 5,
+            "source": 2,
+            "target": 12
+        },
+        {
+            "value": 1,
+            "source": 2,
+            "target": 14
+        },
+        {
+            "value": 1,
+            "source": 2,
+            "target": 15
+        },
+        {
+            "value": 10,
+            "source": 2,
+            "target": 16
+        },
+        {
+            "value": 6,
+            "source": 2,
+            "target": 17
+        },
+        {
+            "value": 10,
+            "source": 2,
+            "target": 18
+        },
+        {
+            "value": 9,
+            "source": 2,
+            "target": 19
+        },
+        {
+            "value": 10,
+            "source": 2,
+            "target": 20
+        },
+        {
+            "value": 7,
+            "source": 2,
+            "target": 21
+        },
+        {
+            "value": 16,
+            "source": 2,
+            "target": 22
+        },
+        {
+            "value": 8,
+            "source": 2,
+            "target": 23
+        }
+    ],
+    "nodes": [
+        {
+            "id": "TCP5027",
+            "value": 122,
+            "group": 0,
+            "name": "ITI - Information Technology Information Council",
+            "type": "user"
+        },
+        {
+            "id": "TCP5008",
+            "value": 96,
+            "group": 0,
+            "name": "C\u00e2mara Brasileira do Com\u00e9rcio Eletr\u00f4nico (c\u00e2mara-e.net)",
+            "type": "user"
+        },
+        {
+            "id": "TCP5028",
+            "value": 88,
+            "group": 0,
+            "name": "SindiTele Brasil - SindiTeleBrasil",
+            "type": "user"
+        },
+        {
+            "id": "TCP1389",
+            "value": 86,
+            "group": 0,
+            "name": "Associa\u00e7\u00e3o Brasileira de Internet - ABRANET",
+            "type": "user"
+        },
+        {
+            "id": "TCP2292",
+            "value": 79,
+            "group": 0,
+            "name": "Associa\u00e7\u00e3o Brasileira de Direito da Tecnologia da Informa\u00e7\u00e3o e das Comunica\u00e7\u00f5es (ABDTIC)",
+            "type": "user"
+        },
+        {
+            "id": "TCP5007",
+            "value": 76,
+            "group": 0,
+            "name": "Associa\u00e7\u00e3o da Empresas de Tecnologia da Informa\u00e7\u00e3o e Comunica\u00e7\u00e3o (BRASSCOM)",
+            "type": "user"
+        },
+        {
+            "id": "TCP5015",
+            "value": 61,
+            "group": 0,
+            "name": "FEBRABAN",
+            "type": "user"
+        },
+        {
+            "id": "TCP5012",
+            "value": 54,
+            "group": 0,
+            "name": "Conselho Empresarial Brasil-Estados Unidos",
+            "type": "user"
+        },
+        {
+            "id": "TCP1837",
+            "value": 49,
+            "group": 0,
+            "name": "Centre for Information Policy Leadership",
+            "type": "user"
+        },
+        {
+            "id": "TCP5025",
+            "value": 47,
+            "group": 0,
+            "name": "TELEF\u00d3NICA - VIVO",
+            "type": "user"
+        },
+        {
+            "id": "TCE0",
+            "value": 28,
+            "group": "0",
+            "name": "Eixo 0",
+            "type": "axis"
+        },
+        {
+            "id": "TCE1",
+            "value": 246,
+            "group": "1",
+            "name": "Eixo 1",
+            "type": "axis"
+        },
+        {
+            "id": "TCE10",
+            "value": 105,
+            "group": "10",
+            "name": "Eixo 10",
+            "type": "axis"
+        },
+        {
+            "id": "TCE11",
+            "value": 35,
+            "group": "11",
+            "name": "Eixo 11",
+            "type": "axis"
+        },
+        {
+            "id": "TCE12",
+            "value": 96,
+            "group": "12",
+            "name": "Eixo 12",
+            "type": "axis"
+        },
+        {
+            "id": "TCE13",
+            "value": 40,
+            "group": "13",
+            "name": "Eixo 13",
+            "type": "axis"
+        },
+        {
+            "id": "TCE2",
+            "value": 295,
+            "group": "2",
+            "name": "Eixo 2",
+            "type": "axis"
+        },
+        {
+            "id": "TCE3",
+            "value": 91,
+            "group": "3",
+            "name": "Eixo 3",
+            "type": "axis"
+        },
+        {
+            "id": "TCE4",
+            "value": 336,
+            "group": "4",
+            "name": "Eixo 4",
+            "type": "axis"
+        },
+        {
+            "id": "TCE5",
+            "value": 68,
+            "group": "5",
+            "name": "Eixo 5",
+            "type": "axis"
+        },
+        {
+            "id": "TCE6",
+            "value": 158,
+            "group": "6",
+            "name": "Eixo 6",
+            "type": "axis"
+        },
+        {
+            "id": "TCE7",
+            "value": 88,
+            "group": "7",
+            "name": "Eixo 7",
+            "type": "axis"
+        },
+        {
+            "id": "TCE8",
+            "value": 155,
+            "group": "8",
+            "name": "Eixo 8",
+            "type": "axis"
+        },
+        {
+            "id": "TCE9",
+            "value": 115,
+            "group": "9",
+            "name": "Eixo 9",
+            "type": "axis"
+        }
+    ]
+}

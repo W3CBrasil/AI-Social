@@ -1,0 +1,228 @@
+colors,hcrow,hccol,rowLabel,colLabel
+#1F77B4,1,1,ANTEPROJETO DE LEI,Margareth
+#FF7F0E,2,2,Dispõe sobre o trata,Giancarlo Boaron
+#2CA02C,3,3,A PRESIDENTA DA REPÚBLICA,Joana Varon
+#3C5C87,4,4,Art. 1,Jeoman
+#D62728,5,5,Art. 2,Pedro Mizukami
+#8C564B,6,6,"Art. 2, I",AME
+#9467BD,7,7,"Art. 2, II",Revolucionário
+#8B3E6B,8,8,"Art. 2, § 1º",MG
+#E377C2,9,9,"Art. 2, § 2º",Adriano
+#7F7F7F,10,10,"Art. 2, § 2º, I",Mari
+#3C7587,11,11,"Art. 2, § 2º, II",Christian Alexandre
+#BCBD22,12,12,"Art. 2, § 3º",Tarso Violin
+#17BECF,13,13,Art. 3,Jlcosta81
+,14,14,"Art. 3, § 1º",Arns
+,15,15,Art. 4,Eden Grei
+,16,16,"Art. 4, § 1º",Fundação Terra
+,17,17,Art. 5,Pessel
+,18,18,"Art. 5, I",Jessica
+,19,19,"Art. 5, II",Magno
+,20,20,"Art. 5, III",Paulo C A
+,21,21,"Art. 5, IV",Gabriel
+,22,22,"Art. 5, V",JCK
+,23,23,"Art. 5, VI",Kaori
+,24,24,"Art. 5, VII",MM
+,25,25,"Art. 5, VIII",Vilson
+,26,26,"Art. 5, IX ",Pedro
+,27,27,"Art. 5, X",Alexandre Perdiz
+,28,28,"Art. 5, XI",Anderson
+,29,29,"Art. 5, XII",Marcelo Saldanha
+,30,30,"Art. 5, XIII",Edvaldo Freitas
+,31,31,"Art. 5, XIV",Drica
+,32,32,"Art. 5, XV",Calebe
+,33,33,"Art. 5, XVI",Igo
+,34,34,"Art. 5, XVII",Tatiana
+,35,35,"Art. 5, XVIII",Prof. Marcos
+,36,36,Art. 6,Paulo Rená
+,37,37,"Art. 6, I",Lucas Lopes
+,38,38,"Art. 6, II",Elis
+,39,39,"Art. 6, III",Démerson Dias
+,40,40,"Art. 6, IV",Ap
+,41,41,"Art. 6, V",Gabriela Martins
+,42,42,"Art. 6, VI",Ellen Sartori
+,43,43,"Art. 6, VII",Ana Amelia
+,44,44,"Art. 6, VIII",Peculato
+,45,45,"Art. 6, IX",Maurício Coeli
+,46,46,"Art. 6, § 1º",Fabricio Pessôa
+,47,47,"Art. 6, § 2º",Guilherme Moraes
+,48,48,Art. 7,Marcelo Crespo
+,49,49,"Art. 7, § 1º",Cesar Rutowitsch
+,50,50,"Art. 7, § 2º",Daniel Astone
+,51,51,"Art. 7, § 3º",Bruno Bioni
+,52,52,"Art. 7, § 4º",Marcos Baldin
+,53,53,"Art. 7, § 5º",Mauro Silva
+,54,54,"Art. 7, § 6º",APS
+,55,55,"Art. 7, § 7º",Elomir
+,56,56,"Art. 7, § 8º",Gilmar
+,57,57,Art. 8,Daniel Serodio
+,58,58,Art. 9,Ramon Pereira
+,59,59,Art. 10,Flavio Costa
+,60,60,"Art. 10, I",Katia Cavalcante
+,61,61,"Art. 10, VI",Samadeu
+,62,62,"Art. 10, VII",Névoa
+,63,63,"Art. 10, VII, a)",Daniele Fontes
+,64,64,"Art. 10, VII, b)",Josimar
+,65,65,"Art. 10, VII, c)",Pheiffer Faedda
+,66,66,"Art. 10, § 1º",Rodrigo Junqueira
+,67,67,"Art. 10, § 3º",Jacqueline Abreu
+,68,68,"Art. 10, § 4º",Aminah Morais
+,69,69,Art. 11,Marcelo
+,70,70,"Art. 11, I",Vanessa Santana
+,71,71,"Art. 11, II",Priscila Peixoto
+,72,72,"Art. 11, III",Ana Carolina Oliveira
+,73,73,"Art. 11, IV",Adriano
+,74,74,"Art. 11, V",Márcia Soldate
+,75,75,"Art. 11, VI",Giovanna Carloni
+,76,76,"Art. 11, VII",Amandahn
+,77,77,"Art. 11, § 1º",Carolina Luco
+,78,78,"Art. 11, § 2º",Tássia Martins
+,79,79,"Art. 11, § 3º",Marta Kanashiro
+,80,80,Art. 12,Marcus Pinto
+,81,81,"Art. 12, I",Leonardo
+,82,82,"Art. 12, II",Luylla Andrade
+,83,83,"Art. 12, II, b)",Natália
+,84,84,"Art. 12, II, c)",Lucas Carrijo
+,85,85,"Art. 12, II, d)",Julia Lozzi
+,86,86,"Art. 12, II, e)",Gabriela Assreuy
+,87,87,"Art. 12, II, f)",Lucas Zolet
+,88,88,"Art. 12, § 2º",Jorge Machado
+,89,89,Art. 13,Roberto Taufick
+,90,90,"Art. 13, § 1º",Sérgio Alves Jr.
+,91,91,"Art. 13, § 2º",Kacsavio
+,92,92,Art. 14,Alexandra
+,93,93,"Art. 14, I",Rafaela16
+,94,94,"Art. 14, II",Jjorge
+,95,95,"Art. 14, III",Victor Costa
+,96,96,"Art. 14, IV",Decko
+,97,97,"Art. 14, § 1º",Mvianna
+,98,98,Art. 15,Ariadne
+,99,99,"Art. 15, II",Andre Malveira
+,100,100,"Art. 15, III",Cláudio Lucena
+,101,101,"Art. 15, § 1º",Tagwato
+,102,102,Art. 16,Caroline
+,103,103,Art. 17,Sinditelebrasil
+,104,104,"Art. 17, I",Edward Ramos
+,105,105,"Art. 17, II",Lucas Pirola
+,106,106,"Art. 17, III",Felipe de Ivanoff
+,107,107,"Art. 17, IV",Miguel Ads
+,108,108,"Art. 17, § 1º",Nathália Marques
+,109,109,"Art. 17, § 2º",Eurico Matos
+,110,110,"Art. 17, § 3º",Priscila M.
+,111,111,"Art. 17, § 3º, I",Emerson Wendt
+,112,112,"Art. 17, § 5º",Luiz Perin Filho
+,113,113,Art. 18,Fernandacgv130287
+,114,114,"Art. 18, I",Leonardo Pessanha
+,115,115,"Art. 18, § 1º",Ana Ferreira
+,116,116,"Art. 18, § 2º",Marcone
+,117,117,"Art. 18, § 2º, II",Elizabeth Torres
+,118,118,"Art. 18, § 4º",Jose Rodrigo Mantovani
+,119,119,Art. 19,Vera Regina
+,120,120,"Art. 19, § 1º",Bernardo Kahl
+,121,121,Art. 20,Lorena Viana
+,122,122,Art. 22,Amanda Arrivabene
+,123,123,Art. 23,Jéssica Lustosa
+,124,124,Art. 24,Marco Antonio Konopacki
+,125,125,"Art. 24, II",Alexandre
+,126,126,"Art. 24, III",Larissa Oliveira
+,127,127,Art. 26,Renata Oliveira
+,128,128,Art. 27,CNseg
+,129,129,Art. 28,Mariane Tabelini
+,130,130,"Art. 28, I",Amanda Pimenta
+,131,131,"Art. 28, III",Lucas Damasceno
+,132,132,"Art. 28, IV",Einstein Goncalves
+,133,133,"Art. 28, V",Gabriele Ferreira
+,134,134,"Art. 28, § 1º",Guilherme Horta
+,135,135,"Art. 28, § 1º, II",Patrícia Costa
+,136,136,"Art. 28, § 1º, IV",Rubemrj
+,137,137,Art. 29,Intervozes
+,138,138,Art. 30,Gabriellebolina
+,139,139,"Art. 30, § 1º",Nicole Oliveira
+,140,140,"Art. 30, § 2º",Elizane Gomes
+,141,141,"Art. 30, § 3º",Bruna Fernandes
+,142,142,Art. 31,Marina
+,143,143,Art. 32,Rodrigo
+,144,144,Art. 33,Rodrigo Serra Negra
+,145,145,Art. 34,Tatiane Ferreira
+,146,146,Art. 35,Stefania Petraglia
+,147,147,"Art. 35, § 1º",Rachel Burgos
+,148,148,"Art. 35, § 2º",Isabella Alves
+,149,149,Art. 37,Estevao Machado
+,150,150,Art. 38,Fbraga
+,151,151,Art. 39,Náthaly Morgani
+,152,152,"Art. 39, § 1º",Wagner Silveira
+,153,153,"Art. 39, § 2º",Kilcy Bispo
+,154,154,Art. 40,Clara Campos
+,155,155,"Art. 40, § 1º",Diogo Neves Pinto
+,156,156,Art. 41,Rudá Lemos
+,157,157,"Art. 41, § 1º",Skybrasil
+,158,158,"Art. 41, § 2º, IV",Gabriela Oliveira
+,159,159,"Art. 41, § 3º",ABRANET
+,160,160,Art. 42,Claro S/A
+,161,161,"Art. 42, § 1º",Gabriel Carvalho
+,162,162,Art. 43,Henrique1993
+,163,163,Art. 44,FEBRABAN
+,164,164,"Art. 44, § 1º, III",Tatiane Souza
+,165,165,Art. 45,Romulo Sousa
+,166,166,"Art. 45, I",Raissa Guimaraes
+,167,167,"Art. 45, § 1º",Flávia Mendes
+,168,168,"Art. 45, § 2º",Bruno Diego
+,169,169,Art. 46,Adamir
+,170,170,Art. 47,Leandro Bussolotto
+,171,171,Art. 48,Thiago
+,172,172,"Art. 48, § 1º",Dino Schwingel
+,173,173,Art. 49,Aldênio R.
+,174,174,Art. 50,Conceição
+,175,175,"Art. 50, I",Cinthya Brito
+,176,176,"Art. 50, II",Ana Breitinger
+,177,177,"Art. 50, III",Samandaborges
+,178,178,"Art. 50, IV",Helloá Rodrigues
+,179,179,"Art. 50, V",Cristhian Augusto
+,180,180,"Art. 50, VI",Tibério Sampaio
+,181,181,"Art. 50, VII",Marlon
+,182,182,"Art. 50, § 1º",Jessica Brasil
+,183,183,"Art. 50, § 2º",Kaliny Aglay
+,184,184,"Art. 50, § 3º",Gleison Melo
+,185,185,"Art. 50, § 4º",CIPL
+,186,186,"Art. 50, § 5º",Vanessa
+,187,187,Art. 51,Lucas Maccari
+,188,188,Art. 52,Kédiman
+,,189,,Poluty
+,,190,,Maiara de Freitas
+,,191,,Israel Rocha
+,,192,,Brunagf
+,,193,,Cassia
+,,194,,Tamara Goulart
+,,195,,Grimaneza
+,,196,,Talise Novack
+,,197,,Luciane Goulart
+,,198,,Sandra
+,,199,,Bruna Nazario
+,,200,,Vanessa M. De Bom
+,,201,,Larissa Denski Nola
+,,202,,Bruna Da Rosa
+,,203,,Andremenegazzo
+,,204,,Lucasnascimento
+,,205,,Jhonata Serafim
+,,206,,Luiz Fernando Borges
+,,207,,Tamiresanselmo1
+,,208,,Bruna Pereira
+,,209,,Silvana
+,,210,,Aparecidacristina
+,,211,,Claudiana
+,,212,,Adelino dos Santos
+,,213,,Gpopai/USP
+,,214,,Rafaelc
+,,215,,Natasha Af
+,,216,,Tiago de Sousa
+,,217,,Gsao
+,,218,,Alan
+,,219,,Tiago Baroni
+,,220,,Stefan
+,,221,,Ricardo Leite
+,,222,,Wellington Cremasco
+,,223,,ABDTIC
+,,224,,ABINEE
+,,225,,BSA
+,,226,,ALRN
+,,227,,Mariana Melo

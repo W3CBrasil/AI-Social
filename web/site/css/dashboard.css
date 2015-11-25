@@ -1,0 +1,62 @@
+.bar {
+  fill-opacity: .8;
+   cursor: pointer;
+}
+.bar text {
+	text-rendering: optimizelegibility;
+	cursor: pointer;
+}
+
+.bar:hover {
+	fill-opacity: 1;
+}
+
+
+.line {
+  fill: none;
+  stroke: #383838;
+  stroke-width: 1px;
+}
+
+
+
+.node {
+  stroke-width: 2px;
+  fill-opacity: .8;
+  cursor: pointer;
+}
+
+.link {
+  stroke: #D3D3D3;
+  stroke-opacity: .8;
+  stroke-width: 1;
+}
+
+
+
+.d3-tip {	
+  font-family: 'Ubuntu', sans-serif;
+  text-rendering: optimizelegibility;
+  font-size: 11px;
+  line-height: 1;
+  padding: 12px 14px;
+  background: rgba(0, 0, 0, 0.7);
+  color:#CCCCCC;
+  border-radius: 8px;
+}
+
+
+.d3-tip span {
+	color:#FFFFFF;
+	font-size: 16px;
+	line-height: 20px;
+	z-index: 1000;	
+}
+
+.d3-tip div {
+	padding: 3px 0px;
+}
+
+.d3-tip span:first-child {
+	font-size: 18px;
+}
