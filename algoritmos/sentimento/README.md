@@ -1,5 +1,5 @@
-Site do Dashboard
-=================
+Análise de Sentimentos
+======================
 
 Este diretório contém os scripts de processamento para gerar os arquivos de dados
 utilizados pelo dashboard, além dos arquivos do site propriamente dito (html, css).
