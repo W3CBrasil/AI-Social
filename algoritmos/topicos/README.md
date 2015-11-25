@@ -23,8 +23,8 @@ Se a estrutura de diretórios do github for seguida, de dentro da pasta codes, e
 
 python run_all.py
 
-Os arquivos de entrada devem estar em:
-../data/
+Os arquivos de entrada devem estar do diretorio de dados da raíz deste repositório:
+../../../dados
 
 Os arquivos de saída serão gravados em:
 ../data/output/
@@ -35,9 +35,9 @@ Para o caso de mudança de da base de dados, parâmetros do método ou diretóri
 
 O arquivo run_all utiliza:
 i.  Um arquivo my_stopwords.txt 
-	Disponibilizado no github, pasta /codes/
+	Disponibilizado no github, pasta codes/
 ii. Uma base de dados de onde se quer extrair os tópicos
-	Disponivilizada no github, pasta /data/comentarios.csv
+	Disponivilizada no github, pasta /dados/dadospessoais-comentarios-pdfs-filtrado.csv
 
 Dentro do arquivo run_all está definida a estrutura de diretórios de/para onde o script lê/escreve os arquivos,
 bem como o número de tópicos que serão extraídos.
