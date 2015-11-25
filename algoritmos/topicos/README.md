@@ -47,6 +47,7 @@ Entrada
 -------
 
 O arquivo run_all utiliza:
+
 1. Um arquivo my_stopwords.txt 
 
    Disponibilizado no github, pasta codes/
@@ -59,9 +60,9 @@ Dentro do arquivo run_all está definida a estrutura de diretórios de/para onde
 bem como o número de tópicos que serão extraídos.
 
 Para modificar esses parâmetros, é necessário editar em run_all.py:
-- docs_comentarios  -  diretorio onde esta o texto a ser processado
-- out_comentarios   -  diretorio onde sera salva a saida pos-processada do LDA
-- num_topics        -  numero de topicos que serao gerados pelo LDA
+- `docs_comentarios`  -  diretorio onde esta o texto a ser processado
+- `out_comentarios`   -  diretorio onde sera salva a saida pos-processada do LDA
+- `num_topics`        -  numero de topicos que serao gerados pelo LDA
 
 Saída
 -----
