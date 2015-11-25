@@ -11,7 +11,7 @@ cd ..
 
 cat ../../dados/dadospessoais-comentarios-pdfs-filtrado.csv | gawk 'BEGIN{FS=","}{print($1"_"$2"_"$3"_"$6)}' > dados/entrada/data1.txt
 
-cat ../../dados/dadospessoais-comentarios-pdfs-filtrado.csv | gawk 'BEGIN{FS=","}{print(tolower($8))}' | sed 's/\"/ /g' | sed 's/?/ ? /g' | sed 's/!/ ! /g' | sed 's/\./ \. /g' | sed 's/</ /g' | sed 's/>/ /g' | gawk '{printf("%s CLASS=0", $1); for(i=2;i<=NF;i++) printf(" w=%s", $i); printf("\n");}' > dados/entrada/data2.txt
+cat ../../dados/dadospessoais-comentarios-pdfs-filtrado.csv | gawk -vFPAT='[^,]*|"[^"]*"' '{print(tolower($11))}' | sed 's/\"/ /g' | sed 's/?/ ? /g' | sed 's/!/ ! /g' | sed 's/\./ \. /g' | sed 's/</ /g' | sed 's/>/ /g' | gawk '{printf("%s CLASS=0", $1); for(i=2;i<=NF;i++) printf(" w=%s", $i); printf("\n");}' > dados/entrada/data2.txt
 
 paste dados/entrada/data1.txt dados/entrada/data2.txt | grep -v source_comment_id_author_id_commentable_id > dados/entrada/data.txt
 
