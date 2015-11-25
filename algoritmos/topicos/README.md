@@ -7,6 +7,8 @@ Versão livre do LDA com Gibbs sampling implementada em C++.
 
 2 - Python 
 Neccessário para rodar o script run_all.py
+Também é necessário ter instalado a biblioteca NLTK ( http://www.nltk.org/ ),
+assim como o submódulo de stopwords "nltk.stopwords".
 
 3- run_all.py
 Script para extração de tópicos. Funciona em 3 etapas:
