@@ -57,3 +57,7 @@ http://200.131.6.30:9200/_plugin/browser/?database=dadospessoais&table=comment
    1. Nessa aba é possível criar algumas visualizações simples.
    2. Cada tipo de visualização depende de informações diferentes e devem
    ser configuradas de acordo
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/W3CBrasil/ai-social/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
