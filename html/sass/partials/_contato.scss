@@ -1,0 +1,38 @@
+.contato-background {
+	background: url("../images/mapa.jpg");	
+	padding: $default-margin-padding;
+	min-height: 800px;
+}
+
+.contato {		
+	background-color: #fff;
+	opacity: 0.9;
+	padding: $default-margin-padding/2;
+
+	.title {		
+	    font-family: ralewaylight;
+	    font-size: 50px;
+	}
+}
+
+.contato-info {
+
+	div {
+		margin: $default-margin-padding 0;
+
+		.desc {
+			display: inline-block;
+		}
+	}
+}
+
+.form-contato {	
+	margin-top: $default-margin-padding*2;
+
+	input,
+	select,
+	radiobox,
+	textarea {
+		margin: 5px 0;
+	}
+}

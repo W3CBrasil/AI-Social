@@ -1,0 +1,28 @@
+.pagination {
+	> li {
+		> a,
+		> a:hover,
+		> a:focus,
+		> span,
+		> span:hover,
+		> span:focus { color: #646464; }
+	}
+}
+
+.pager {
+	li {
+		> a,
+		> span { color: #646464; }
+	}
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+	background-color: #027f83;
+	border-color: #19ADB3;
+	color: #FFF;
+}

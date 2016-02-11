@@ -1,0 +1,369 @@
+$default-margin-padding: 20px;
+footer {
+  background: #353535;
+  display: inline-block;
+  width: 100%;
+  margin-top: $default-margin-padding*2.5;
+  figure {
+    border-bottom: 1px solid #4A4A4A;
+    border-right: 1px solid #4A4A4A;
+    display: inline-block;
+    height: 130px;
+    padding: 1% 2%;
+  }
+
+  .cgi {
+    height: 180px;
+  }
+
+  .nic,
+  .registro,
+  .cert,
+  .ceptro,
+  .cetic,
+  .ptt
+  .w3c {
+    bottom: 30px;
+    position: relative;
+
+    .footer-ico {
+      margin-top: 10px;
+    }
+  }
+
+  .text-right {
+    display: inline-block;
+    padding-bottom: $default-margin-padding;
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+.footer-ico {
+  display: inline-block;
+  float: left;
+  padding: 2%;
+}
+
+
+.license {
+color: #757575;
+padding: 20px 40px;
+font-size: 11px;
+}
+
+.license a {
+color: #F4F4F3;
+}
+
+
+.cgi {
+  background: none repeat scroll 0 0 #2E2E2E;
+  border-bottom: 10px solid #5898F9;
+  border-right: medium none;
+  margin-right: 20px;
+  padding: 40px;
+}
+
+.menu-footer {
+  background: #242424;
+  font-size: 12px;
+
+  p {
+    font-size: 10px;
+    margin-left: 255px;
+    margin-top: 10px;
+  }
+
+  ul {
+    list-style: none;
+    display: inline-block;    
+
+    li {
+      display: inline;
+      padding: 0 $default-margin-padding/2;
+    }
+
+    li:nth-child(2) {
+      border-left: 1px solid #757575;
+      border-right: 1px solid #757575;
+    }
+
+    a {
+      color: #757575;
+    }
+  }
+}
+
+.teste-footer {
+  background: #353535;
+  position: relative;
+
+  .links-footer {
+    display: inline-block;
+    list-style: none;
+    float: left;
+    margin-left: -35px;
+
+    li {
+      display: inline;
+      position: absolute;
+      bottom: 0;
+
+      a {
+        display: inline-block;
+        height: 120px;
+        width: 140px;
+        background: url("about:blank");
+        z-index: 9999;
+        margin-bottom: 60px;
+      }
+
+      &.teste-link-quem,
+      &.teste-link-trabalhe {
+        a {
+          height: 50px;
+          width: 100px;
+          position: absolute;
+          bottom: 48px;
+        }
+      }
+
+      &.teste-link-trabalhe { left: 27%; }
+
+      &.teste-link-quem { left: 37%; }
+    }
+
+    .teste-link-cgi {
+      bottom: 100px;
+      left: 10%;
+      height: 185px;
+      a {
+        width: 205px;
+      }
+    }
+
+    .teste-link-nic {
+      bottom: 120px;
+      left: 25.2%;
+      a { width: 120px; }
+    }
+
+    .teste-link-registro {
+      bottom: 110px;
+      left: 36%;
+      a { width: 100px; }
+    }
+
+    .teste-link-cert {
+      bottom: 120px;
+      left: 45%;
+      a { width: 100px; }
+    }
+
+    .teste-link-cetic {
+      bottom: 120px;
+      left: 54%;
+      a { width: 100px; }
+    }
+
+    .teste-link-ceptro {
+      bottom: 120px;
+      left: 61%;
+      a { width: 115px; }
+    }    
+
+    .teste-link-ptt {
+      bottom: 110px;
+      left: 70%;
+      a { width: 100px; }
+    }
+
+    .teste-link-ceweb {
+      bottom: 120px;
+      left: 77%;
+      a { width: 110px; }
+    }
+
+    .teste-link-w3c {
+      bottom: 120px;
+      left: 86%;
+      a { width: 80px; }
+    }
+  }
+
+  .pull-right {    
+    display: inline-block;
+    width: 130px;
+    margin-top: 80px;
+
+    a {
+      &:before {
+        content: "\00BB";
+        margin: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .teste-footer{
+    .img-responsive { width: 95%; }
+
+    .links-footer {
+      li {
+        a { height: 120px; }
+      }
+
+      .teste-link-cgi {
+        height: 150px;
+        a { width: 155px; }
+      }
+
+      .teste-link-nic {
+        left: 20%;
+        a { width: 110px; }
+      }
+
+      .teste-link-registro {
+        left: 32%;
+        a { width: 110px; }
+      }
+
+      .teste-link-cert {
+        left: 43%;
+        a { width: 80px; }
+      }
+
+      .teste-link-cetic {
+        left: 52%;
+        a { width: 80px; }
+      }
+
+      .teste-link-ceptro {
+        left: 60%;
+        a { width: 100px; }
+      }
+
+      .teste-link-ptt {
+        left: 71%;
+        a { width: 70px; }
+      }
+
+      .teste-link-ceweb {
+        left: 78%;
+        a { width: 100px; }
+      }
+
+      .teste-link-w3c {
+        left: 89%;
+        a { width: 60px; }
+      }
+
+      .teste-link-quem,
+      .teste-link-trabalhe {
+        a {
+          height: 25px !important;
+          bottom: 65px;
+        }
+      }
+
+      .teste-link-trabalhe { left: 210px !important; }
+
+      .teste-link-quem { left: 320px !important; }
+    }
+  }
+
+  .teste-footer {
+    .pull-right {
+      margin-right: 30px;
+      margin-top: 60px;
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .teste-footer{
+    .links-footer {
+      li {
+        bottom: 140px !important;
+        a {
+          height: 80px;
+          width: 140px;
+        }
+      }
+
+      .teste-link-cgi {
+        a {
+          height: 100px;
+          width: 120px;
+        }
+      }
+
+      .teste-link-nic {
+        a { width: 80px; }
+      }
+
+      .teste-link-registro {
+        a { width: 85px; }
+      }
+
+      .teste-link-cert {
+        a { width: 70px; }
+      }
+
+      .teste-link-cetic {
+        a { width: 60px; }
+      }
+
+      .teste-link-ceptro {
+        a { width: 75px; }
+      }
+
+      .teste-link-ptt {
+        a { width: 50px; }
+      }
+
+      .teste-link-ceweb {
+        a { width: 80px; }
+      }
+
+      .teste-link-w3c {
+        a { width: 50px; }
+      }
+
+      li.teste-link-quem,
+      li.teste-link-trabalhe {        
+        bottom: -4px !important;
+        a { bottom: 115px; }
+      }
+
+      li.teste-link-trabalhe { left: 150px !important; }
+
+      li.teste-link-quem { left: 250px !important;
+      }
+
+    }
+  }
+
+  .teste-footer {
+    .pull-right {
+      margin-right: 5px;
+      margin-top: 45px;
+    }
+  }
+}
+
+@media (max-width: 779px) {
+  .teste-footer{
+    .links-footer {
+      li {
+        a {
+          display: none
+
+        }
+      }
+
+    }
+  }
+}

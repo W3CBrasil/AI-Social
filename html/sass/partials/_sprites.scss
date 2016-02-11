@@ -1,0 +1,21 @@
+@import "icons/*.png";
+$icons-sprite-dimensions: true;
+@include all-icons-sprites;
+
+// Home Alert Icons
+.icons-share,
+.icons-github,
+.icons-download {
+	margin: 0 auto;
+	padding-top: 5px;
+	position: relative;
+	top: 13%;
+	display: inline-block;
+}
+
+.redes-socias {
+	span {
+		display: block;
+		margin-top: 12px;
+	}
+}

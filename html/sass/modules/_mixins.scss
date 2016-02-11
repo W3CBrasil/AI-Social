@@ -1,0 +1,118 @@
+@mixin arrow-readMore {
+  content: url("../images/link_setaVERDE_NIC.png");
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin box-size($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin boxes($base-color, $width) {
+    color: #FFFFFF;
+    display: inline-block;
+    float: left;
+    margin: 0.1%;
+    min-height: 210px;
+    opacity: 0.9;
+    width: $width;
+
+    &:first-child {
+        background-color: lighten( $base-color, 4% );
+        margin-left: 0;
+    }
+
+    &:nth-child(2) {
+        background-color: $base-color;
+
+    }
+
+    &:nth-child(3) {
+        background-color: lighten( $base-color, 6% );
+        margin-right: 0;
+    }
+
+    &:nth-child(4) {
+        background-color: $base-color;
+        margin-left: 0;
+    }
+
+    &:nth-child(5) {
+        background-color: $base-color;
+    }
+
+    &:last-child {
+        background-color: lighten( $base-color, 12% );
+        margin-right: 0;
+    }
+
+    h2 {
+        margin: $default-margin-padding;
+    }
+}
+
+@mixin gradient-blue-black {
+  background: #5388f4;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUzODhmNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI4JSIgc3RvcC1jb2xvcj0iIzUyODZmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQxJSIgc3RvcC1jb2xvcj0iIzUwODNlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzZTY1Y2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #5388f4 0%, #5286f2 28%, #5083ee 41%, #3e65cf 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5388f4), color-stop(28%,#5286f2), color-stop(41%,#5083ee), color-stop(100%,#3e65cf));
+  background: -webkit-linear-gradient(top,  #5388f4 0%,#5286f2 28%,#5083ee 41%,#3e65cf 100%);
+  background: -o-linear-gradient(top,  #5388f4 0%,#5286f2 28%,#5083ee 41%,#3e65cf 100%);
+  background: -ms-linear-gradient(top,  #5388f4 0%,#5286f2 28%,#5083ee 41%,#3e65cf 100%);
+  background: linear-gradient(to bottom,  #5388f4 0%,#5286f2 28%,#5083ee 41%,#3e65cf 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5388f4', endColorstr='#3e65cf',GradientType=0 );
+}
+
+@mixin gradient-white-gray {
+  background: #c7c7c7;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M3YzdjNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjclIiBzdG9wLWNvbG9yPSIjZmRmZGZkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzklIiBzdG9wLWNvbG9yPSIjZTZlNmU2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTglIiBzdG9wLWNvbG9yPSIjZTBlMGUwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UwZTBlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  #c7c7c7 0%, #ffffff 0%, #fdfdfd 27%, #e6e6e6 79%, #e0e0e0 98%, #e0e0e0 100%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c7c7c7), color-stop(0%,#ffffff), color-stop(27%,#fdfdfd), color-stop(79%,#e6e6e6), color-stop(98%,#e0e0e0), color-stop(100%,#e0e0e0), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #c7c7c7 0%,#ffffff 0%,#fdfdfd 27%,#e6e6e6 79%,#e0e0e0 98%,#e0e0e0 100%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #c7c7c7 0%,#ffffff 0%,#fdfdfd 27%,#e6e6e6 79%,#e0e0e0 98%,#e0e0e0 100%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #c7c7c7 0%,#ffffff 0%,#fdfdfd 27%,#e6e6e6 79%,#e0e0e0 98%,#e0e0e0 100%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #c7c7c7 0%,#ffffff 0%,#fdfdfd 27%,#e6e6e6 79%,#e0e0e0 98%,#e0e0e0 100%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c7c7c7', endColorstr='#ffffff',GradientType=0 );
+}
+
+@mixin glyphicon-before {
+  -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    font-size: 10px;
+    position: relative;
+    top: 4px;
+}
+
+@mixin square-list {
+    content: "■ ";
+    color: #5998f9;
+    position: relative;
+    bottom: 1px;
+}
+
+@mixin triangle-list {
+    content: "\e072 ";
+    position: relative;
+    bottom: 1px;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    position: relative;
+    top: 0;
+}

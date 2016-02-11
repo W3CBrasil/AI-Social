@@ -1,0 +1,196 @@
+.list-group-item{ 
+  border: none;
+  border-radius: 0;
+}
+
+/*  bhoechie tab */
+title-tab.bhoechie-tab-container{
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 0 !important;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  border:1px solid #ddd;
+  margin-top: 20px;
+  margin-left: 50px;
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  -moz-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+  filter: alpha(opacity=97);
+}
+title-tab.bhoechie-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.bhoechie-tab-menu title-tab.list-group{
+  margin-bottom: 0;
+}
+title-tab.bhoechie-tab-menu title-tab.list-group>a{
+  margin-bottom: 0;
+}
+title-tab.bhoechie-tab-menu title-tab.list-group>a .glyphicon,
+title-tab.bhoechie-tab-menu title-tab.list-group>a .fa {
+  color: #5A55A3;
+}
+title-tab.bhoechie-tab-menu title-tab.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+title-tab.bhoechie-tab-menu title-tab.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+
+a.box-tab-01 {
+  background: #000 !important;
+}
+
+a.box-tab-02 {
+  background: #1a7589 !important;
+}
+
+a.box-tab-03 {
+  background: #1a7567 !important;
+}
+
+a.box-tab-04 {
+  background: #1a7536 !important;
+}
+
+a.box-tab-05 {
+ background: #1a7500 !important;
+}
+
+a.box-tab-06 {
+  background: #1a8900 !important;
+}
+
+a.list-group-item .list-group>a.active,
+a.list-group-item  .list-group>a.active .glyphicon,
+a.list-group-item .list-group>a.active .fa{
+  background-color: #5A55A3;
+  background-image: #5A55A3;
+  color: #FFF;
+}
+
+a.list-group-item  { color: #FFF } 
+
+/*.bhoechie-tab-menu .list-group>a.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #000;
+
+  }*/
+
+  a.list-group-item.box-tab-01.active:after {
+   content: '';
+   position: absolute;
+   left: 100%;
+   top: 50%;
+   margin-top: -13px;
+   border-left: 0;
+   border-bottom: 13px solid transparent;
+   border-top: 13px solid transparent;
+   border-left: 10px solid #000 !important;
+ }
+
+ a.list-group-item.box-tab-02.active:after {
+   content: '';
+   position: absolute;
+   left: 100%;
+   top: 50%;
+   margin-top: -13px;
+   border-left: 0;
+   border-bottom: 13px solid transparent;
+   border-top: 13px solid transparent;
+   border-left: 10px solid #1a7589 !important;
+ }
+
+ a.list-group-item.box-tab-03.active:after {
+   content: '';
+   position: absolute;
+   left: 100%;
+   top: 50%;
+   margin-top: -13px;
+   border-left: 0;
+   border-bottom: 13px solid transparent;
+   border-top: 13px solid transparent;
+   border-left: 10px solid #1a7567 !important;
+ }
+
+ a.list-group-item.box-tab-04.active:after {
+   content: '';
+   position: absolute;
+   left: 100%;
+   top: 50%;
+   margin-top: -13px;
+   border-left: 0;
+   border-bottom: 13px solid transparent;
+   border-top: 13px solid transparent;
+   border-left: 10px solid #1a7536 !important;
+ }
+
+ a.list-group-item.box-tab-05.active:after {
+   content: '';
+   position: absolute;
+   left: 100%;
+   top: 50%;
+   margin-top: -13px;
+   border-left: 0;
+   border-bottom: 13px solid transparent;
+   border-top: 13px solid transparent;
+   border-left: 10px solid #1a7500 !important;
+ }
+
+ a.list-group-item.box-tab-06.active:after {
+   content: '';
+   position: absolute;
+   left: 100%;
+   top: 50%;
+   margin-top: -13px;
+   border-left: 0;
+   border-bottom: 13px solid transparent;
+   border-top: 13px solid transparent;
+   border-left: 10px solid #1a8900 !important;
+ }
+
+ .bhoechie-tab-content{
+  background-color: #ffffff;
+  /* border: 1px solid #eeeeee; */
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.bhoechie-tab .bhoechie-tab-content:not(.active){
+  display: none;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.bhoechie-tab-menu {
+  padding-left: 0;
+}
+
+a.list-group-item:focus, a.list-group-item:hover {
+  border-bottom: 3px solid #FF6D00;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  z-index: 2;
+  color: #fff;
+  border-bottom: transparent;
+}

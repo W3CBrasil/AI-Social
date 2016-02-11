@@ -1,0 +1,226 @@
+a {
+	color: $default-green;
+}
+
+p {
+	a:hover, a:focus{
+		color: #000;
+		text-decoration: underline;
+	}
+}
+.post-vaga-title{ font-size:31px; }
+
+h1,
+h2 {
+	font-family: ralewayextralight;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	font-family: ralewayextralight;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 64px;
+}
+
+h3 {
+	font-size: 64px;
+}
+
+h4 {
+	font-size: 41px;
+}
+
+h5 {
+	font-size: 36px;
+}
+
+h6 {
+	font-size: 28px;
+}
+
+.text-page ,h6{
+	font-size: 19px !important;
+}
+.link-quemsomos{
+	a{
+		color: #FFF;
+	}
+
+}
+.redessociais{
+	color: #000;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+.category {
+	color: $link-lightGreen !important;
+	font-family: montserratbold, montserrat, arial;
+}
+
+.header-links {
+	a {
+		color: #000;
+	}
+}
+
+.excerpt {
+  font-size: 14px;
+  color: #545454;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.read-more {
+	color: $link-lightGreen;
+}
+
+.calendario {
+	.read-more {
+		color: $link-lightGreen;
+	}
+}
+
+.section-areasAtuacao {
+	p {
+		a {
+			color: $primary-color;
+		}
+	}
+}
+
+.title {
+	margin-top: 5px;
+	font-family: raleway;
+	font-size: 13px;
+
+	a {
+		color: #000;
+	}
+}
+
+.title-big {
+	font-family: ralewayextralight;
+	font-size: 36px;
+}
+
+.title-med {
+	font-family: ralewayextralight;
+	font-size: 18px;
+	margin-top: 9px;
+	font-weight: bold;
+}
+
+.title-featured {font-size: 40px;}
+
+.blog-post {
+	h2 {
+		font-family: ralewayextralight, raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 32px;
+
+		a {
+			color: #000;
+			cursor: pointer;
+		}
+	}
+}
+
+.publicacao {
+	h1 {
+		font-size: 36px;
+		margin-top: 0px;
+		a {
+			color: #000;
+		}
+	}
+}
+
+.boxes-info-cgi {
+	h2 {
+		font-size: 41px;
+	}
+}
+
+.gray-feature {
+	h3 {
+		font-size: 48px;
+	}
+}
+
+.article-single {
+	h1 {
+		font-size: 36px;
+		color: #000000;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+}
+
+.boxes-info-cgi-cc {
+	h2 {
+		font-size: 33px;
+	}
+}
+
+.text-black {
+	color: $black !important;
+}
+.box-servicos {
+	p { font-size: 13px; }
+}
+
+.box-nic {
+
+	.boxes {
+
+		h2 { font-size: 45px; }
+
+	}
+
+}
+
+.titulos-gtlds { font-size: 24px !important; }
+
+.titulos-int-gtlds{ font-size: 18px !important; }
+
+@media (max-width: 480px) {
+	.page-layout {
+		.title-main { font-size: 40px; }
+	}
+
+	.blog-post {
+		h2 { font-size: 30px; }
+	}
+}
+
+.teste-footer {
+	.pull-right { font-size: 13px; }
+}
+
+.video-title {
+	font-family: raleway;
+	color: #222;
+	font-size: 20px;
+}
+
+.video-meta {
+	font-family: Helvetica;
+	color: #838383;
+	.date,
+	.time {
+		background-color: transparent !important;
+		color: #838383;
+	}
+}
