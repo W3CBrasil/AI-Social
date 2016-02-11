@@ -6,20 +6,20 @@ http://homepages.dcc.ufmg.br/~diego.barros/research/prodape/index.html
 
 Mini-tutoriais de como acessar as ferramentas e navegar:
 
-* Calaca * http://200.131.6.30:9200/_plugin/calaca/
+* Calaca * http://200.131.6.36:9200/_plugin/calaca/
    1. Digite a busca desejada.
    2. Ele exibe cada resultado em elementos individuais de HTML estilizado.
    Apenas alguns campos são exibidos.
 
 
 * Browser *
-http://200.131.6.30:9200/_plugin/browser/?database=dadospessoais&table=comment
+http://200.131.6.36:9200/_plugin/elasticsearch-browser/?database=dadospessoais&table=comment
 
    1. Digita a busca desejada no campo "search" e dê enter.
    2. Ele exibe os resultados no formato de tabela com todos os campos.
 
 
-* Inquisitor * http://200.131.6.30:9200/_plugin/inquisitor/ 
+* Inquisitor * http://200.131.6.36:9200/_plugin/elasticsearch-inquisitor/
 
    1. Em "Index" selecione "dadospessoais"
    2. Em "Type" selecione "comment"
@@ -32,7 +32,7 @@ http://200.131.6.30:9200/_plugin/browser/?database=dadospessoais&table=comment
    campos, e com o termo buscado marcado de amarelo.
 
 
-* Head * http://200.131.6.30:9200/_plugin/head/
+* Head * http://200.131.6.36:9200/_plugin/head/
 
    1. Acesse a aba "Consulta Estruturada"
    2. Em "Busca" selecione "dadospessoais"
@@ -52,7 +52,7 @@ http://200.131.6.30:9200/_plugin/browser/?database=dadospessoais&table=comment
    buscado.
 
 
-* Kibana * Aba "Visualize"* http://200.131.6.30:8080
+* Kibana * Aba "Visualize"* http://200.131.6.36:5601
 
    1. Nessa aba é possível criar algumas visualizações simples.
    2. Cada tipo de visualização depende de informações diferentes e devem
