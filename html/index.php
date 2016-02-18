@@ -181,7 +181,8 @@
 
   <div class="box-desc">
     <p class="title-desc">Parceiros</p>
-
+    <div class="soon-partner"><img src="assets/images/inweb.png"></div>
+    <div class="soon-partner"><img src="assets/images/inweb.png"></div> 
   </div>
 
 

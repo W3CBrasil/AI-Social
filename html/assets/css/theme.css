@@ -18,90 +18,94 @@ main {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background-image: url("../images/banner-home.png");
 }
 
-/* line 19, ../../sass/partials/_base.scss */
+/* line 18, ../../sass/partials/_base.scss */
 .first-line {
   background-color: #353535;
 }
 
-/* line 24, ../../sass/partials/_base.scss */
+/* line 23, ../../sass/partials/_base.scss */
 .share {
   margin-top: 30px;
 }
 
-/* line 26, ../../sass/partials/_base.scss */
+/* line 25, ../../sass/partials/_base.scss */
 .first-line {
   background-color: #353535;
 }
 
-/* line 30, ../../sass/partials/_base.scss */
+/* line 29, ../../sass/partials/_base.scss */
 .title-desc {
   color: #000;
   font-size: 18px;
   font-weight: 500;
 }
 
-/* line 36, ../../sass/partials/_base.scss */
+/* line 35, ../../sass/partials/_base.scss */
 .time-involved {
   margin-top: 300px;
 }
 
-/* line 40, ../../sass/partials/_base.scss */
+/* line 39, ../../sass/partials/_base.scss */
 .box-desc {
   padding: 5px;
 }
-/* line 42, ../../sass/partials/_base.scss */
+/* line 41, ../../sass/partials/_base.scss */
 .box-desc .title-desc {
   color: #f76800;
 }
 
-/* line 47, ../../sass/partials/_base.scss */
+/* line 46, ../../sass/partials/_base.scss */
 .mini-graphic {
   border-left: 2px solid #b4b4b4;
 }
-/* line 50, ../../sass/partials/_base.scss */
+/* line 49, ../../sass/partials/_base.scss */
 .mini-graphic .img-mini-graphic {
   margin-top: 5px;
   padding-left: 2px;
   padding-right: 0;
 }
 
-/* line 57, ../../sass/partials/_base.scss */
+/* line 56, ../../sass/partials/_base.scss */
 .description {
   border-left: 2px solid #b4b4b4;
 }
 
-/* line 59, ../../sass/partials/_base.scss */
+/* line 58, ../../sass/partials/_base.scss */
 .first-container {
   margin-bottom: 80px;
 }
 
-/* line 61, ../../sass/partials/_base.scss */
+/* line 60, ../../sass/partials/_base.scss */
 .second-container {
   margin-bottom: 80px;
 }
 
-/* line 63, ../../sass/partials/_base.scss */
+/* line 62, ../../sass/partials/_base.scss */
 .box-partner {
   background-color: #b4b4b4;
   padding: 20px;
   border-radius: 2px;
 }
-/* line 68, ../../sass/partials/_base.scss */
+/* line 67, ../../sass/partials/_base.scss */
 .box-partner .title-desc {
   font-size: 26px;
 }
 
-/* line 75, ../../sass/partials/_base.scss */
+/* line 74, ../../sass/partials/_base.scss */
 .img-graphic .img-responsive {
   width: 100%;
 }
 
-/* line 80, ../../sass/partials/_base.scss */
+/* line 79, ../../sass/partials/_base.scss */
 .title-author {
   color: #539bb1;
+}
+
+/* line 81, ../../sass/partials/_base.scss */
+.soon-partner {
+  margin-bottom: 60px;
 }
 
 /* line 64, icons/*.png */
