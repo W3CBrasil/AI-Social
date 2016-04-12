@@ -8,10 +8,9 @@
   <link href="/favicon.ico" type="image/x-icon" rel="icon" />
   <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" />    
 
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.css">
   <link rel="stylesheet" href="assets/css/theme.css">
-  <link rel="canonical" href="http://eventdomain.com/">
 </head>
 <body>
   <header>
@@ -26,183 +25,178 @@
   </header>
 
   <main>
-    <div class="banner" style="background-image:url(assets/images/banner-home.png);"></div>
-
-    <div class="col-xs-12 first-container">
-      <div class="col-md-2 col-xs-12 bhoechie-tab-menu">
-        <div class="list-group">
-          <?php include("inc/sobre.php"); ?>
-          <?php include("inc/classificacao.php"); ?>
-          <?php include("inc/correlacoes.php"); ?>
-          <?php include("inc/topicos.php"); ?>
+    <div class="banner img-resposive">
+      <div class="row col-xs-12">
+        <div class="col-xs-2 visible-lg visible-md">
+          <a href="/"><img src="/assets/images/logo-dados.png" alt="Inteligência Analítica aplicada ao Processo de Particapação socil na web" class="img-responsive"></a>
         </div>
-      </div> <!-- /bhoechie-tab-menu -->
-
-      <div class="col-md-10 col-xs-12 bhoechie-tab">
-
-        <!-- Tab 1  -->
-        <div class="bhoechie-tab-content active">
-          <p>Nome</p>
-          <p>Data: 16/02/2016</p>
-          <p class="desc-list-group-item">Donec condimentum ipsum quis magna porttitor dignissim. Donec eu metus non risus sagittis elementum ac vel arcu. Quisque congue, purus ut convallis efficitur, mauris nibh feugiat est, eu tempus dui urna a justo. Ut dapibus at neque sed aliquam. Donec tincidunt eros id dui luctus volutpat. Etiam iaculis, metus et eleifend scelerisque, justo nulla laoreet purus, id auctor nisi ipsum nec nisl. Etiam gravida purus nisi, quis lacinia elit aliquet eu. Donec vehicula risus vitae tortor pretium, eget mollis urna rutrum. Aenean eget sagittis nibh. Etiam dignissim quam vel ipsum scelerisque accumsan.</p>
-
-          <p class="desc-list-group-item">Donec condimentum ipsum quis magna porttitor dignissim. Donec eu metus non risus sagittis elementum ac vel arcu. Quisque congue, purus ut convallis efficitur, mauris nibh feugiat est, eu tempus dui urna a justo. Ut dapibus at neque sed aliquam. Donec tincidunt eros id dui luctus volutpat. Etiam iaculis, metus et eleifend scelerisque, justo nulla laoreet purus, id auctor nisi ipsum nec nisl. Etiam gravida purus nisi, quis lacinia elit aliquet eu. Donec vehicula risus vitae tortor pretium, eget mollis urna rutrum. Aenean eget sagittis nibh. Etiam dignissim quam vel ipsum scelerisque accumsan.</p>
-
-          <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-
-          <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-
-          <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-
-          <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-
-          <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-
-          <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-
-          <?php include("inc/share.php"); ?>
-        </div>
-
-        <!-- Tab 2 -->
-        <div class="bhoechie-tab-content">
-          <p>Nome</p>
-          <p>Data: 16/02/2016</p>
-          <div class="col-xs-3 row">
-            <img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem">
+        <div class="col-xs-10">
+          <div class="box-title-banner">
+            <p class="title-banner">Inteligência Analítica aplicada ao </p>
+            <p class="second-title-banner">Processo de Particapação Socil na Web</p>
           </div>
+        </div>
+      </div>
 
-          <div class="col-xs-9">
-            <p class="desc-list-group-item">Donec condimentum ipsum quis magna porttitor dignissim. Donec eu metus non risus sagittis elementum ac vel arcu. Quisque congue, purus ut convallis efficitur, mauris nibh feugiat est, eu tempus dui urna a justo. Ut dapibus at neque sed aliquam. Donec tincidunt eros id dui luctus volutpat. Etiam iaculis, metus et eleifend scelerisque, justo nulla laoreet purus, id auctor nisi ipsum nec nisl. Etiam gravida purus nisi, quis lacinia elit aliquet eu. Donec vehicula risus vitae tortor pretium, eget mollis urna rutrum. Aenean eget sagittis nibh. Etiam dignissim quam vel ipsum scelerisque accumsan.</p>
-
-            <p class="desc-list-group-item">Donec condimentum ipsum quis magna porttitor dignissim. Donec eu metus non risus sagittis elementum ac vel arcu. Quisque congue, purus ut convallis efficitur, mauris nibh feugiat est, eu tempus dui urna a justo. Ut dapibus at neque sed aliquam. Donec tincidunt eros id dui luctus volutpat. Etiam iaculis, metus et eleifend scelerisque, justo nulla laoreet purus, id auctor nisi ipsum nec nisl. Etiam gravida purus nisi, quis lacinia elit aliquet eu. Donec vehicula risus vitae tortor pretium, eget mollis urna rutrum. Aenean eget sagittis nibh. Etiam dignissim quam vel ipsum scelerisque accumsan.</p>
+      <div class="container-fluid">
+       <div class="third-line top-bar">
+        <nav class="navbar navbar-inverse col-xs-12">
+          <div class="container-fluid">
+            <div class="container row">
+              <div class="col-xs-11 col-md-offset-1">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse nav-banner" id="menu">
+                  <ul class="nav navbar-nav">
+                    <li><a href="/"><span class="glyphicon glyphicon-home"></span>
+                      <span class="sr-only">Home</span>
+                    </a></li>
+                    <li><a href="#">Documentos</a></li>
+                    <li><a href="#">Relatórios</a></li>
+                    <li><a href="#">Dados</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="col-xs-12">
-            <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-
-            <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-
-            <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-
-            <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-
-            <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-
-            <p class="desc-list-group-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rutrum metus magna, id congue neque egestas sit amet. Vestibulum turpis nisi, consectetur quis ante vel, aliquam viverra leo. Vivamus consequat dui quis ligula pretium, ac suscipit tellus tristique. Sed volutpat, orci tristique pharetra placerat, urna neque sollicitudin augue, non aliquam risus metus quis magna. Nam vel nibh ac tellus aliquam pellentesque vel euismod libero. Morbi sed luctus quam. Duis lectus erat, semper maximus sapien non, ultricies imperdiet felis. Suspendisse ac ullamcorper felis.</p>
-          </div>
-          <?php include("inc/share.php"); ?>
-        </div>
-
-        <!-- Tab 3 -->
-        <div class="bhoechie-tab-content">
-          <p class="desc-list-group-item">Donec condimentum ipsum quis magna porttitor dignissim. Donec eu metus non risus sagittis elementum ac vel arcu. Quisque congue, purus ut convallis efficitur, mauris nibh feugiat est, eu tempus dui urna a justo. Ut dapibus at neque sed aliquam. Donec tincidunt eros id dui luctus volutpat. Etiam iaculis, metus et eleifend scelerisque, justo nulla laoreet purus, id auctor nisi ipsum nec nisl. Etiam gravida purus nisi, quis lacinia elit aliquet eu. Donec vehicula risus vitae tortor pretium, eget mollis urna rutrum. Aenean eget sagittis nibh. Etiam dignissim quam vel ipsum scelerisque accumsan.</p>
-        </div>
-
-        <!-- Tab 4 --> 
-        <div class="bhoechie-tab-content">
-          <p>Lorem Ipsum 4</p>
-        </div>
+        </nav>
       </div>
     </div>
 
-    <div class="col-xs-12 second-container">
-      <div class="col-md-3 col-xs-12">
-        <p class="title-desc">Outras visualizações</p>
-
-        <div class="box-desc">
-          <a href="" title="Voronoi Circle"><img src="assets/images/voronoi-circles.png" class="img-responsive" alt="Alt da imagem"></a>
-        </div>
-
-        <div class="box-desc">
-          <a href="" title="Voroblobinoids"><img src="assets/images/voroblobinoids.png" class="img-responsive" alt="Alt da imagem"></a>
-        </div>
-
-        <div class="box-desc">
-          <a href="" title="Color Mesh"><img src="assets/images/color-mesh.png" class="img-responsive" alt="Alt da imagem"></a>
-        </div>
-
-        <div class="box-desc">
-          <a href="" title="Canvas Bar Chart"><img src="assets/images/canvas-bar-chart.png" class="img-responsive" alt="Alt da imagem"></a>
-        </div>
-
-        <div class="box-desc">
-          <a href="" title="Cubehelix Color Picker"><img src="assets/images/cubehelix-color-picker.png" class="img-responsive" alt="Alt da imagem"></a>
-        </div>
-
-
+  </div>
+  <div class="col-xs-12 first-container">
+    <div class="col-md-2 col-xs-12 bhoechie-tab-menu">
+      <div class="list-group">
+        <?php include("inc/sobre.php"); ?>
+        <?php include("inc/classificacao.php"); ?>
+        <?php include("inc/correlacoes.php"); ?>
+        <?php include("inc/topicos.php"); ?>
       </div>
-      <div class="col-md-6 col-xs-12 mini-graphic">
-       <p class="title-desc"> De onde veio a idéia?</p>
-       <p class="title-author">Por Yaso</p>
-       <div class="img-graphic">
-        <img src="assets/images/img-exemple.png" class="img-responsive" alt="Alt da imagem">
-      </div>
-      <div class="row container-mini-graphic">
-        <div class="col-xs-12">
-          <p class="title-desc">O projeto</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet diam a erat ornare mollis id non arcu. Nam in risus purus. Etiam aliquam egestas bibendum. Praesent et erat quis enim gravida efficitur. Nullam posuere porttitor venenatis. Suspendisse id pulvinar mauris, et vehicula risus. Cras ut turpis pulvinar, feugiat odio sed, gravida arcu. Quisque ut varius odio. Vestibulum eu dignissim risus.</p>
-        </div>
+    </div> <!-- /bhoechie-tab-menu -->
 
-        <div class="col-xs-12">
-          <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
-          <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
-          <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
-        </div>
+    <div class="col-md-10 col-xs-12 bhoechie-tab">
+      <!-- Tab 1 -->
+      <?php include("inc/tabs/tab1.php"); ?>
 
+      <!-- Tab 2 -->
+      
+      <?php include("inc/tabs/tab2.php"); ?>
+      
 
-        <div class="col-xs-12">
-         <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
-         <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
-         <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
-       </div>
-     </div>
-   </div>
-   <div class="col-md-3 col-xs-12 description">
-    <div class="box-desc">
-      <p class="title-desc">O projeto</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet diam a erat ornare mollis id non arcu. Nam in risus purus. Etiam aliquam egestas bibendum. Praesent et erat quis enim gravida efficitur. Nullam posuere porttitor venenatis. Suspendisse id pulvinar mauris, et vehicula risus. Cras ut turpis pulvinar, feugiat odio sed, gravida arcu. Quisque ut varius odio. Vestibulum eu dignissim risus.</p>
-    </div>
+      <!-- Tab 3 -->
+      <?php include("inc/tabs/tab3.php"); ?>
 
-    <div class="box-desc">
-      <p class="title-desc">O projeto</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet diam a erat ornare mollis id non arcu. Nam in risus purus. Etiam aliquam egestas bibendum. Praesent et erat quis enim gravida efficitur. Nullam posuere porttitor venenatis. Suspendisse id pulvinar mauris, et vehicula risus. Cras ut turpis pulvinar, feugiat odio sed, gravida arcu. Quisque ut varius odio. Vestibulum eu dignissim risus.</p>
-    </div>
+      <!-- Tab 4 --> 
 
-    <div class="box-desc">
-      <p class="title-desc">O projeto</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet diam a erat ornare mollis id non arcu. Nam in risus purus. Etiam aliquam egestas bibendum. Praesent et erat quis enim gravida efficitur. Nullam posuere porttitor venenatis. Suspendisse id pulvinar mauris, et vehicula risus. Cras ut turpis pulvinar, feugiat odio sed, gravida arcu. Quisque ut varius odio. Vestibulum eu dignissim risus.</p>
-    </div>
+      <?php include("inc/tabs/tab4.php"); ?>
 
-    <div class="box-desc">
-      <p class="title-desc">O projeto</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet diam a erat ornare mollis id non arcu. Nam in risus purus. Etiam aliquam egestas bibendum. Praesent et erat quis enim gravida efficitur. Nullam posuere porttitor venenatis. Suspendisse id pulvinar mauris, et vehicula risus. Cras ut turpis pulvinar, feugiat odio sed, gravida arcu. Quisque ut varius odio. Vestibulum eu dignissim risus.</p>
-    </div>
-
-    <div class="box-desc">
-      <p class="title-desc">Parceiros</p>
-      <div class="soon-partner">
-        <a href="#"><img src="assets/images/inweb.png"></a>
-      </div>
-      <div class="soon-partner">
-        <a href="#"><img src="assets/images/inweb.png"></a>
-      </div>
-    </div>
-
-
-    <div class="box-desc">
-      <p class="title-desc time-involved">Time envolvido</p>
-      <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
-      <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
-      <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
-      <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
-      <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
-      <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
-      <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
-      <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
-      <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
-      <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
     </div>
   </div>
+
+  <div class="col-xs-12 second-container">
+    <div class="col-md-3 col-xs-12">
+      <p class="title-desc">Outras visualizações</p>
+
+      <div class="box-desc">
+        <a href="" title="Voronoi Circle"><img src="assets/images/voronoi-circles.png" class="img-responsive" alt="Alt da imagem"></a>
+      </div>
+
+      <div class="box-desc">
+        <a href="" title="Voroblobinoids"><img src="assets/images/voroblobinoids.png" class="img-responsive" alt="Alt da imagem"></a>
+      </div>
+
+      <div class="box-desc">
+        <a href="" title="Color Mesh"><img src="assets/images/color-mesh.png" class="img-responsive" alt="Alt da imagem"></a>
+      </div>
+
+      <div class="box-desc">
+        <a href="" title="Canvas Bar Chart"><img src="assets/images/canvas-bar-chart.png" class="img-responsive" alt="Alt da imagem"></a>
+      </div>
+
+      <div class="box-desc">
+        <a href="" title="Cubehelix Color Picker"><img src="assets/images/cubehelix-color-picker.png" class="img-responsive" alt="Alt da imagem"></a>
+      </div>
+
+
+    </div>
+    <div class="col-md-6 col-xs-12 mini-graphic">
+     <p class="title-desc"> De onde veio a idéia?</p>
+     <p class="title-author">Por Yaso</p>
+     <div class="img-graphic">
+      <img src="assets/images/img-exemple.png" class="img-responsive" alt="Alt da imagem">
+    </div>
+    <div class="row container-mini-graphic">
+      <div class="col-xs-12">
+        <p class="title-desc">O projeto</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet diam a erat ornare mollis id non arcu. Nam in risus purus. Etiam aliquam egestas bibendum. Praesent et erat quis enim gravida efficitur. Nullam posuere porttitor venenatis. Suspendisse id pulvinar mauris, et vehicula risus. Cras ut turpis pulvinar, feugiat odio sed, gravida arcu. Quisque ut varius odio. Vestibulum eu dignissim risus.</p>
+      </div>
+
+      <div class="col-xs-12">
+        <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
+        <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
+        <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
+      </div>
+
+
+      <div class="col-xs-12">
+       <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
+       <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
+       <div class="col-sm-4 col-xs-12 img-mini-graphic"><img src="assets/images/img-exemple-02.png" class="img-responsive" alt="Alt da imagem"></div>
+     </div>
+   </div>
+ </div>
+ <div class="col-md-3 col-xs-12 description">
+  <div class="box-desc">
+    <p class="title-desc">O projeto</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet diam a erat ornare mollis id non arcu. Nam in risus purus. Etiam aliquam egestas bibendum. Praesent et erat quis enim gravida efficitur. Nullam posuere porttitor venenatis. Suspendisse id pulvinar mauris, et vehicula risus. Cras ut turpis pulvinar, feugiat odio sed, gravida arcu. Quisque ut varius odio. Vestibulum eu dignissim risus.</p>
+  </div>
+
+  <div class="box-desc">
+    <p class="title-desc">O projeto</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet diam a erat ornare mollis id non arcu. Nam in risus purus. Etiam aliquam egestas bibendum. Praesent et erat quis enim gravida efficitur. Nullam posuere porttitor venenatis. Suspendisse id pulvinar mauris, et vehicula risus. Cras ut turpis pulvinar, feugiat odio sed, gravida arcu. Quisque ut varius odio. Vestibulum eu dignissim risus.</p>
+  </div>
+
+  <div class="box-desc">
+    <p class="title-desc">O projeto</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet diam a erat ornare mollis id non arcu. Nam in risus purus. Etiam aliquam egestas bibendum. Praesent et erat quis enim gravida efficitur. Nullam posuere porttitor venenatis. Suspendisse id pulvinar mauris, et vehicula risus. Cras ut turpis pulvinar, feugiat odio sed, gravida arcu. Quisque ut varius odio. Vestibulum eu dignissim risus.</p>
+  </div>
+
+  <div class="box-desc">
+    <p class="title-desc">O projeto</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet diam a erat ornare mollis id non arcu. Nam in risus purus. Etiam aliquam egestas bibendum. Praesent et erat quis enim gravida efficitur. Nullam posuere porttitor venenatis. Suspendisse id pulvinar mauris, et vehicula risus. Cras ut turpis pulvinar, feugiat odio sed, gravida arcu. Quisque ut varius odio. Vestibulum eu dignissim risus.</p>
+  </div>
+
+  <div class="box-desc">
+    <p class="title-desc">Parceiros</p>
+    <div class="soon-partner">
+      <a href="#"><img src="assets/images/inweb.png" alt="Logo Parceiros - Inweb"></a>
+    </div>
+    <div class="soon-partner">
+      <a href="#"><img src="assets/images/inweb.png" alt="Logo Parceiros - Inweb 2"></a>
+    </div>
+  </div>
+
+
+  <div class="box-desc">
+    <p class="title-desc time-involved">Time envolvido</p>
+    <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
+    <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
+    <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
+    <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
+    <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
+    <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
+    <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
+    <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
+    <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
+    <p><strong>Lorem Ipsum, </strong>turpis pulvina</p>
+  </div>
+</div>
 </div> 
 </main>
 <div class="teste-footer">

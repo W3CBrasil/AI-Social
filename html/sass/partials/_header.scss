@@ -13,3 +13,64 @@
     top: 10px;
     margin: 0 15px;
 }
+
+
+.navbar-inverse {
+    background: rgba(255,255,255,0.5);
+    border-color: transparent;
+    margin-bottom: 0;
+}
+
+header .navbar {
+    border-radius: 0 !important;
+    border-top: 1px solid rgba(107,107,107,0.3);
+}
+
+.banner {
+    background-image: url("/assets/images/banner-home.png");
+    min-height: 200px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+
+    .container-fluid {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+
+    }
+
+    .box-title-banner {
+        margin-top: 70px;
+        margin-left: -65px;
+        line-height: 40px;
+        .title-banner {
+            color: #FFF;
+            font-size: 30px;
+            font-family: arial;
+        }
+
+        .second-title-banner {
+           color: #FFF;
+           font-size: 42px;
+           font-weight: 500;
+           font-family: arial;
+       }
+   }
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: #000;
+    font-size: 16px;
+}
+
+.third-line {
+    margin-top: 5px;
+    width: 100%;
+
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #017ABF;
+}
+
+
