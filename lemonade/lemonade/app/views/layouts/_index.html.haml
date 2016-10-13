@@ -1,0 +1,22 @@
+#menu-wrapper
+  .row{:style => "min-height: 200px"}
+    .navbar-brand{:style => "margin-top:30px; margin-left:30px;"}
+      =image_tag asset_path('logo.png'), :size => '385x106'
+      -#%h1
+        %a{"style" => " height: 200px; width: 630px;"} Lemo
+    .col-md-12.col-sm-10.main-menu.text-right
+      .toggle-menu.visible-sm.visible-xs
+        %i.fa.fa-bars
+      %ul.menu-first
+        -if user_signed_in?
+          %li
+            %a{href: "#", "data-target" => "#form_new", "data-toggle" => "modal", :type => "button"}=t :novo
+          %li
+            = link_to t(:projetos), dataflows_path
+          %li
+            %a.aisocial{"data-target" => "#tracking_modal", "data-toggle" => "modal", "data-url" => $elastic_search + "/tarefas/", :href => ""}=t(:tarefas)
+          %li
+            %a.aisocial{"data-target" => "#tracking_modal", "data-toggle" => "modal", "data-url" => $elastic_search + "/datasets/", :href => ""}=t(:bases)
+        -if user_signed_in?
+          %li
+            %a{href: destroy_user_session_path, "data-method": 'delete'}=t :sair

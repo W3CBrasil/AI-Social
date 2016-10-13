@@ -1,0 +1,4 @@
+CREATE DATABASE ai_social_analysis CHARACTER SET UTF8;
+CREATE USER mj@localhost IDENTIFIED BY 'server.MJ-Sala3004#';
+GRANT ALL PRIVILEGES ON ai_social_analysis.* TO mj@localhost;
+FLUSH PRIVILEGES;

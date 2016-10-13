@@ -1,0 +1,15 @@
+.row
+  .col-lg-12
+    .well.bs-component
+      .basic-grey
+        %h1{:style => "text-align: center"} Log in
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
+        = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+          .form-inputs{:style => "text-align: center;"}
+            = f.input :email, required: false, autofocus: true
+            = f.input :password, required: false
+            = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
+          .form-actions{:style => "text-align: center;"}
+            = f.button :submit, "Log in"
+        = render "devise/shared/links"

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="page-header" style="margin-top: 0px;">Tarefa {{task.pk}} - {{task.name}}</h1>
+
+<ul>
+    <li><b>Proprietário:</b> {{task.owner}}</li>
+    <li><b>Criada em:</b> {{task.created_at}}</li>
+    <li><b>Estado:</b>
+      {% if task.state == 1 %}
+      <span class="label label-default">Criada</span></li>
+      {% endif %}
+
+      {% if task.state == 2 %}
+      <span class="label label-primary">Executando</span></li>
+      {% endif %}
+
+      {% if task.state == 3 %}
+      <span class="label label-success">Finalizada</span></li>
+      <li><b>Finalizada em:</b> {{task.finished_at}}</li>
+      {% endif %}
+
+      {% if task.state == 4 %}
+      <span class="label label-danger">Falhou</span></li>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+              <h3 class="panel-title">Mensagem de Erro</h3>
+          </div>
+          <div class="panel-body">{{task.error}}</div>
+      </div>
+      {% endif %}
+</ul> 
+
+<h2>Algoritmo</h2>
+<ul>
+    <li><b>Dataset entrada: </b><a href="{% url 'dataset_info' task.dataset_input.project task.dataset_input.id_project %}">{{task.dataset_input}}</a></li>
+    <li><b>Dataset saída: </b>
+      {% if task.dataset_output %}
+      <a href="{% url 'dataset_info' task.dataset_output.project task.dataset_output.id_project %}">{{task.dataset_output}}</a>
+      {% endif %}
+    </li>
+    <li><b>Ação: </b> <span class="label label-warning">{{task.algorithm.name}}</span></li></li>
+    <li><b>Parâmetros: </b> 
+        <div class="panel panel-default">
+            <div class="panel-body">
+                {{task.algorithm_params}}
+            </div>
+        </div>
+    </li>
+</ul>
+            
+{% endblock %}
+

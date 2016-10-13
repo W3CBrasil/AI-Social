@@ -1,0 +1,7 @@
+<%- if @response == 'destroy_success' %>
+  $(".container-fluid").notify(gon.projeto_removido, { className: "success", elementPosition: "botton center" });
+  setTimeout(function(){$(".container-fluid").notify(gon.voce_redirecionado, { className: "info", elementPosition: "center", position: "botton center right"});}, 1000);
+  setTimeout(function(){window.location = "<%= root_path %>";}, 6000);
+<%- else %>
+  $("#delete-btn").notify(gon.erro, { showDuration: 200 });
+<%-end %>

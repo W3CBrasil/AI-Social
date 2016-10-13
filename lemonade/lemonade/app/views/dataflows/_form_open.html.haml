@@ -1,0 +1,13 @@
+.modal-dialog{:role => "document"}
+  .modal-content
+    .modal-header
+      %button.close{"aria-label" => t(:fechar), "data-dismiss" => "modal", type: "button"}
+        %span{"aria-hidden" => "true"} x
+      %h6#gridModalLabel.modal-title=t :abrir_fluxo
+    = form_tag(edit_dataflow_path('default_dataflow'), method: :GET, authenticity_token: true) do
+      .modal-body
+        .form-group
+          = select_tag 'name', options_for_select(current_user.dataflow.map{|d| d.name}, {}), { class: "form-control" }
+      .modal-footer
+        = submit_tag "Ok", id: "edit-btn", class: "btn btn-primary", style: "background: #1abc9c; border-color: #1abc9c;",  data: { confirm: t(:alteracoes_nao_salvas)}
+        %a.btn.btn-primary{"data-dismiss" => "modal", :href => "#", :style => "background: #EA7B7B; border-color: #EA7B7B;"}=t(:cancelar)

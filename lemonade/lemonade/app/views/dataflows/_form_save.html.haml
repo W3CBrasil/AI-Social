@@ -1,0 +1,14 @@
+.modal-dialog{:role => "document"}
+  .modal-content
+    .modal-header
+      %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+        %span{"aria-hidden" => "true"} x
+      %h6#gridModalLabel.modal-title=t :salvar_fluxo
+    =form_for @dataflow,remote: true, method: "PATCH" do |f|
+      .modal-body
+        %strong= t :sobrescrever_fluxo
+      .modal-footer
+        .form-group
+          =f.text_field :interface, class: "form-control", type: "hidden", value: "{'cells':[]}", id:"form_save_interface"
+        =f.submit "Ok", id: "save-btn", class: "btn btn-primary", style: "background: #1abc9c; border-color: #1abc9c;"
+        %a.btn.btn-primary{"data-dismiss" => "modal", :href => "#", :style => "background: #EA7B7B; border-color: #EA7B7B;"}=t :cancelar

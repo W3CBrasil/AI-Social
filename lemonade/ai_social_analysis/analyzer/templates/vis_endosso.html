@@ -1,0 +1,174 @@
+{% load staticfiles %} 
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Inteligência Analítica - Consulta Pública</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+    
+        <link rel="stylesheet" href="{% static 'css/vendor/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/vendor/bootstrap.min.css' %}"> 
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/vis_endosso.css' %}">   
+        
+    </head>
+    <body>
+    	
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+     
+        <div id="wrapper">
+        	
+        	<div id="sidebar-wrapper">
+        		
+        		<div class="container-fluid">
+        			
+        			
+        			<ul>
+        				<li> </li>
+        			</ul>
+        			
+        			<div id="legenda-dashboard">
+        				
+        				
+        				
+        			</div>
+        			
+        			
+        			
+        		</div>
+        		
+        	</div>
+        	
+        	
+        	
+        	
+        	<nav class="navbar navbar-default navbar-fixed">
+        		
+        		<div class="container-fluid">
+        			
+        			
+        			<div class="navbar-header">
+
+        				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"> </span>
+							<span class="icon-bar"> </span>
+							<span class="icon-bar"> </span>
+						</button>
+
+        			</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						
+						<ul class="nav navbar-nav">
+							<li><a id="menu-toggle" href="#menu-toggle" class=""><i class="fa fa-exchange fa-lg"></i></a></li>
+						</ul>
+        				
+
+						<ul class="nav navbar-nav navbar-right top-nav">
+
+							<li class="dropdown">
+
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user fa-lg"> </i> Nome do Usuário <span class="caret"> </span> </a>
+
+								<ul class="dropdown-menu">
+ 
+									<li>
+										<a href="#"><i class="fa fa-fw fa-gear fa-lg"> </i>Configurações</a>
+									</li>
+
+									<li class="divider"> </li>
+
+									<li>
+										<a href="#"><i class="fa fa-fw fa-power-off fa-lg"> </i>Log Out</a>
+									</li>
+
+								</ul> 
+
+							</li>
+
+						</ul>
+
+					</div>
+
+        		</div>
+        			
+        	</nav>
+        		
+        	
+        	
+        	<div id="page-content-wrapper">
+     		
+        		<div class="container-fluid">
+        			
+        			<!-- Linha Título da Página -->
+        			<div class="row"> 
+        				<div class="col-lg-12">
+        					<h1 class="page-header" >
+        						<h1 class="page-header" >Grafo
+        							<small>Endosso</small>
+        						</h1>
+        					</h1>
+        					<ol class="breadcrumb">
+        						<li>Início</li>
+        						<li>Seleção de Dados</li>
+        						<li class="active">Grafo Endosso</li>
+        					</ol>
+        				</div>
+        			</div>
+        			
+        			<!-- Linha 1 Dashboard -->
+        			<div class="row">
+        				 
+        				<div class="col-lg-12">
+        					
+        					
+        					<div class="panel panel-default">
+
+        						<div class="panel-body">
+        							
+        							<div id="container-grafo" class="container-fluid">
+        								
+        							</div>
+        							
+        							
+        							
+        						</div>
+        						
+        					</div>
+        					
+
+        					
+        					
+        
+        					
+        				</div>
+        				
+        			</div>
+        
+        			
+        		</div>
+        		
+        	</div>
+        	
+        </div>
+
+        <script src="{% static 'js/vendor/jquery-2.2.1.min.js' %}"></script>
+		<script src="{% static 'js/vendor/pace.min.js' %}"></script>
+		<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+		
+        <script src="{% static 'js/vendor/d3.min.js' %}"></script>
+        <script src="{% static 'js/vendor/d3-tip.js' %}"></script>
+        
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/vis_endosso.js' %}"></script>
+        
+    </body>
+</html>

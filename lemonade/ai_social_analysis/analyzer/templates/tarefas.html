@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="page-header" style="margin-top: 0px;">Tarefas
+    <a class="btn btn-default pull-right" href="{% url 'tarefa_criar' %}">Criar Tarefa</a>
+</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Ação</th>
+      <th>Estado</th>
+      <th>Criada</th>
+      <th>Dataset entrada</th>
+      <th>Finalizada</th>
+      <th>Dataset saída</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for task in object_list %}
+    <tr>
+      <td><a href="{% url 'tarefa_info' task.pk %}">Tarefa {{task.pk}} - {{ task.name }}</a></td>
+  	  <td>{{task.algorithm}}</td>
+      <td>
+        {% if task.state == 1 %}
+        <span class="label label-default">Criada</span></li>
+        {% endif %}
+
+        {% if task.state == 2 %}
+        <span class="label label-primary">Executando</span></li>
+        {% endif %}
+
+        {% if task.state == 3 %}
+        <span class="label label-success">Finalizada</span></li>
+        {% endif %}
+
+        {% if task.state == 4 %}
+        <span class="label label-danger">Falhou</span></li>
+        {% endif %}
+      </td>
+  	  <td>{{task.created_at}}</td>
+      <td><a href="{% url 'dataset_info' task.dataset_input.project task.dataset_input.id_project %}">{{task.dataset_input}}</a></td>
+  	  <td>{{task.finished_at|default_if_none:""}}</td>
+      <td>
+        {% if task.dataset_output %}
+        <a href="{% url 'dataset_info' task.dataset_output.project task.dataset_output.id_project %}">{{task.dataset_output}}</a></td>
+        {% endif %}
+      </td>
+    </tr>
+    {% empty %}
+    <div class="alert alert-warning" role="alert">
+        Nenhuma tarefa foi criada ainda.
+    </div>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}
+

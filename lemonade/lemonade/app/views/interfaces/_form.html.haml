@@ -1,0 +1,25 @@
+.modal-dialog{:role => "document"}
+  .modal-content
+    = form_tag(interface_path(params[:id]), remote: true, method: :PATCH, authenticity_token: true) do
+      .modal-body
+        .form-group
+          = text_field_tag :dataflow, params[:dataflow], type: "hidden"
+          -if @parameters[:browser]
+            - @parameters[:browser].each do |param, value|
+              = label_tag param, t(param), class:"control-label"
+              = file_field_tag param, { :class => "File", :name => "file", :type => "file" }
+          -if @parameters[:text]
+            - @parameters[:text].each do |param, value|
+              = label_tag param, t(param), class:"control-label"
+              = text_field_tag param, value, class: "form-control"
+          -if @parameters[:select]
+            - @parameters[:select].each do |param, value|
+              = label_tag param, t(param), class:"control-label"
+              = select_tag(param, options_for_select(value['list'], @parameters[:select][:Datasets][:selected]), { :class => "form-control" })
+          -if @parameters[:check_box]
+            - @parameters[:check_box].each do |param, value|
+              = label_tag param, t(param), class:"control-label"
+              = check_box_tag param, value
+      .modal-footer
+        = submit_tag "Ok", class: "btn btn-primary", style: "background: #1abc9c; border-color: #1abc9c;"
+        %a.btn.btn-primary{"data-dismiss" => "modal", :href => "#", :style => "background: #EA7B7B; border-color: #EA7B7B;"}=t :cancelar

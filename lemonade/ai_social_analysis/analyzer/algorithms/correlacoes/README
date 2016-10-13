@@ -1,0 +1,9 @@
+Read the first page of relatorios/correlacoes.pdf (in Portuguese) to understand the objective. The subsequent pages list the patterns obtained from "dadospessoais-anteprojeto.csv" and "dadospessoais-comentarios-pdfs-filtrado.csv" (same content as "biclusters.readable").
+
+Install d-peeler and multidupehack following the instructions in the respective INSTALL files:
+- http://dcc.ufmg.br/~lcerf/en/prototypes.html#d-peeler
+- http://dcc.ufmg.br/~lcerf/en/prototypes.html#multidupehack
+
+Run 'mine.sh ../../dados/dadospessoais-anteprojeto.csv ../../dados/dadospessoais-comentarios-pdfs-filtrado.csv' or use equivalent input files.
+
+The script returns ids of the citizens associated with ids of sections of the law project (abstracted to the level of the whole articles). See the file "biclusters" for the output obtained with "dadospessoais-anteprojeto.csv" and "dadospessoais-comentarios-pdfs-filtrado.csv". To get the names of the citizens/sections (presented as the content of a LaTeX tabular: see the file "biclusters.readable"), uncomment the related part of mine.sh.

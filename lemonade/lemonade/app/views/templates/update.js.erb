@@ -1,0 +1,7 @@
+var id = "<%= params[:id] %>";
+var parameters = <%= raw(@parameters.to_json) %>;
+var cell = graph.getCell(id);
+cell.attributes.parameters = parameters;
+cell.attr({'.label':{'text': '<%= params['Step name'] %>'}});
+$("#template-modal").modal("hide");
+$(".container-fluid").notify(gon.parametros_alterados, { className: "success", elementPosition: "botton center" });

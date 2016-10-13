@@ -1,0 +1,17 @@
+=render 'dataflows/superior_menu'
+.flat-blue.app-container
+  .row.content-container
+    =render 'templates/sidemenu'
+  .app-container#id1
+    .paper#paper
+#dataflow-modal.modal.fade
+#template-modal.modal.fade
+#current_dataflow{ "value" => @dataflow.id}
+#form_new.modal.fade
+  =render 'form_new'
+#form_open.modal.fade
+  =render 'form_open'
+#form_save.modal.fade
+  =render 'form_save'
+#form_saveAs.modal.fade
+  =render 'form_saveAs'

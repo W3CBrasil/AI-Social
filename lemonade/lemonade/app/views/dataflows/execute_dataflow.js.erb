@@ -1,0 +1,75 @@
+document.getElementById("aisocial").height = $(window).height() *0.85;
+var step = function(dataset_id, algorithms, feedback, dataset_name ) {
+  var algorithm = algorithms.splice(0, 1)[0];
+  var box_id = feedback[0];
+  color_box(box_id, '#0099ff', '#1aa3ff');
+  var box = graph.getCell(box_id);
+  var dataset_url = dataset_name.split('_').slice(0, -1).join('_');
+  var dataset_num = dataset_name.split('_').pop();
+  putUrlVisuAttr(box_id, gon.elastic_search + "/projeto/" + dataset_url + "/dataset/" + dataset_num);
+  feedback.shift();
+  box_id = feedback[0];
+  color_box(box_id, '#0099ff', '#1aa3ff');
+  var url = gon.elastic_search;
+  $.ajax({
+    url: url + "/tarefa/criar_fluxo/",
+    type: 'POST',
+    xhrFields: {
+                withCredentials: true
+              },
+    crossDomain: true,
+    data: {
+      "name": gon.minha_tarefa,
+      "dataset_input": dataset_id,
+      "algorithm": algorithm.id,
+      "algorithm_params": JSON.stringify(algorithm.algorithm_params)
+    },
+    success: function(data, status, xhr, box) {
+      data = JSON.parse(data);
+      if(data.state === 3) {
+        if(algorithms.length === 0) {
+          var id = data.dataset_output.name.split("_").pop();
+          var uri = url + "/projeto/" + dataset_url + "/dataset/" + id;
+          if(doc = document.getElementById("aisocial"))
+            doc.src = uri;
+          var link = "<a href='#' data-toggle='modal' data-target='#tracking_modal' data-url='" + uri + "'>" + gon.acessar_resultado + "</a>";
+          recolor_all(ids_dataflow,'');
+          unblock_interface(gon.fluxo_executado_sucesso, 'spinner', link, 99999999);
+          $.post("/dataflows/update_run", {url: uri, id: "<%=@dataflow.id%>"});
+          $("h1.follow").replaceWith("<h1 class='follow'></h1>");
+          $("td#detail_<%=@id%>").replaceWith("<td>" + link + "</td>");
+          var box_id = feedback.shift();
+          putUrlVisuAttr(box_id, uri);
+          color_box(ids_dataflow[ids_dataflow.length -1],'#33cc33', '#47d147');
+        } else {
+          var dataset_name = data.dataset_output.name;
+          step(data.dataset_output.id, algorithms, feedback, dataset_name);
+        }
+      } else {
+        recolor_all(ids_dataflow,'');
+        unblock_interface(gon.erro_servidor, 'spinner');
+        $("h1.follow").replaceWith("<h1 class='follow'></h1>");
+      }
+    },
+    xhrFields: {
+      withCredentials: true
+    },
+    crossDomain: true
+  });
+};
+
+if(<%=@input_id%> === 0) {
+  unblock_interface(gon.necessario_input,'spinner');
+} else {
+  var feedback = <%= raw @feed  %>;
+  window.ids_dataflow = feedback.slice();
+  recolor_all(ids_dataflow);
+
+  if(doc = document.getElementById("aisocial")){
+    doc.src = gon.elastic_search + '/tarefas/';
+  }
+  var tarefas = gon.elastic_search + "/tarefas/";
+  //block_interface(gon.executando_fluxo, "<a href='#' data-toggle='modal' data-target='#tracking_modal' class='aisocial' data-url='" + tarefas + "'>" + gon.acompanhar_tarefa + "</a>")
+  //$("h1.follow").replaceWith("<h1 class='follow'><a href='#' data-toggle='modal' data-target='#tracking_modal' class='aisocial' data-url='" + tarefas + "'>" + gon.acompanhar_tarefa + "</a></h1>");
+  step(<%=@input_id%>, JSON.parse('<%=raw @filters%>'), feedback, '<%=@input_name%>' );
+}

@@ -1,0 +1,326 @@
+*** DESCRIPTION ***
+
+From a dataset, d-peeler computes every closed n-set (i.e., maximal
+rectangles of 1 modulo permutations on any of the sets) satisfying
+given constraints. With the --minimize (-m) option, it also
+post-treats these patterns to output a minimization of the input
+dataset.
+
+
+*** RETURN VALUES ***
+
+d-peeler returns values which can be used when called from a
+script. They are conformed to sysexit.h.
+* 0 is returned when d-peeler terminates successfully.
+* 64 is returned when d-peeler was called incorrectly.
+* 65 is returned when an input data line is not properly formatted.
+* 74 is returned when data could not be read or written on the disk.
+
+
+*** GENERAL ***
+
+* d-peeler --help (or simply d-peeler -h) displays a reminder of the
+different options which can be passed to d-peeler.
+* d-peeler --version (or simply d-peeler -V) displays version
+information.
+
+
+*** OPTIONS ***
+
+Any option, but the general ones listed above, can either be specified
+on the command line or in an option file. If an option is present both
+in the option file and on the command line, the latter is used.
+
+The option file can be specified through option --opt. When omitted, a
+file named as the input data file + ".opt" is supposed to be the
+option file related to the input data file. For example, if the input
+data file name is "dataset.txt" and "dataset.txt.opt" exists, it is
+supposed to be the related option file.
+
+The options have the same name in the option file as on the command
+line. Only long names can be used though. Arguments passed to an
+option are separated from the name of the option by "=". As an
+example, these lines may constitute an option file:
+minimize = true
+ids = ": "
+area = 2
+ac = 2 0.5 0.5
+
+
+*** INPUT DATA ***
+
+The name of the file containing the input data set must be passed as
+an argument to d-peeler.
+
+The syntax of the input data set is flexible. Every line must be
+either empty (it is ignored) or contain n fields (each of them related
+to a dimension) where n is the number of dimensions. Each field may,
+itself, gather several items. Several different separators may be used
+to separate the dimensions and the same goes for the separations of
+the items in a dimension. The items can be any string (as far as they
+do not include any of the separators!). Let us take an example. This
+line could be part of an input data set:
+01-09-2007: Thomas,Harry,Max basketball,gymnastics
+
+There are 3 dimensions in this data set: the first one gathers dates,
+the second pupils and the last one sports. The dimensions are
+separated by the characters ":" or/and " ". The fact that two
+dimensions are separated by several separators (in our example both
+":" and " " separate the dates from the pupils) does not raise any
+trouble. The items are always separated by ",".
+
+To be properly understood, one must indicate to d-peeler the
+separators used otherwise defaults are used (" " to separate
+dimensions and "," to separate "items"). The related options are --ids
+for Input Dimension Separators and --iis for Input Item Separators. In
+the previous example, d-peeler can be called as follows:
+$ d-peeler --ids ": " dataset
+There is no need to the option --iis since the default value is
+correct.
+
+In conjunction with the option --minimize (-m), the name of a data
+file gathering a "Don't Care Set" can be passed to d-peeler through
+option --dcs. When ommitted, a file named as the input data file +
+".dcs" is supposed to be the "Don't Care Set" related to the input
+data file. For example, if the input data file name is "dataset.txt"
+and "dataset.txt.dcs" exists, it is supposed to be the related "Don't
+Care" file. The "Don't Care Set" must be formatted like the input data
+set.
+
+
+*** OUTPUT DATA ***
+
+The output data looks like the input data. Without the option
+--minimize (-m), each line is a closed n-set. With the option
+--minimize (-m), the whole output covers everything from the original
+data set but, hopefully, has a smaller size.
+
+Option --out (-o) is used to set the output file name. When omitted,
+the output file name is the output file name is the input file name +
+".out". For example, if the input file name is "dataset.txt", the
+default output file name is "dataset.txt.out".
+
+The dimensions are separated by a string specified through option
+--ods (by default " "). The items are separated by a string specified
+through option --ois (by default ","). An empty set is output with the
+string specified through option --empty (-e) (by default "ø"). The
+whole set is output with the string specified through option --all (by
+default "-").
+
+Moreover, d-peeler can append to each pattern, information describing
+it. When called with option --ps, it prints the number of items in
+each dimension. When called with option --pa, it prints the area
+(where each dimension may be weighted if used in conjunction with
+--ac) of the pattern. The separators used can be specified:
+* --css sets the string separating the pattern from the number of
+items in each dimension (by default " : ")
+* --ss, used in conjunction with --css, sets the string separating two
+sizes (by default " ")
+* --sas sets the string separating the pattern or the sizes (when used
+in conjunction with --css) from the number of items in each dimension
+(by default " : ")
+
+
+*** CONSTRAINTS ***
+
+Constraints on the computed closed n-sets can be pushed in their
+extraction. Their use reduces the extraction time.
+
+Constraints regarding the delta-maximality of any dimension of the
+computed closed n-sets can be set with option --delta (-d). One float
+(between 0 and 1) per dimension must be given. By default the
+classical maximality (0 for every dimension) is used. On the command
+line, do not forget to protect the list of floats by using double
+quotes ("). For example, the following command can be used to compute
+closed 3-sets whose two first dimension are maximal and the last set
+is 0.5-maximal):
+$ d-peeler -d "0 0 0.5" dataset
+
+Constraints regarding the minimal number of items which any computed
+closed n-set must gather in each dimension can be set with option
+--sizes (-s). One integer per dimension must be given. By default no
+size constraint is applied (0 for every dimension). On the command
+line, do not forget to protect the list of integers by using double
+quotes ("). For example, the following command can be used to compute
+closed 3-sets with at least 4 items in the first dimension:
+$ d-peeler -s "4 0 0" dataset
+
+Constraints regarding the maximal number of items which any computed
+closed n-set is allowed to gather in each dimension can be set with
+option --Sizes (-S). One integer per dimension must be given. By
+default no maximal size constraint are applied. On the command line,
+do not forget to protect the list of integers by using double quotes
+("). For example, the following command can be used to compute
+closed 3-sets with at most 4 items in the first dimension:
+$ d-peeler -S "4 0 0" dataset
+
+Constraints regarding the minimal area of any computed closed n-set
+can be set with option --area (-a). By default no area constraint is
+applied (minimal area of 0).
+
+Constraints regarding the maximal area of any computed closed n-set
+can be set with option --Area (-A). By default no maximal area
+constraint is applied.
+
+Furthermore, different weights may be given to each dimension using
+option --ac. One float per dimension must be given. By default the
+classical area measure (coefficient 1 for every dimension) is used. On
+the command line, do not forget to protect the list of floats by using
+double quotes ("). For example, let us consider the following call:
+$ d-peeler -a 4.5 --ac "0 1 1 0.5" dataset
+In this example, the product of the number of items in the second
+dimension by the number of items in the third dimension by the square
+root of the number of items in the last dimension must be at least 4.5
+for the closed 4-set to be output.
+
+When dimensions in the input data form an undirected graph and only
+cliques (for any computed pattern, the sets of items in these
+dimensions must be the same) are searched, option --clique (-c)
+achieves it. The IDs of the dimensions must be given. These IDs start
+at 0. On the command line, do not forget to protect the list of IDs by
+using double quotes ("). For example, to compute cliques in a graph
+whose nodes are given in the two first dimensions (the possible
+remaining dimensions gather labels on the edges), d-peeler must be
+called as follows:
+$ d-peeler -c "0 1" dataset
+
+A constraint regarding a minimal minimization ratio can be set with
+option --mr. It is the ratio between the area and the number of logic
+operators needed to express an n-set.
+
+
+*** CONSTRAINTS ON GROUPS OF ITEMS ***
+
+Groups of items can be defined in files whose paths are passed in
+argument to the option --groups (-g). The file paths must not include
+any space since this character is used as a separator. On the command
+line, do not forget to protect the list of paths by using double
+quotes ("). Every file relates to a different group whose composition
+is unrestricted. In particular, a group can contain items from
+different dimensions and the groups can overlap or even be included
+into each others.
+
+The syntax of a file defining a group is flexible. Every line must be
+either empty (it is ignored) or contain two fields. The first field
+must be an integer between 0 and n - 1 and specifies the ID of a
+dimension (i.e., the position in the input data starting with 0). The
+list of items, in the second field, therefore are searched in this
+dimension. If an item is not found, a warning is issued and the item
+is ignored. Notice that the list of items can be reduced to one single
+item and several lines can deal with the same dimension.
+
+Several different separators may be used to separate dimension IDs
+from the list of items. The same goes for the separations of the items
+in a dimension. Let us take an example. These three line could be part
+of a group file:
+0: 01-09-2007
+1 Thomas,Harry
+1:Max
+
+This group contains four items, one in the first dimension (whose ID
+is 0) and three in the second dimension (whose ID is 1). The
+dimensions are separated from the lists of items by the characters ":"
+or/and " ". The fact that two dimensions are separated by several
+separators (in our example both ":" and " " are used on the first
+line) does not raise any trouble. The items are, in this example,
+always separated by ",".
+
+By default, d-peeler assumes that the characters set with --ids
+separate not only the dimensions of the input data but also the
+dimension IDs from the lists of items in a file describing a group. In
+the same way, d-peeler assumes that the characters set with --iis
+separate the items in both the input data and the groups. If the
+separators of the input data differ from those used in the groups,
+--gds (resp. --gis) must be used to set the characters separating, in
+the groups, the dimension IDs from the items (resp. the items from
+each others).
+
+Constraints regarding the minimal number of items which any computed
+closed n-set must gather in each group can be set with option
+--gs. One integer per group must be given in the same order as the one
+used to specify the groups. By default all items in the groups must be
+present. On the command line, do not forget to protect the list of
+integers by using double quotes ("). For example, the following
+command can be used to compute closed n-sets with at least 4 items in
+the group1 and at least 2 items in group2:
+$ d-peeler -g "group1 group2" --gs "4 2" dataset
+
+Constraints regarding the maximal number of items which any computed
+closed n-set is allowed to gather in each group can be set with option
+--gS. One integer per dimension must be given in the same order as the
+one used to specify the groups. By default no maximal size constraint
+are applied on the groups. On the command line, do not forget to
+protect the list of integers by using double quotes ("). For example,
+the following command can be used to compute closed n-sets with at
+most 4 items in group1 and at most 2 items in group2:
+$ d-peeler -g "group1 group2" --gS "4 2" dataset
+
+Constraints regarding minimal ratios between numbers of items present
+in pairs of groups can be specified in a square matrix input as a
+file. Its name is set with option --gr. The ratios in the matrix must
+be float numbers. Such a number is the minimal ratio that is allowed
+between the number of items present in the group in row and the number
+of those in the group in column. The order of the groups is that of
+the file names set with the option --groups. Since a ratio between the
+number of items in a group and this same number would always be 1, the
+diagonal is differently interpreted: they are minimal numbers of items
+in the related groups. If both options --gr and --gs are set, the
+thresholds in argument of --gs are considered. As an example, these
+lines may constitute a file set with --gr:
+1 0.325
+0.666 2
+
+Because there are two rows (and two columns), two groups must be set
+with option --groups. The matrix forces the computed closed n-sets to
+have:
+- at least 1 item in the first group;
+- at least 2 items in the second group;
+- a ratio between the number of items present in the first and second
+group to be higher than 0.325;
+- a ratio between the number of items present in the second and first
+group to be higher than 0.666.
+
+Because the groups can be included into each others, option --gr
+allows to mine patterns such as confident classification rules (one
+group contains all objects in a dimension, the other group those that
+are in the class at the right-hand side of the rules), positively
+correlated patterns (same setting), emerging patterns (one group
+contains the objects in a class, the other groups all remaining
+objects in the same dimension), etc. For positively correlated and
+emerging patterns, the ratios in the matrix differ from those used to
+define the patterns by constant factors (ratios of the total number of
+items in the two groups).
+
+
+*** DATASET REDUCTION  ***
+
+Before the actual extraction, d-peeler removes from the input data
+tuples that cannot be covered by any closed n-set satisfying the
+minimal size constraints specified through the option --sizes
+(-s). That typically makes d-peeler run much faster and the patterns
+at the output are guaranyteely the same (although they can be in a
+different order and so can their items).
+
+The option --no-reduction (-n) disables the input data reduction. To
+only reduced the input data and output the reduction (rather than the
+closed n-sets), use option --reduction (-r).
+
+
+*** EXAMPLE ***
+
+A tiny data set is given as an example in example/example.data. It is
+provided with an option file, two group files and a ratio
+file. Experiment!
+
+
+*** BUGS ***
+
+Report bugs to <magicbanana@gmail.com>.
+
+
+*** COPYRIGHT ***
+
+Copyright 2007-2014 Loïc Cerf (magicbanana@gmail.com) This is free
+software. You may redistribute copies of it under the terms of the GNU
+General Public License <http://www.gnu.org/licenses/gpl.html>. There
+is NO WARRANTY, to the extent permitted by law.

@@ -1,0 +1,71 @@
+---
+en:
+  projeto: Workflow
+  novo: New
+  abrir: Open
+  salvar: Save
+  entrada: Input
+  saida: Output
+  filtros: Filters
+  operacoes: Operations
+  tarefas: Tasks
+  projeto_removido: Workflow removed.
+  projeto_carregado: Workflow loaded.
+  projeto_salvo: Workflow saved.
+  nome_nao_encontrado: Name not found
+  voce_redirecionado: You will be redirected.
+  erro: Error.
+  minha_tarefa: My Task
+  acessar_resultado: Access Result
+  fluxo_executado_sucesso: Workflow successfully executed
+  erro_executando: "Error executing:"
+  erro_servidor: Server error
+  necessario_input: You need to select an input
+  executando_fluxo: Executing workflow
+  acompanhar_tarefa: Click here to see your task.
+  novo_fluxo: New Workflow
+  alteracoes_nao_salvas: Unsaved taks will be lost, are you sure?
+  parametros_alterados: Parameters changed
+  cancelar: Cancel
+  fechar: Close
+  abrir_fluxo: Open Workflow
+  salvar_fluxo: Save Workflow
+  sobrescrever_fluxo: This Workflow will overwrite your last configuration
+  salvar_como: Save as
+  novo_nome: New name
+  nenhum_fluxo: You don't have a workflow. Please, create one
+  seus_fluxos: Your Workflows
+  name: Name
+  base: Database
+  bases: Databases
+  sair: Leave
+  remover: Remove
+  criado_em: Created at
+  detalhes: Details
+  inicio: Home
+  lsl: Team
+  acessar_resultados: Access results
+  certeza_remover_fluxo: Are you sure you want to remove this workflow?
+  certeza_remover_projeto: Are you sure you want to remove this workflow?
+  executar: Execute
+  novo: New
+  projetos: Workflows
+  nao_logado: You are not logged at AI Social
+  Datasets: Datasets
+  Filter: Filter
+  Sentiment Analysis: Sentiment Analysis
+  Correlation Patern: Correlation Pattern
+  endorsement: Endorsement
+  Topics: Topics
+  Output: Output
+  query: Query
+  Step name: Step Name
+  n_words: Number of Words
+  n_topics: Number of Topics
+  n_iters: Number of iterations
+  nome: Name
+  base: Databases
+  criado_em: Create at
+  detalhes: Details
+  delete: Delete
+

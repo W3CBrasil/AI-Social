@@ -1,0 +1,3 @@
+var template_box =  <%= raw(@box.to_json) %>  ;
+var graph_element = new joint.shapes.devs.Box(template_box);
+graph.addCell(graph_element);

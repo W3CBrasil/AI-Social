@@ -1,0 +1,364 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Inteligência Analítica - Consulta Pública</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+    
+        <link rel="stylesheet" href="{% static 'css/vendor/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/vendor/bootstrap.min.css' %}">
+        
+        <link rel="stylesheet" href="{% static 'css/vendor/datatables.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/vendor/responsive.dataTables.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/vendor/fixedHeader.bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/vendor/buttons.bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/vendor/buttons.dataTables.min.css' %}">
+        
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+        
+    </head>
+    <body>
+    	
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+     
+        <div id="wrapper">
+        	
+        	<div id="sidebar-wrapper">
+        		
+        		<div class="container-fluid">
+        			
+        			
+        			<ul>
+        				<li> </li>
+        			</ul>
+        			
+        			<div id="legenda-dashboard">
+        				
+        				
+        				
+        			</div>
+        			
+        			
+        			
+        		</div>
+        		
+        	</div>
+        	
+        	
+        	
+        	
+        	<nav class="navbar navbar-default navbar-fixed">
+        		
+        		<div class="container-fluid">
+        			
+        			
+        			<div class="navbar-header">
+
+        				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"> </span>
+							<span class="icon-bar"> </span>
+							<span class="icon-bar"> </span>
+						</button>
+
+        			</div>
+
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						
+						<ul class="nav navbar-nav">
+							<li><a id="menu-toggle" href="#menu-toggle" class=""><i class="fa fa-exchange fa-lg"></i></a></li>
+						</ul>
+        				
+
+						<ul class="nav navbar-nav navbar-right top-nav">
+							
+							
+							<li>
+								<a href="#" class="btn" onclick="OrdenaCrescente()"> <i class="fa fa-sort-amount-asc fa-lg"> </i> Crescente</a>
+															
+							</li>
+							
+							<li>
+								<a href="#" class="btn" onclick="OrdenaDecrescente()"> <i class="fa fa-sort-amount-desc fa-lg"> </i> Descrescente</a>
+							</li>
+							
+							<li><a href="#" class="btn" onclick="DesenhaVisualizacao()"> <i class="fa fa-refresh fa-lg"> </i>  Limpar</a></li>
+
+							<li class="dropdown">
+
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-user fa-lg"> </i> Nome do Usuário <span class="caret"> </span> </a>
+
+								<ul class="dropdown-menu">
+ 
+									<li>
+										<a href="#"><i class="fa fa-fw fa-gear fa-lg"> </i>Configurações</a>
+									</li>
+
+									<li class="divider"> </li>
+
+									<li>
+										<a href="#"><i class="fa fa-fw fa-power-off fa-lg"> </i>Log Out</a>
+									</li>
+
+								</ul> 
+
+							</li>
+
+						</ul>
+
+					</div>
+
+        		</div>
+        			
+        	</nav>
+        		
+        	
+        	
+        	<div id="page-content-wrapper">
+     		
+        		<div class="container-fluid">
+        			
+        			<!-- Linha Título da Página -->
+        			<div class="row"> 
+        				<div class="col-lg-12">
+        					<h1 class="page-header" >Dashboard
+        						<small>Dados Selecionados</small>
+        					</h1>
+        					<ol class="breadcrumb">
+        						<li>Início</li>
+        						<li>Seleção de Dados</li>
+        						<li class="active">Dashboard</li>
+        					</ol>
+        				</div>
+        			</div>
+        			
+        			<!-- Linha 1 Dashboard -->
+        			<div class="row"> 
+        				<div class="col-lg-7">
+        					
+        					<!-- Painel Informações Gerais -->
+        					<div class="row">
+        						
+        						<div class="col-lg-6">
+        							
+        							        							
+        							<div class="panel panel-default">
+										
+										
+
+										<div class="panel-body-media">
+											
+											<div id="container-total-participantes" class="media">
+												
+												<div class="media-left media-middle">
+													<i class="fa fa-4x fa-users"> </i>
+												</div>
+												
+												<div class="media-body">
+													
+													<h4 id="contador-participantes" class="media-heading text-right">0</h4>
+													<p class="text-right">Participantes</p>
+													
+												</div>
+
+												
+											</div>
+											
+										</div>
+
+									</div>
+
+        						</div>
+        						
+        						
+        						<div class="col-lg-6">
+        							
+        							<div class="panel panel-default">
+
+										<div class="panel-body-media">
+											
+											<div id="container-total-comentarios" class="media">
+												
+												<div class="media-left media-middle">
+													<i class="fa fa-4x fa-comment"> </i>
+												</div>
+												
+												<div class="media-body">
+													
+													<h4 id="contador-comentarios" class="media-heading text-right">0</h4>
+													<p class="text-right">Comentários</p>
+													
+												</div>
+
+												
+											</div>
+											
+										</div>
+
+									</div>
+
+        						</div>
+        					
+        					</div>
+        					
+        					
+        					<div class="row">
+
+								<!-- Painel Gŕafico de Barras Participantes -->
+								<div class="col-lg-6">
+
+																		
+									
+									<div class="panel panel-default">
+
+										<div class="panel-heading">
+											<h4>#20 Participantes	
+												<a href="#" onclick="OrdenaParticipantesDesc()" class="pull-right" title="Ordenação Decrescente"> <i class="fa fa-sort-amount-desc fa-fw"> </i> </a>
+												<a href="#" onclick="OrdenaParticipantesAsc()" class="pull-right" title="Ordenação Crescente"> <i class="fa fa-sort-amount-asc fa-fw">   </i> </a>
+											</h4>
+										</div>
+
+										<div class="panel-body">
+											<div id="container-participantes" class="container-grafico">
+
+											</div>
+										</div>
+
+									</div>
+        							
+        						</div>
+        						
+        						<div class="col-lg-6">
+        							
+        							<!-- Painel Gŕafico de Barras Eixos -->
+        							<div class="panel panel-default">
+
+										<div class="panel-heading">
+											
+											
+								
+												
+											<h4>Distribuição por Eixos
+												<a href="#" onclick="OrdenaEixosDesc()" class="pull-right" title="Ordenação Decrescente"> <i class="fa fa-sort-amount-desc fa-fw"> </i> </a>
+												<a href="#" onclick="OrdenaEixosAsc()" class="pull-right" title="Ordenação Crescente"> <i class="fa fa-sort-amount-asc fa-fw">   </i> </a>
+											</h4>
+											
+											
+										</div>
+
+										<div class="panel-body">
+											<div id="container-eixos" class="container-grafico">
+
+											</div>
+										</div>
+
+									</div>
+
+        							
+        						</div>
+        					
+        					</div>
+        					
+        				</div>
+        				
+        				<!-- Painel Treemap -->
+        				<div class="col-lg-5">
+        					
+        					<div class="panel panel-default">
+        						
+        						<div class="panel-heading">
+        							<h4>Itens de Lei</h4>
+        						</div>
+        						
+        						<div class="panel-body">
+        							<div id="container-item-lei" class="container-grafico">
+        								
+        							</div>
+        						</div>
+        						
+        					</div>
+        					
+        				</div>
+        				
+        				
+        			</div>
+        			
+        			<!-- Linha 2 Dashboard -->
+        			<div class="row">
+        				
+        				<div class="col-lg-7">
+        					
+        					<div class="panel panel-default">
+        						<!--
+        						<div class="panel-heading">
+        							<h4 class="pull-leftt">Dados Selecionados </h4>
+        						</div>
+        						-->
+        						<div class="panel-body">
+        							<div id="container-tabela-dados" class="table-responsive">
+        								
+        							</div>
+        						</div>
+        						
+        					</div>
+        					
+        				</div>
+        				
+        				<div class="col-lg-5">
+        					<div class="panel panel-default">
+        						
+        						<div class="panel-heading">
+        							<h4>Termos dos Comentários</h4>
+        						</div>
+        						
+        						<div class="panel-body">
+        							<div id="container-nuvem-termos" class="container-grafico">
+        								
+        							</div>
+        						</div>
+        						
+        					</div>
+        				</div> 
+        			
+        			</div>
+        			
+        		</div>
+        		
+        	</div>
+        	
+        </div>
+
+        <script src="{% static 'js/vendor/jquery-2.2.1.min.js' %}"></script>
+        <script src="{% static 'js/vendor/pace.min.js' %}"></script>
+        <script src="{% static 'js/vendor/countUp.js' %}"></script>
+        <script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+		
+        <script src="{% static 'js/vendor/datatables.min.js' %}"></script>
+		
+        <script src="{% static 'js/vendor/dataTables.responsive.min.js' %}"></script>
+        <script src="{% static 'js/vendor/dataTables.fixedHeader.min.js' %}"></script>
+		
+        <script src="{% static 'js/vendor/dataTables.buttons.min.js' %}"></script>
+        <script src="{% static 'js/vendor/buttons.bootstrap.min.js' %}"></script>
+		
+        <script src="{% static 'js/vendor/buttons.print.min.js' %}"></script>
+        <script src="{% static 'js/vendor/buttons.html5.min.js' %}"></script>
+		
+		
+        <script src="{% static 'js/vendor/d3.min.js' %}"></script>
+        <script src="{% static 'js/vendor/d3.layout.cloud.js' %}"></script>
+        <script src="{% static 'js/vendor/d3-tip.js' %}"></script>
+        
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/dashboard.js' %}"></script>
+        
+    </body>
+</html>

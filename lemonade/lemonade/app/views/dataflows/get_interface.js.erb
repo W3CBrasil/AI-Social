@@ -1,0 +1,3 @@
+var interface = JSON.parse(<%= raw @dataflow.interface.to_json %>);
+graph.fromJSON(interface);
+$(".container-fluid").notify({text: gon.projeto_carregado}, { className: "spinner", elementPosition: "center", position: "botton center right", style: 'spinner'});

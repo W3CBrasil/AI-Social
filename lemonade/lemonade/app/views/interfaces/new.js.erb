@@ -1,0 +1,27 @@
+var template_box =  <%= raw(@box.to_json) %>;
+var defaultSpace = 150;
+var sizeSidebar = 80;
+
+if(lastPosition.x == posNullValue && lastPosition.y == posNullValue){
+   lastPosition.x = template_box["position"]["x"];
+   lastPosition.y = template_box["position"]["y"];
+
+   defaultPosition.x = lastPosition.x;
+   defaultPosition.y = lastPosition.y;
+}
+
+lastPosition = JSON.parse(JSON.stringify(lastPosition));
+
+lastPosition.x = lastPosition.x + defaultSpace;
+lastPosition.x = lastPosition.x % (paper.options.width - sizeSidebar);
+
+template_box["position"] = lastPosition;
+
+var graph_element = new joint.shapes.devs.Box(template_box);
+id = graph_element.id;
+
+if(template_box.name === "in_db_elastic"){
+  get_input_api(id, "<%= @box.name %>");
+} else{
+  create_box_params(id,  "<%= @box.name %>");
+}

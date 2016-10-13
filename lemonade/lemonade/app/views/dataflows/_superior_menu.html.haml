@@ -1,0 +1,53 @@
+.row.content-container
+  %nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+    .container-fluid
+      .navbar-header
+        %button.navbar-expand-toggle{:type => "button"}
+          %i.fa.fa-bars.icon
+        %ol.breadcrumb.navbar-breadcrumb
+          %li.active= t :projeto
+          %li#dataflow-name
+            =@dataflow.name
+        %button.navbar-right-expand-toggle.pull-right.visible-xs{:type => "button"}
+          %i.fa.fa-th.icon
+      %ul.nav.navbar-nav.navbar-right
+        %li#new-menu
+          %a{:href => "#", "data-target" => "#form_new", "data-toggle" => "modal", :type => "button"}=t :novo
+        %li#open-menu
+          %a{:href => "#", "data-target" => "#form_open", "data-toggle" => "modal", :type => "button"}=t :abrir
+        %li#execute
+          %a#execute-play{:href => "#"}
+            .fa.fa-play
+        %li.dropdown
+          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :role => "button"}=t(:salvar)
+          %ul.dropdown-menu.animated.fadeInDown
+            %li
+              %a{:id => "save-btn", :href => "#", "data-target" => "#form_save", "data-toggle" => "modal"}= t :salvar
+            %li
+              %a{:id => "saveAs-btn", :href => "#", "data-target" => "#form_saveAs", "data-toggle" => "modal" }=t :salvar_como
+        %li
+          = link_to t(:remover), dataflow_url(@dataflow), data: {confirm: t(:certeza_remover_projeto)}, method: 'DELETE'
+        %button.navbar-right-expand-toggle.pull-right.visible-xs{:type => "button"}
+          %i.fa.fa-times.icon
+        %li
+          %a{:href => "/"}=t(:inicio)
+        %li
+          %a{:href => "/services/about"}=t(:lsl)
+        %li.dropdown.profile
+          %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            -if user_signed_in?
+              =current_user.email
+            -else
+              Login
+            %span.caret
+          %ul.dropdown-menu.animated.fadeInDown
+            %li
+              .profile-info
+                -if user_signed_in?
+                  %h4.username
+                    = current_user.name
+                  %p
+                    = current_user.email
+                  .btn-group.margin-bottom-1x{:role => "group"}
+                    %button.btn.btn-default.col-xs-12{:type => "button"}
+                      =button_to "Log out", $elastic_search + '/logout'

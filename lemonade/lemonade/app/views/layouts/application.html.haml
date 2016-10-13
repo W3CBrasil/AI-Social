@@ -1,0 +1,37 @@
+!!!
+%html
+  %head
+    %title Lemonade
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    = Gon::Base.render_data
+  %body.flat-blue{ data: contexto_controller(controller) }
+    #tracking_modal.modal.fade
+      =render partial: 'dataflows/tracking_modal'
+    .app-container
+      - if @dataflow.nil?
+        .container
+          %navbar.navbar-default
+            .container-fluid
+              .navbar-header
+                %ul.nav.navbar-nav
+                  %li
+                    %h2{ style:"margin:5px"} Idioma
+                  %li
+                    %a#pt-br{ href: "/locale/pt-BR", style: "padding:2px" }
+                      =image_tag 'brazil.png', :size => '25x20'
+                  %li
+                    %a#en{ href: "/locale/en", style: "padding:2px" }
+                      =image_tag 'united_kingdom.png', :size => '25x20'
+          =render partial: 'layouts/index'
+          = yield
+      -else
+        =yield
+
+- if @dataflow.nil?
+  #dataflow-modal.modal.fade
+  #form_new.modal.fade
+    -if user_signed_in?
+      =render '/dataflows/form_new'
+

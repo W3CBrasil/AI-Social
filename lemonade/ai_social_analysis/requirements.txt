@@ -1,0 +1,7 @@
+Django==1.9.4
+elasticsearch==2.1.0
+mysqlclient
+numpy
+scipy
+django-cors-headers
+

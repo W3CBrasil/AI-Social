@@ -1,0 +1,52 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Teste CORS</title>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+            
+                alert("Getting...");
+                $.ajax("http://200.131.6.30/tarefa/criar_fluxo/", {
+                    type: "GET",
+                    success: function(data, status, xhr) {
+                        alert("Recebi! "+data)	
+                    },
+            
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    crossDomain: true
+                }); 
+            
+                alert("Posting...");
+                $.ajax("http://200.131.6.30/tarefa/criar_fluxo/", {
+                    type: "POST",
+            
+                    data: {
+                        "name": "Minha Tarefa",
+                        "dataset_input": "2",
+                        "algorithm": "1",
+                        "algorithm_params": "{\"time_to_sleep\":5}"
+                    },
+            
+                    success: function(data, status, xhr) {
+                        alert("Recebi! "+data)	
+                    },
+            
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    crossDomain: true
+                }); 
+            
+            });
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>

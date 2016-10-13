@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<h1 class="page-header" style="margin-top: 0px;">Dataset - {{dataset.project}} / {{dataset.id_project}}</h1>
+
+<ul>
+    <li><b>Proprietário:</b> {{dataset.owner}}</li>
+    <li><b>Criado em:</b> {{dataset.created_at}}</li>
+    <li><b>Tarefa:</b> 
+      {% if dataset.task_parent %}
+      <a href="{% url 'tarefa_info' dataset.task_parent.pk %}">Tarefa {{dataset.task_parent.pk}} - {{ dataset.task_parent.name }}</a>
+      {% else %}
+      <span class="label label-default">Nenhuma</span>
+      {% endif %}
+    </li>
+
+</ul> 
+
+<h2>Informações</h2>
+    <ul>
+        <li><b>Número de documentos:</b> <span class="badge">{{dataset.es_ndocs}}</span> </li>
+        <li><b>Campos: </b>
+        {% for field in dataset.es_fields.all %}
+            <span class="badge">{{field}}</span>
+        {% endfor %}
+        </li>
+    </ul> 
+
+
+<h2>Download</h2>
+
+<a class="btn btn-default btn-lg" href="{% url 'dataset_dados_csv' dataset.project dataset.id_project %}">
+  <span class="glyphicon glyphicon-download" aria-hidden="true"></span> CSV
+</a>
+
+<a class="btn btn-default btn-lg" href="{% url 'dataset_dados_jsonl' dataset.project dataset.id_project %}">
+  <span class="glyphicon glyphicon-download" aria-hidden="true"></span> JSON Line
+</a>
+
+
+<h2>Visualizações</h2>
+
+<div class="row">
+    <!--
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <h3><a href="{% url 'calaca' dataset.project dataset.id_project %}"><img src="{% static 'img/calaca.png' %}" alt="Calaca"></a></h3>
+            <div class="caption">
+                <h3><a href="{% url 'calaca' dataset.project dataset.id_project %}">Busca</a></h3>
+                <p>A Busca permite visualizar os comentários presentes no dataset, assim como fazer buscas e filtragens temporárias.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <h3><a href="{% url 'dashboard' dataset.project dataset.id_project %}"><img src="{% static 'img/dashboard.png' %}" alt="Dashboard"></a></h3>
+            <div class="caption">
+                <h3><a href="{% url 'dashboard' dataset.project dataset.id_project %}">Dashboard</a></h3>
+                <p>O dashboard fornece uma forma de visualizar e explorar os dados através de gráficos e visualizações de dados.</p>
+            </div>
+        </div>
+    </div>
+    -->
+    {% for vis in visualizacoes %}
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <h3><a href="{% url vis.nome dataset.project dataset.id_project %}"><img src="{% static vis.img %}" alt="{{vis.titulo}}"></a></h3>
+            <div class="caption">
+                <h3><a href="{% url vis.nome dataset.project dataset.id_project %}">{{vis.titulo}}</a></h3>
+                <p>{{vis.descricao}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
+

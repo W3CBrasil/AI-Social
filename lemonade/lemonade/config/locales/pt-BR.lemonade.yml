@@ -1,0 +1,72 @@
+---
+pt-BR:
+  projeto: Fluxo
+  novo: Novo
+  abrir: Abrir
+  salvar: Salvar
+  entrada: Entrada
+  saida: Saída
+  filtros: Filtros
+  operacoes: Operações
+  tarefas: Tarefas
+  projeto_removido: Fluxo removido com sucesso.
+  projeto_carregado: Fluxo carregado com sucesso.
+  projeto_salvo: Fluxo salvo com sucesso.
+  nome_nao_encontrado: Nome não encontrado
+  voce_redirecionado: Você será redirecionado.
+  erro: Erro.
+  minha_tarefa: Minha Tarefa
+  acessar_resultado: Acessar Resultado
+  fluxo_executado_sucesso: Fluxo executado com sucesso.
+  erro_executando: "Erro Executando:"
+  erro_servidor: Erro no servidor
+  necessario_input: É necessário selecionar um input
+  executando_fluxo: Executando o fluxo
+  acompanhar_tarefa: Clique aqui para acompanhar sua tarefa.
+  novo_fluxo: Novo Fluxo
+  alteracoes_nao_salvas: As alterações que não foram salvas serão descartadas, deseja continuar?
+  parametros_alterados: Parâmetros alterados
+  cancelar: Cancelar
+  fechar: Fechar
+  abrir_fluxo: Abrir Fluxo
+  salvar_fluxo: Salvar Fluxo
+  sobrescrever_fluxo: Este fluxo irá sobrescrever sua última configuração
+  salvar_como: Salvar como
+  novo_nome: Novo nome
+  nenhum_fluxo: Você ainda não tem nenhum fluxo. Considere criar um
+  seus_fluxos: Seus fluxos
+  name: Nome
+  base: Base de Dados
+  bases: Bases de Dados
+  sair: Sair
+  remover: Remover
+  criado_em: Criado em
+  detalhes: Detalhes
+  inicio: Início
+  lsl: Equipe
+  acessar_resultados: Acessar resultados
+  certeza_remover_fluxo: Você tem certeza que quer deletar este fluxo?
+  certeza_remover_projeto: Você tem certeza que quer deletar este fluxo?
+  executar: Executar
+  novo: Novo
+  projetos: Fluxos
+  nao_logado: Você não esta logado no AI social
+  Datasets: Base de Dados
+  Filter: Filtro
+  Sentiment Analysis: Análise de Sentimento
+  Correlation Patern: Padrão de Correlação
+  endorsement: Endosso
+  Topics: Tópicos
+  Output: Saída
+  query: Consulta
+  Step name: Nome
+  n_words: Número de Palavras
+  n_topics: Número de Tópicos
+  n_iters: Número de Iterações
+  nome: Nome
+  base: Base de dados
+  criado_em: Criado em
+  detalhes: Detalhes
+  delete: Remover
+
+

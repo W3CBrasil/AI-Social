@@ -1,0 +1,8 @@
+<%- if @response %>
+  $("#form_save").modal("hide");
+  $(".container-fluid").notify({text: gon.projeto_salvo}, { className: "spinner", elementPosition: "center", position: "botton center right", style: 'spinner'});
+  recolor_all(ids_dataflow,'');
+
+<%- else %>
+  $("#edit-btn").notify(gon.nome_nao_encontrado, { showDuration: 200 });
+<%- end %>

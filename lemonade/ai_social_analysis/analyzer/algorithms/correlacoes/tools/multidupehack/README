@@ -1,0 +1,562 @@
+*** DESCRIPTION ***
+
+From a fuzzy data set, multidupehack computes every (closed)
+noise-tolerant n-set satisfying given constraints and/or optimizing
+given measures. With the --reduction (-r) option, multidupehack only
+reduces the data w.r.t. the provided noise tolerance thresholds and
+minimal size constraints. With the --ha option, the extracted (closed)
+noise-tolerant n-sets are hierarchically agglomerated in a
+post-processing step.
+
+
+*** RETURN VALUES ***
+
+multidupehack returns values which can be used when called from a
+script. They are conformed to sysexit.h.
+* 0 is returned when multidupehack terminates successfully.
+* 64 is returned when multidupehack was called incorrectly.
+* 65 is returned when an input data line is not properly formatted.
+* 74 is returned when data could not be read or written on the disk.
+
+
+*** GENERAL ***
+
+* multidupehack called with no option displays a reminder of the main
+options and the names of the help sections ("size-constraints",
+"group-constraints" or "io").
+* multidupehack --help (or simply multidupehack -h) followed by a help
+section name (or only a string starting like the section name, e.g.,
+multidupehack -h s) displays a reminder of the different options
+relating to the specified topic.
+* multidupehack --version (or simply multidupehack -V) displays
+version information.
+
+
+*** OPTIONS ***
+
+Any option passed to multidupehack may either be specified on the
+command line or in an option file. If an option is present both in the
+option file and on the command line, the latter is used.
+
+The option file can be specified through option --opt. When omitted, a
+file named as the input data file + ".opt" is supposed to be the
+option file related to the input data file. For example, if the input
+data file name is "dataset.txt" and "dataset.txt.opt" exists, it is
+supposed to be the related option file.
+
+The options have the same name in the option file as on the command
+line. Only long names can be used though. Arguments passed to an
+option are separated from the name of the option by "=". As an
+example, these lines may constitute an option file:
+ids = ": "
+area = 2
+epsilon = 2 0.5 0.5
+
+Options taking a list of values in argument can only be given the
+first ones. The list is then completed with the default value. Options
+taking a matrix file in argument can only be given a file specifying
+the upper-left part of the matrix. The matrix is then completed with
+the default value.
+
+
+*** INPUT DATA ***
+
+The name of the file containing the input data set must be passed as
+an argument to multidupehack.
+
+The syntax of the input data set is flexible. Every line must be
+either empty (it is ignored) or contain n + 1 fields: n dimension
+fields and a double float number between 0 and 1 (the membership
+degree). Each dimension field may, itself, gather several
+elements. Several different separators may be used to separate the
+fields and the same goes for the separations of the elements in a
+dimension field. The elements can be any string (as far as they do not
+include any of the separators!). Let us take an example. This line
+could be part of an input data set:
+01-09-2007: Thomas,Harry,Max basketball,gymnastics 0.9
+
+There are 3 dimensions in this data set: the first one gathers dates,
+the second pupils and the last one sports. The membership degree is
+0.9. The fields are separated by the characters ":" or/and " ". The
+fact that two dimensions are separated by several separators (in our
+example both ":" and " " separate the dates from the pupils) does not
+raise any trouble. The elements are always separated by ",".
+
+To be properly understood, one must indicate to multidupehack the
+separators used otherwise defaults are used (" " to separate
+dimensions and "," to separate elements). The related options are
+--ids for Input Dimension Separators and --ies for Input Element
+Separators. In the previous example, multidupehack is to be called as
+follows:
+$ multidupehack --ids ": " dataset
+There is, here, no need to specify the option --ies since the default
+value is correct.
+
+
+*** OUTPUT DATA ***
+
+The output data looks like the input data. Without the option
+--reduction (-r), each line is a (closed) noise-tolerant n-set. With
+the option --reduction (-r), each line is a noisy n-tuple.
+
+Option --out (-o) is used to set the output file name. When omitted,
+the output file name is set from the input file name. Without the
+option --reduction, it is input file name + ".out". With the option
+--reduction, it is input file name + ".red". For example, if the input
+file name is "dataset.txt", the default output file name is
+"dataset.txt.red" if --reduction is used, "dataset.txt.out" otherwise.
+
+The dimensions are separated by a string specified through option
+--ods (by default " "). The elements are separated by a string
+specified through option --oes (by default ","). An empty set is
+output with the string specified through option --empty (by default
+"ø").
+
+Unless --reduction is used or non-agglomerated sky-patterns are
+searched, the option --pn is effective. It prints how much noise is
+present in every element of every output pattern. This noise is
+relative if --ha is used, absolute otherwise. The string separating
+the element from this noise can be set with the option --ens (by
+default "#").
+
+Moreover, multidupehack can append to each pattern, information
+describing it. When called with option --ps, it prints the number of
+elements in each dimension. When called with option --pa, it prints
+the area of the pattern. The separators can be specified:
+* --css sets the string separating the pattern from the number of
+elements in each dimension (by default " : ")
+* --ss, used in conjunction with --css, sets the string separating two
+sizes (by default " ")
+* --sas sets the string separating the pattern or the sizes (when used
+in conjunction with --css) from the number of elements in each
+dimension (by default " : ")
+
+
+*** NOISE TOLERANCE ***
+
+The maximal absolute quantity of noise allowed in any element of an
+output (closed) noise-tolerant n-set are specified with option
+--epsilon (-e). One double float number per dimension must be
+given. By default multidupehack does not tolerate any noise (0 for
+every dimension). On the command line, do not forget to protect the
+list of double float numbers by using double quotes ("). For example,
+the following command computes the closed noise-tolerant 3-sets
+tolerating a quantity 1.5 of noise for every element of the two first
+dimensions and 2 for the last dimension:
+$ multidupehack -e "1.5 1.5 2" dataset
+
+
+*** CLOSEDNESS ***
+
+By default, multidupehack computes the noise-tolerant n-set that are
+closed in every dimension. Option --unclosed (-u) makes it compute
+noise-tolerant n-set that are unclosed in the dimensions whose IDs are
+given in argument. Those IDs start at 0. For example, the following
+command computes the 3-sets that are only required to be closed in the
+second dimension:
+$ multidupehack -u "0 2" dataset
+
+
+*** CONSTRAINTS ***
+
+Constraints on the computed (closed) noise-tolerant n-sets can
+set. Their use reduces the extraction time.
+
+When two dimensions of the input data respectively relate to the input
+and the output vertices of a graph and cross-graph quasi-cliques (for
+any noise-tolerant n-set, the sets of elements in these dimensions
+must be the same) are searched, option --clique (-c) achieves it. The
+IDs of the dimensions must be given. Those IDs start at 0. On the
+command line, do not forget to protect the list of IDs by using double
+quotes ("). For example, to compute cliques in a graph whose vertices
+are in the two first dimensions (the possible remaining dimensions
+label on the edges), multidupehack must be called as follows:
+$ multidupehack -c "0 1" dataset
+
+When dimensions of the input data contain double float numbers, whose
+differences are interpretable as distances, and only almost-contiguous
+values should make valid dimensions of the noise-tolerant n-sets,
+option --tau (-t) specifies the maximal difference that is allowed
+between two subsequent values (or 0 for no such constraint). One
+integer per dimension must be given. By default no contiguity
+constraint is applied (0 for every dimension). On the command line, do
+not forget to protect the list of double float numbers by using double
+quotes ("). For example, the following command computes the closed
+3-sets with a 1.5-contiguity in the third dimension:
+$ multidupehack -t "0 0 1.5" dataset
+
+Constraints regarding the minimal number of elements which any
+computed noise-tolerant n-set must gather in each dimension can be set
+with option --sizes (-s). One integer per dimension must be given. By
+default no minimal size constraint is applied (0 for every
+dimension). On the command line, do not forget to protect the list of
+integers by using double quotes ("). For example, the following
+command computes the closed 3-sets with at least 4 elements in the
+first dimension:
+$ multidupehack -s "4 0 0" dataset
+
+Constraints regarding the maximal number of elements which any
+computed noise-tolerant n-set is allowed to gather in each dimension
+can be set with option --Sizes (-S). One integer per dimension must be
+given. By default no maximal size constraint is applied. On the
+command line, do not forget to protect the list of integers by using
+double quotes ("). For example, the following command computes the
+closed 3-sets with at most 4 elements in the first dimension:
+$ multidupehack -S "4 0 0" dataset
+
+Constraints regarding the minimal area of any computed noise-tolerant
+n-set can be set with option --area (-a). By default the minimal area
+is one n-tuple.
+
+Constraints regarding the maximal area of any computed noise-tolerant
+n-set can be set with option --Area (-A). By default no maximal area
+constraint is enforced.
+
+
+*** CONSTRAINTS ON GROUPS OF ELEMENTS ***
+
+Groups of elements can be defined in files whose paths are set with
+option --groups (-g). The file paths must not include any space since
+this character is used as a separator. On the command line, do not
+forget to protect the list of paths by using double quotes ("). Every
+file relates to a different group whose composition is
+unrestricted. In particular, a group can contain elements from
+different dimensions and the groups can overlap or even be included
+into each others.
+
+The syntax of a file defining a group is flexible. Every line must be
+either empty (it is ignored) or contain two fields. The first field
+must be an integer between 0 and n - 1 and specifies the ID of a
+dimension (i.e., the position in the input data starting with 0). The
+list of elements, in the second field, therefore are searched in this
+dimension. If an element is not found, a warning is issued and the
+element is ignored. Notice that the list of elements can be reduced to
+one single element and several lines can deal with the same dimension.
+
+Several different separators may be used to separate dimension IDs
+from the list of elements. The same goes for the separations of the
+elements in a dimension. Let us take an example. These three line
+could be part of a group file:
+0: 01-09-2007
+1 Thomas,Harry
+1:Max
+
+This group contains four elements, one in the first dimension (whose
+ID is 0) and three in the second dimension (whose ID is 1). The
+dimensions are separated from the lists of elements by the characters
+":" or/and " ". The fact that two dimensions are separated by several
+separators (in our example both ":" and " " are used on the first
+line) does not raise any trouble. The elements are, in this example,
+always separated by ",".
+
+By default, multidupehack assumes that the characters set with --ids
+separate not only the dimensions of the input data but also the
+dimension IDs from the lists of elements in a file describing a
+group. In the same way, multidupehack assumes that the characters set
+with --ies separate the elements in both the input data and the
+groups. If the separators of the input data differ from those used in
+the groups, --gds (resp. --ges) must be used to set the characters
+separating, in the groups, the dimension IDs from the elements
+(resp. the elements from each others).
+
+Constraints regarding the minimal number of elements which any
+computed noise-tolerant n-set must gather in each group can be set
+with option --gs. One integer per group must be given in the same
+order as the one used to specify the groups. By default no such
+constraint is enforced unless no other group constraints is used. In
+that latter case, the sole definition of the groups is interpreted as
+requiring the presence of all elements in them. On the command line,
+do not forget to protect the list of integers by using double quotes
+("). For example, the following command computes the closed n-sets
+with at least 4 elements in group1 and at least 2 elements in group2:
+$ multidupehack -g "group1 group2" --gs "4 2" dataset
+
+Constraints regarding the maximal number of elements which any
+computed noise-tolerant n-set is allowed to gather in each group can
+be set with option --gS. One integer per dimension must be given in
+the same order as the one used to specify the groups. By default no
+maximal size constraint is enforced on the groups. On the command
+line, do not forget to protect the list of integers by using double
+quotes ("). For example, the following command computes the closed
+n-sets with at most 4 elements in group1 and at most 2 elements in
+group2:
+$ multidupehack -g "group1 group2" --gS "4 2" dataset
+
+Constraints regarding minimal ratios between numbers of elements
+present in pairs of groups can be specified in a matrix input as a
+file. Its name is set with option --gr. The ratios in the matrix must
+be float numbers. Such a number is the minimal ratio that is allowed
+between the number of elements present in the group in row and the
+number of those in the group in column. The order of the groups is
+that of the file names set with the option --groups. Since a ratio
+between the number of elements in a group and this same number would
+always be 1, the diagonal is differently interpreted: it must contain
+integers specifying minimal numbers of elements in the related groups,
+hence no need to additionally use option --gs. As an example, these
+lines may constitute a file set with --gr:
+1 0.325
+0.666 2
+
+Because there are two rows (and two columns), at least two groups must
+be set with option --groups. Option --gs here forces the computed
+noise-tolerant n-sets to have:
+- at least 1 element in the first group;
+- at least 2 elements in the second group;
+- a ratio between the number of elements present in the first and
+second group to be higher than 0.325;
+- a ratio between the number of elements present in the second and
+first group to be higher than 0.666.
+
+Because the groups can be included into each others, option --gr
+allows to mine patterns such as confident classification rules (one
+group contains all objects in a dimension, the other group those that
+are in the class at the right-hand side of the rules), positively
+correlated patterns (same setting), emerging patterns (one group
+contains the objects in a class, the other groups all remaining
+objects in the same dimension), etc. For positively correlated and
+emerging patterns, the ratios in the matrix differ from those used to
+define the patterns by constant factors (ratios of the total number of
+elements in the two groups).
+
+Analogously to constraints regarding minimal ratios between numbers of
+elements present in pairs of groups, minimal Piatetsky-Shapiro
+measures, minimal leverages, minimal forces, minimal Yule's Q and
+minimal Yule's Y can be specified in matrices input as files. Their
+names are respectively set with options --gps, --gl, --gf, --gyq and
+--gyy. Again, the diagonal specifies the minimal numbers of elements
+in the related groups. Here are the definitions of those measures,
+where size(k) means "the total number of elements in the kth group"
+and cover(k) means "the number of elements in the kth group that are
+present in the noise-tolerant n-set":
+- Piatetsky-Shapiro measure:
+  cover(i) / size(j) - cover(j) * size(i) / size(j)²;
+- Leverage:
+  cover(i) / cover(j) - cover(j) * size(i) / size(j)²;
+- Force:
+  cover(i)² * (size(i) + size(j)) * size(j) / (cover(j) * (cover(i) + cover(j)) * size(i))
+- Yule's Q
+  (cover(i) * (size(i) + size(j) - cover(i)) - cover(j) * (size(i) - cover(i))) / (cover(i) * (size(i) + size(j) - cover(i)) + cover(j) * (size(i) - cover(i)))
+- Yule's Y
+  (sqrt(cover(i) * (size(i) + size(j) - cover(i))) - sqrt(cover(j) * (size(i) - cover(i)))) / (sqrt(cover(i) * (size(i) + size(j) - cover(i))) + sqrt(cover(j) * (size(i) - cover(i))))
+
+Notice that classical Piatetsky-Shapiro and leverage measures, as used
+in the associative classification field, are obtained by specifying
+the positive class as a group and all objects (including those in the
+positive class) as another group. In contrast, the classical force,
+Yule's Q and Yule's Y measures are obtained by specifying the positive
+class as a group and all other objects (excluding those in the
+positive class) as another group.
+
+
+*** CONSTRAINTS ON VALUES ***
+
+Given k of the n dimensions of the input data, values can be
+associated (or not) with the k-tuples that are made from the elements
+in those k dimensions. The first non-empty line of a file defining
+values associated with k-tuples lists the k IDs of the dimensions,
+i.e., their positions in the input data. Those IDs start at 0. The
+remaining lines are either empty (they are ignored) or have k + 1
+fields: k dimensions and a value, i.e., one double float number. The
+syntax is flexible. Each of the k first dimensions is composed of a
+list of elements in the dimension whose ID was specified at the first
+non-empty line. If an element is not found, a warning is issued and
+the element is ignored. Notice that the list of elements can be
+reduced to one single element.
+
+Several different separators may be used to separate the k + 1
+fields. The same goes for the separations of the elements in a
+dimension. Let us take an example. These three line could be the
+beginning (or even the entirety: not every possible k-tuple needs to
+be associated with a value) of a file defining values:
+1 0
+Thomas,Harry 01-09-2007     42
+Harry 02-09-2007;03-09-2007 .5
+
+This file defines four values: 42 is associated with the 2-tuple
+(Thomas, 01-09-2007), 42 is associated with the 2-tuple (Harry,
+01-09-2007), .5 is associated with the 2-tuple (Harry, 01-09-2007),
+and .5 is associated with the 2-tuple (Harry, 02-09-2007). The pupils
+come from the second dimension of the input data (whose ID is 1) and
+the dates come from the first dimension of the input data (whose ID is
+0). The fields are separated by the character " " (there can be
+several of them, as illustrated in the example). The elements are, in
+this example, separated by "," or/and ";".
+
+By default, multidupehack assumes that the characters set with --ids
+separate not only the dimensions of the input data but also the fields
+of any file defining values. In the same way, multidupehack assumes
+that the characters set with --ies separate the elements in both the
+input data and the value files. If the separators of the input data
+differ from those used to define the values, --vds (resp. --ves) must
+be used to set the characters separating the fields (resp. the
+elements from each others) in a file defining values.
+
+Option --utility sets a constraint regarding the minimal sum (argument
+of the option) of positive values associated with the k-tuples that
+are made from the related k dimensions of a noise-tolerant n-set. The
+considered positive values are read from the file whose path is set
+with option --utility-values (-v). If option --utility-values is used
+but not option --utility (and neither is option --sky-utility), the
+minimal sum is 0, i.e., no constraint is enforced. The following
+command computes the closed n-sets whose k-tuples are associated with
+values, defined in a file "values" in the working directory, that sum
+to at least 12.5:
+$ multidupehack -v values dataset --utility 12.5 dataset
+
+Here is another example where the characters separating the elements
+is not the default but "," and/or ";":
+$ multidupehack --ves ",;" -v values --utility 12.5 dataset
+
+
+*** CONSTRAINTS ON POINTS ***
+
+Given k of the n dimensions of the input data, points can be
+associated (or not) with the k-tuples that are made from the elements
+in those k dimensions. The first non-empty line of a file defining
+points associated with k-tuples lists the k IDs of the dimensions,
+i.e., their positions in the input data. Those IDs start at 0. The
+remaining lines are either empty (they are ignored) or have k + 2
+fields: k dimensions and a point, i.e., two double float numbers. The
+syntax is flexible. Each of the k first dimensions is composed of a
+list of elements in the dimension whose ID was specified at the first
+non-empty line. If an element is not found, a warning is issued and
+the element is ignored. Notice that the list of elements can be
+reduced to one single element.
+
+Several different separators may be used to separate the k + 2
+fields. The same goes for the separations of the elements in a
+dimension. Let us take an example. These three line could be the
+beginning (or even the entirety: not every possible k-tuple needs to
+be associated with a point) of a file defining points:
+1 0
+Thomas,Harry 01-09-2007     42 -1
+Harry 02-09-2007;03-09-2007 .5 8
+
+This file defines four points: (42, -1) is associated with the 2-tuple
+(Thomas, 01-09-2007), (42, -1) is associated with the 2-tuple (Harry,
+01-09-2007), (.5, 8) is associated with the 2-tuple (Harry,
+01-09-2007), and (.5, 8) is associated with the 2-tuple (Harry,
+02-09-2007). The pupils come from the second dimension of the input
+data (whose ID is 1) and the dates come from the first dimension of
+the input data (whose ID is 0). The fields are separated by the
+character " " (there can be several of them, as illustrated in the
+example). The elements are, in this example, separated by "," or/and
+";".
+
+By default, multidupehack assumes that the characters set with --ids
+separate not only the dimensions of the input data but also the fields
+of any file defining points. In the same way, multidupehack assumes
+that the characters set with --ies separate the elements in both the
+input data and the point files. If the separators of the input data
+differ from those used to define the points, --pds (resp. --pes) must
+be used to set the characters separating the fields (resp. the
+elements from each others) in a file defining points.
+
+Option --slope sets a constraint regarding the minimal slope (argument
+of the option) of the line fitting the points associated with the
+k-tuples that are made from the related k dimensions of a
+noise-tolerant n-set. The considered points are read from the file
+whose path is set with option --slope-points. If option --slope-points
+is used but not option --slope (and neither is option --sky-slope),
+the minimal slope is 0. For example, the following command computes
+the closed n-sets whose k-tuples are associated with points, defined
+in a file "points" in the working directory, that are increasing (the
+line fitting them has a positive slope):
+$ multidupehack --slope-points points dataset
+
+Here is another example where the minimal slope is set to .5 and the
+characters separating the elements is not the default but "," and/or
+";":
+$ multidupehack --pes ",;" --slope-points points --slope .5 dataset
+
+
+*** SIMULTANEOUS OPTIMIZATION OF MEASURES ***
+
+The constraints detailed in the three previous sections are measures
+that are to exceed or stay below user-specified thresholds. Instead
+of, or in addition to those constraints, those same measures can be
+simultaneously optimized. Formally, multidupehack computes
+noise-tolerant n-sets that are on the skyline when considered as
+points in the vectorial space of the measures.
+
+The related option names are the analog short names for the constraint
+prefixed with "sky-". For instance, option --sky-a specifies the
+maximization of the area. In the case of sizes, the IDs of the related
+dimensions must be given. Those IDs start at 0. For example, the
+followig command can used to compute the closed noise-tolerant n-sets
+with as many elements as possible in the two first dimensions and as
+few as possible in the third one:
+$ multidupehack --sky-s "0 1" --sky-S 2 dataset
+
+Constraints parametrized through a matrix file can be optimized as
+well. A null value in the matrix (the default) means no optimization,
+whereas any other number specifies an optimization. For instance,
+option --sky-gr can set this file:
+2 0
+0.666 -1
+
+Because there are two rows (and two columns), at least two groups must
+be set with option --groups. Option --sky-gr here forces the closed
+noise-tolerant n-sets to simultaneously maximize:
+- the presence of elements in the first group;
+- the presence of elements in the second group;
+- the ratio between the number of elements present in the second and
+first group.
+
+Observe that the same file could be given to option --gr to
+additionally enforce the presence at least two elements in the first
+group and a ratio between the number of elements present in the second
+and first group to be at least 0.666.
+
+The option --psky turns on the output, on the standard output, of the
+interdiate skylines that are found.
+
+
+*** HIERARCHICAL AGGLOMERATION ***
+
+Option --ha followed by a strictly positive integer triggers a
+post-processing step: the hierarchical agglomeration of the closed
+noise-tolerant n-sets. The maximal number, in millions, of candidate
+agglomerates to consider is the mandatory argument of the option. The
+memory consumption linearly grows with that number.
+
+Option --shift must be given a double float number in argument. It
+controls a shift of the membership degrees before the
+agglomeration. It is a multiplier of the average membership degree of
+the n-tuples where all elements belong at least one closed
+noise-tolerant n-set to agglomerate. It is 1 by default. Smaller
+(resp. larger) values lead to favoring larger (resp. smaller)
+agglomerates.
+
+
+*** INPUT DATA STORAGE ***
+
+multidupehack stores the input data in a hybrid way: part of them can
+be stored in a sparse structure (when most of them have a null
+membership degree) and part of them in a dense structure.
+
+Option --density (-d) must be given a float number in argument. It is
+threshold at which a denser structure is preferred. It is 1 by
+default, i.e., it favors minimal space requirements (hence cache
+misses). However, if the reduced relation is small enough to fit into
+the cache, denser structures support faster extractions, i.e.,
+--density should be given a number close to 0 (or even 0).
+
+
+*** EXAMPLE ***
+
+A tiny data set is given as an example in example/example.data. It is
+provided with an option file. Experiment!
+
+
+*** BUGS ***
+
+Report bugs to <lcerf@dcc.ufmg.br>.
+
+
+*** COPYRIGHT ***
+
+Copyright 2007-2016 Loïc Cerf (lcerf@dcc.ufmg.br) This is free
+software. You may redistribute copies of it under the terms of the GNU
+General Public License <http://www.gnu.org/licenses/gpl.html>. There
+is NO WARRANTY, to the extent permitted by law.

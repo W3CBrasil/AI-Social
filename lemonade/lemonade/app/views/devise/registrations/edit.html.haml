@@ -1,0 +1,23 @@
+.row
+  .col-lg-12
+    .well.bs-component
+      .basic-grey
+        %h1 Edit #{resource_name.to_s.humanize}
+        = simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+          = f.error_notification
+          .form-inputs{:style => "text-align:center;"}
+            = f.input :name, required: true, autofocus: true
+            = f.input :email, required: true, autofocus: true
+            - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+              %p
+                Currently waiting confirmation for: #{resource.unconfirmed_email}
+            = f.input :password, autocomplete: "off", required: false
+            %h6 leave it blank if you don't want to change it
+            = f.input :password_confirmation, required: false
+            = f.input :current_password,  required: true
+            %h6 we need your current password to confirm the changes
+          .form-actions{:style => "text-align:center;"}
+            = f.button :submit, "Update"
+        -#%p
+          Unhappy? #{link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+        -#= link_to "Back", :back

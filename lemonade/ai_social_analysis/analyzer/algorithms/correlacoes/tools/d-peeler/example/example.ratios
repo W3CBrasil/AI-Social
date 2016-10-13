@@ -1,0 +1,10 @@
+0 0.325
+0.666 1
+
+You can write whatever you want (e.g., the extracted closed n-sets)
+AFTER the ratios. Notice that the diagonal relates to minimal numbers
+of elements in the groups to be present in every computed closed
+n-set. The other values are ratios between the number of elements in
+the group in line with the number of elements in the group in
+column. The order of the groups is that of the file names set with the
+--groups option.

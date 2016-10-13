@@ -1,0 +1,51 @@
+.row
+  .col-lg-12
+    .container-fluid
+    .well.bs-component
+      .basic-grey
+        -if user_signed_in?
+          -if current_user.dataflow.empty?
+            %h1{style: "text-align: center"}
+              =t :nenhum_fluxo
+          -else
+            %h1{style: "text-align: center"}=t :seus_fluxos
+            %br
+            %br
+            %h1.follow{style: "text-align:  center"}
+            .well.pre-scrollable
+              %table.table.table-striped.table-hover
+                %thead
+                  %tr
+                    %th.col-md-2
+                      =t(:nome)
+                    %th.col-md-4
+                      =t(:base)
+                    %th.col-md-2
+                      =t(:criado_em)
+                    %th.col-md-2
+                      =t(:detalhes)
+                    %th.col-md-2{colspan: 2}
+                %tbody
+                  -@dataflows.each do |dataflow|
+                    - id = dataflow[:id]
+                    = form_tag(interface_path(id), remote: true, method: :PATCH, authenticity_token: true) do
+                      %tr
+                        %td
+                          =link_to dataflow.name, dataflow_path(id)
+                        %td
+                          - unless @value[id].nil?
+                            =select_tag(t(:bases), options_for_select(@value[id]['list'], @value[id][:selected]), { class: "form-control" })
+                        %td
+                          =l dataflow.created_at
+                        %td{id: "detail_#{id}"}
+                          -if dataflow.last_result?
+                            %a.aisocial{"data-target" => "#tracking_modal", "data-toggle" => "modal", "data-url" => dataflow.last_result, :href => ""}=t(:acessar_resultados)
+
+                        %td.right
+                          = link_to dataflow_url(dataflow), data: {confirm: t(:certeza_remover_fluxo)}, method: 'delete' do
+                            .fa.fa-times-circle
+                              =t(:delete)
+                        %td.right
+                          - unless @value[id].nil?
+                            = link_to execute_url(id: id), remote: true do
+                              .fa.fa-play-circle=t :executar

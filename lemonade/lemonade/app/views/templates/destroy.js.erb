@@ -1,0 +1,8 @@
+eval($.ajax({
+            url: "/dataflows/" + current_dataflow,
+            method: "PATCH",
+            data: {dataflow: {interface: JSON.stringify(graph) }},
+            success:  function(response) {
+            }
+          })
+    );

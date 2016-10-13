@@ -1,0 +1,6 @@
+var id = "<%= params[:id] %>";
+var parameters = <%= raw(@parameters.to_json) %>;
+var cell = graph.getCell(id);
+cell.attr({'.label':{'text': '<%= params['Step name'] %>'}});
+$("#template-modal").modal("hide");
+$(".container-fluid").notify({ text: gon.parametros_alterados}, { className: "spinner", elementPosition: "botton center", style: "spinner" });

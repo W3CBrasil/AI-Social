@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="page-header" style="margin-top: 0px;">Datasets</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Projeto</th>
+      <th>Proprietário</th>
+      <th>Criação</th>
+      <th>Tarefa</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for dataset in object_list %}
+    <tr>
+      <td><a href="{% url 'dataset_info' dataset.project dataset.id_project %}">{{dataset.name}}</a></td>
+  	  <td>{{dataset.project}}</td>
+  	  <td>{{dataset.owner}}</td>
+  	  <td>{{dataset.created_at}}</td>
+      <td>
+        {% if dataset.task_parent %}
+        <a href="{% url 'tarefa_info' dataset.task_parent.pk %}">Tarefa {{dataset.task_parent.pk}} - {{ dataset.task_parent.name }}</a>
+        {% else %}
+        <span class="label label-default">Nenhuma</span>
+        {% endif %}
+      </td>
+    </tr>
+    {% empty %}
+    <div class="alert alert-warning" role="alert">
+        Nenhum dataset disponível.
+    </div>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}
+

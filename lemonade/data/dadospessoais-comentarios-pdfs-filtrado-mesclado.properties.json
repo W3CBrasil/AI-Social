@@ -1,0 +1,116 @@
+{
+  "settings": {
+    "analysis": {
+      "filter": {
+        "brazilian_stop": {
+          "type": "stop",
+          "stopwords": "_brazilian_"
+        }
+      },
+      "analyzer": {
+        "my_brazilian": {
+          "filter": [
+            "lowercase",
+            "brazilian_stop"
+          ],
+          "tokenizer": "standard"
+        },
+        "brazilian_acento": {
+          "filter": [
+            "lowercase",
+            "brazilian_stop",
+            "asciifolding"
+          ],
+          "tokenizer": "standard"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "comment": {
+      "properties": {
+        "comment_date": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "commentable_article_name": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "commentable_type": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "source": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "commentable_parent": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "comment_text": {
+          "type": "string",
+          "fields": {
+            "brazilian": {
+              "type": "string",
+              "analyzer": "my_brazilian"
+            },
+            "acento": {
+              "type": "string",
+              "analyzer": "brazilian_acento"
+            }
+          }
+        },
+        "comment_id": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "commentable_name": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "author_name": {
+          "type" : "multi_field",
+          "fields" : {
+            "author_name" : {"type" : "string", "index" : "analyzed"},
+            "all" : {"type" : "string", "index" : "not_analyzed"}
+          }
+        },
+        "commentable_id": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "commentable_article": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "commentable_chapter": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "author_id": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "comment_parent": {
+          "type": "string",
+          "index": "not_analyzed"
+        },
+        "commentable_text": {
+          "type": "string",
+          "fields": {
+            "brazilian": {
+              "type": "string",
+              "analyzer": "brazilian"
+            }
+          }
+        },
+        "commentable_axis": {
+          "type": "string",
+          "index": "not_analyzed"
+        }
+      }
+    }
+  }
+}

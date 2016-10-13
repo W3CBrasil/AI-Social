@@ -1,0 +1,14 @@
+.modal-dialog{:role => "document"}
+  .modal-content
+    .modal-header
+      %button.close{"aria-label" => t(:fechar), "data-dismiss" => "modal", :type => "button"}
+        %span{"aria-hidden" => "true"} x
+      %h6#gridModalLabel.modal-title=t :salvar_como
+    = form_tag(dataflows_path, method: :POST, authenticity_token: true) do
+      .modal-body
+        .form-group
+          = text_field_tag 'name', nil, class: "form-control", placeholder: t(:novo_nome)
+          = text_field_tag :interface, "{'cells':[]}", class: "form-control", type: "hidden", id:"form_saveAs_interface"
+      .modal-footer
+        = submit_tag "Ok", id: "save-btn", class: "btn btn-primary", style: "background: #1abc9c; border-color: #1abc9c;"
+        %a.btn.btn-primary{"data-dismiss" => "modal", :href => "#", :style => "background: #EA7B7B; border-color: #EA7B7B;"}=t :cancelar

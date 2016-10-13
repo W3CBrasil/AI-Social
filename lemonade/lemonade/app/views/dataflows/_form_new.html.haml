@@ -1,0 +1,17 @@
+.modal-dialog{:role => "document"}
+  .modal-content
+    .modal-header
+      %button.close{"aria-label" => "Close", "data-dismiss" => "modal", type: "button"}
+        %span{"aria-hidden" => "true"} x
+      %h6#gridModalLabel.modal-title=t :novo_fluxo
+    = form_tag(dataflows_path, method: :POST, authenticity_token: true) do
+      .modal-body
+        .form-group
+          = text_field_tag 'name', nil, class: "form-control", placeholder: t(:novo_nome)
+          = text_field_tag :interface, "{'cells':[]}", class: "form-control", type: "hidden"
+      .modal-footer
+        - if params[:action] == 'show'
+          = submit_tag "Ok", id: "new-btn", class: "btn btn-primary", style: "background: #1abc9c; border-color: #1abc9c;",   data: { confirm:  t(:alteracoes_nao_salvas)}
+        - else
+          = submit_tag "Ok", id: "new-btn", class: "btn btn-primary", style: "background: #1abc9c; border-color: #1abc9c;"
+        %a.btn.btn-primary{"data-dismiss" => "modal", :href => "#", :style => "background: #EA7B7B; border-color: #EA7B7B;"}=t :cancelar

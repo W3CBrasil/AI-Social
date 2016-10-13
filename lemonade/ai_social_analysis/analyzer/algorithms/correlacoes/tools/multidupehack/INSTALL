@@ -1,0 +1,122 @@
+*** Dependencies ***
+
+To run, multidupehack requires the Boost library. Most of GNU/Linux
+distributions have it in their repositories. Simply use your package
+manager to install it. Notice however that Debian and its derivatives
+(including the *buntu) split that library into several packages. If
+you run one of them, you must install libboost-dev,
+libboost-program-options and libboost-program-options-dev.
+
+To manually install the Boost library (for example if you are running
+a proprietary operating system), this Web page may help you:
+http://www.boost.org/more/getting_started/index.html
+
+
+*** Compilation ***
+
+multidupehack was meant to be built with GCC version 4.7 or
+later. However one can easily adapt the makefile to use another
+compiler.
+
+To install multidupehack on a *NIX-like operating system, run (with
+administrator privileges):
+# make install
+
+If you do not have access to administrator privileges or if you do not
+run a *NIX-like operating system, simply run:
+$ make
+The executable, called multidupehack, is created in the working
+directory. You can then move it to a personal directory listed in your
+PATH variable.
+
+
+*** Compilation Options ***
+
+Several options can be easily enabled (respectively disabled) in
+Parameters.h by uncommenting (respectively commenting) them:
+
+OUTPUT turns on the output. This option may be disabled to evaluate
+the performance of multidupehack independently from the writing
+performances of the disk.
+
+PRE_PROCESS turns on the pre-process that aims to ignore elements that
+cannot be in any pattern given the minimal size constraints and the
+tolerance to noise.
+
+MIN_SIZE_ELEMENT_PRUNING turns on the heuristic that removes from the
+search space individual elements that would necessarily make a pattern
+violate some minimal size or area constraint.
+
+DETECT_NON_EXTENSION_ELEMENTS turns out the heuristic that removes the
+elements that are set absent by enumeration and cannot prevent the
+closedness of the patterns that will be recursively considered.
+
+TWO_MODE_ELEMENT_CHOICE turns on the heuristic that decides in a
+different way the dimension the next enumerated element is taken in if
+the numbers of present elements still make it impossible to exceed any
+epsilon. The dimension is chosen so that there are as few enumeration
+nodes as possible with barely enough present elements to exceed some
+epsilon.
+
+ENUMERATION_PROCESS selects the procedure that decides what is the
+next element to enumerate:
+0: choose the most noisy element in the immediate potential part of the tuple space;
+1: choose the most noisy element in the immediate potential part of the tuple space plus (n - 1) times in the present part of the tuple space.
+
+VERBOSE_PARSER turns on the output (on the standard output) of
+information when the input data and group files are parsed.
+
+DEBUG turns on the output (on the standard output) of information
+during the extraction of the (closed) error-tolerant n-sets. This
+option may be enabled by who wishes to precisely understand how this
+extraction is performed on a small data set.
+
+DEBUG_HA turns on the output (on the standard output) of information
+during the agglomeration of the closed error-tolerant n-sets. This
+option may be enabled by who wishes to understand how this
+agglomeration is performed on a small number of closed error-tolerant
+n-sets.
+
+VERBOSE_ELEMENT_CHOICE turns on the output (on the standard output) of
+information regarding the choice of the next element to
+enumerate. Combined with DEBUG, this option may be enabled by who
+wishes to precisely understand how this choice is performed on a small
+data set.
+
+NUMERIC_PRECISION turns ou the output (on the standard output) of the
+maximal possible round-off error made when internally storing a
+membership degree.
+
+NB_OF_CLOSED_N_SETS turns on the output (on the standard output) of
+how many valid (closed) error-tolerant n-sets were selected during the
+extraction phase.
+
+NB_OF_LEFT_NODES turns on the output (on the standard output) of how
+many (not necessarily closed or constraint-satisfying) patterns were
+considered during the extraction phase. This option may be enabled by
+who wishes an estimate of the time complexity independent from the
+hardware performance.
+
+TIME turns on the output (on the standard output) of the running time
+of multidupehack.
+
+DETAILED_TIME turns on the output (on the standard output) of a more
+detailed analysis of how the time is spent. It gives (in this order):
+- the parsing time
+- the pre-processing time (to reduce the relation)
+- the mining time
+- the post-processing time (to agglomerate the closed error-tolerant n-sets)
+
+ELEMENT_CHOICE_TIME turns on the output (on the standard output) of
+the time spent choosing the next element to enumerate.
+
+MIN_SIZE_ELEMENT_PRUNING_TIME turns on the output (on the standard
+output) of the time spent detecting elements that contain too much
+noise given the minimal size and area constraints.
+
+GNUPLOT modifies the outputs of NUMERIC_PRECISION,
+NB_OF_CLOSED_N_SETS, NB_OF_LEFT_NODES, TIME, DETAILED_TIME,
+ELEMENT_CHOICE_TIME and MIN_SIZE_ELEMENT_PRUNING_TIME (in this
+order). They become tab separated values.
+
+ASSERT is used to check the correctness of the computed noise counters.

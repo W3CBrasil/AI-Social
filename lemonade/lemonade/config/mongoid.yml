@@ -1,0 +1,26 @@
+evelopment:
+  clients:
+    default:
+      database: datascience_development
+      hosts:
+        - localhost:27017
+      options:
+  options:
+production:
+  clients:
+    default:
+      database: datascience
+      hosts:
+        - localhost:27017
+      options:
+  options:
+test:
+  clients:
+    default:
+      database: datascience_test
+      hosts:
+        - localhost:27017
+      options:
+        read:
+          mode: :primary
+        max_pool_size: 1
